@@ -23,7 +23,6 @@ Partial Class FRMLOGIN
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.pnlsidenav = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        Me.lblhome = New System.Windows.Forms.Label()
         Me.picsurs = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.BTNINSTA = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -46,7 +45,6 @@ Partial Class FRMLOGIN
         '
         'pnlsidenav
         '
-        Me.pnlsidenav.Controls.Add(Me.lblhome)
         Me.pnlsidenav.Controls.Add(Me.picsurs)
         Me.pnlsidenav.Controls.Add(Me.Guna2HtmlLabel1)
         Me.pnlsidenav.Controls.Add(Me.BTNINSTA)
@@ -63,15 +61,6 @@ Partial Class FRMLOGIN
         Me.pnlsidenav.ShadowDecoration.Parent = Me.pnlsidenav
         Me.pnlsidenav.Size = New System.Drawing.Size(187, 500)
         Me.pnlsidenav.TabIndex = 25
-        '
-        'lblhome
-        '
-        Me.lblhome.BackColor = System.Drawing.Color.Transparent
-        Me.lblhome.Location = New System.Drawing.Point(43, 18)
-        Me.lblhome.Name = "lblhome"
-        Me.lblhome.Size = New System.Drawing.Size(52, 23)
-        Me.lblhome.TabIndex = 31
-        Me.lblhome.Text = "Home"
         '
         'picsurs
         '
@@ -293,5 +282,4 @@ Partial Class FRMLOGIN
     Friend WithEvents BTNINSTA As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents picsurs As Guna.UI2.WinForms.Guna2CirclePictureBox
-    Friend WithEvents lblhome As Label
 End Class

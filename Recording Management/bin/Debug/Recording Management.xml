@@ -47,6 +47,11 @@ Recording Management
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Recording_Management.My.Resources.Resources.cross">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Recording_Management.My.Resources.Resources.dashboard">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -57,7 +62,17 @@ Recording Management
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Recording_Management.My.Resources.Resources.edit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Recording_Management.My.Resources.Resources.facebook__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Recording_Management.My.Resources.Resources.floppy_disk">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -112,6 +127,21 @@ Recording Management
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Recording_Management.My.Resources.Resources.plus">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Recording_Management.My.Resources.Resources.plus__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Recording_Management.My.Resources.Resources.plus__2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Recording_Management.My.Resources.Resources.power_off">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -155,6 +185,71 @@ Recording Management
 <member name="P:Recording_Management.My.Resources.Resources.workplace">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_userDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_userRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_userRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_userTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Recording_Management.record_management_systemDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Recording_Management.record_management_systemDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Recording_Management.record_management_systemDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Recording_Management.record_management_systemDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Recording_Management.record_management_systemDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Recording_Management.record_management_systemDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Recording_Management.record_management_systemDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Recording_Management.record_management_systemDataSetTableAdapters.TableAdapterManager.UpdateAll(Recording_Management.record_management_systemDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
 </summary>
 </member>
 </members>

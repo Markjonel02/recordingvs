@@ -24,8 +24,6 @@ Partial Class FRMMAINMENU
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRMMAINMENU))
         Me.pnlfrmmainpanel = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.lblshowhide = New System.Windows.Forms.Label()
-        Me.chkshowbutton = New Guna.UI2.WinForms.Guna2ImageCheckBox()
         Me.pnlfrmuser = New System.Windows.Forms.Panel()
         Me.BTNLOGOUT = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
@@ -38,24 +36,22 @@ Partial Class FRMMAINMENU
         Me.BTNITEM = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.BTNMANAGE = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.pnlback = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
-        Me.pnlmainmenu = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.lblgreet = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.lblgreet = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.pnlmainmenu = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlfrmmainpanel.SuspendLayout()
         Me.pnlfrmuser.SuspendLayout()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlback.SuspendLayout()
-        Me.pnlmainmenu.SuspendLayout()
         Me.Guna2GradientPanel1.SuspendLayout()
+        Me.pnlmainmenu.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnlfrmmainpanel
         '
         Me.pnlfrmmainpanel.BackColor = System.Drawing.Color.Transparent
-        Me.pnlfrmmainpanel.Controls.Add(Me.lblshowhide)
-        Me.pnlfrmmainpanel.Controls.Add(Me.chkshowbutton)
         Me.pnlfrmmainpanel.Controls.Add(Me.pnlfrmuser)
         Me.pnlfrmmainpanel.Controls.Add(Me.BTNDASHOARD)
         Me.pnlfrmmainpanel.Controls.Add(Me.BTNREP)
@@ -73,26 +69,6 @@ Partial Class FRMMAINMENU
         Me.pnlfrmmainpanel.ShadowDecoration.Parent = Me.pnlfrmmainpanel
         Me.pnlfrmmainpanel.Size = New System.Drawing.Size(203, 527)
         Me.pnlfrmmainpanel.TabIndex = 0
-        '
-        'lblshowhide
-        '
-        Me.lblshowhide.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.lblshowhide.Location = New System.Drawing.Point(132, 146)
-        Me.lblshowhide.Name = "lblshowhide"
-        Me.lblshowhide.Size = New System.Drawing.Size(40, 23)
-        Me.lblshowhide.TabIndex = 2
-        '
-        'chkshowbutton
-        '
-        Me.chkshowbutton.CheckedState.Image = Global.Recording_Management.My.Resources.Resources.down_arrow
-        Me.chkshowbutton.CheckedState.Parent = Me.chkshowbutton
-        Me.chkshowbutton.HoverState.Parent = Me.chkshowbutton
-        Me.chkshowbutton.Image = Global.Recording_Management.My.Resources.Resources.arrow_up
-        Me.chkshowbutton.Location = New System.Drawing.Point(178, 146)
-        Me.chkshowbutton.Name = "chkshowbutton"
-        Me.chkshowbutton.PressedState.Parent = Me.chkshowbutton
-        Me.chkshowbutton.Size = New System.Drawing.Size(19, 19)
-        Me.chkshowbutton.TabIndex = 2
         '
         'pnlfrmuser
         '
@@ -143,10 +119,10 @@ Partial Class FRMMAINMENU
         Me.BTNDASHOARD.CustomImages.Parent = Me.BTNDASHOARD
         Me.BTNDASHOARD.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BTNDASHOARD.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BTNDASHOARD.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BTNDASHOARD.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTNDASHOARD.ForeColor = System.Drawing.Color.White
         Me.BTNDASHOARD.HoverState.Parent = Me.BTNDASHOARD
-        Me.BTNDASHOARD.Location = New System.Drawing.Point(0, 171)
+        Me.BTNDASHOARD.Location = New System.Drawing.Point(0, 191)
         Me.BTNDASHOARD.Name = "BTNDASHOARD"
         Me.BTNDASHOARD.ShadowDecoration.Parent = Me.BTNDASHOARD
         Me.BTNDASHOARD.Size = New System.Drawing.Size(203, 31)
@@ -165,10 +141,10 @@ Partial Class FRMMAINMENU
         Me.BTNREP.CustomImages.Parent = Me.BTNREP
         Me.BTNREP.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BTNREP.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BTNREP.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BTNREP.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTNREP.ForeColor = System.Drawing.Color.White
         Me.BTNREP.HoverState.Parent = Me.BTNREP
-        Me.BTNREP.Location = New System.Drawing.Point(0, 430)
+        Me.BTNREP.Location = New System.Drawing.Point(0, 450)
         Me.BTNREP.Name = "BTNREP"
         Me.BTNREP.ShadowDecoration.Parent = Me.BTNREP
         Me.BTNREP.Size = New System.Drawing.Size(203, 31)
@@ -188,10 +164,10 @@ Partial Class FRMMAINMENU
         Me.BTNTRANSAC.CustomImages.Parent = Me.BTNTRANSAC
         Me.BTNTRANSAC.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BTNTRANSAC.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BTNTRANSAC.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BTNTRANSAC.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTNTRANSAC.ForeColor = System.Drawing.Color.White
         Me.BTNTRANSAC.HoverState.Parent = Me.BTNTRANSAC
-        Me.BTNTRANSAC.Location = New System.Drawing.Point(0, 356)
+        Me.BTNTRANSAC.Location = New System.Drawing.Point(0, 376)
         Me.BTNTRANSAC.Name = "BTNTRANSAC"
         Me.BTNTRANSAC.ShadowDecoration.Parent = Me.BTNTRANSAC
         Me.BTNTRANSAC.Size = New System.Drawing.Size(203, 31)
@@ -211,10 +187,10 @@ Partial Class FRMMAINMENU
         Me.BTNSYSTEMSET.CustomImages.Parent = Me.BTNSYSTEMSET
         Me.BTNSYSTEMSET.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BTNSYSTEMSET.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BTNSYSTEMSET.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BTNSYSTEMSET.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTNSYSTEMSET.ForeColor = System.Drawing.Color.White
         Me.BTNSYSTEMSET.HoverState.Parent = Me.BTNSYSTEMSET
-        Me.BTNSYSTEMSET.Location = New System.Drawing.Point(0, 393)
+        Me.BTNSYSTEMSET.Location = New System.Drawing.Point(0, 413)
         Me.BTNSYSTEMSET.Name = "BTNSYSTEMSET"
         Me.BTNSYSTEMSET.ShadowDecoration.Parent = Me.BTNSYSTEMSET
         Me.BTNSYSTEMSET.Size = New System.Drawing.Size(203, 31)
@@ -234,10 +210,10 @@ Partial Class FRMMAINMENU
         Me.BTNBORRPROF.CustomImages.Parent = Me.BTNBORRPROF
         Me.BTNBORRPROF.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BTNBORRPROF.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BTNBORRPROF.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BTNBORRPROF.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTNBORRPROF.ForeColor = System.Drawing.Color.White
         Me.BTNBORRPROF.HoverState.Parent = Me.BTNBORRPROF
-        Me.BTNBORRPROF.Location = New System.Drawing.Point(0, 319)
+        Me.BTNBORRPROF.Location = New System.Drawing.Point(0, 339)
         Me.BTNBORRPROF.Name = "BTNBORRPROF"
         Me.BTNBORRPROF.ShadowDecoration.Parent = Me.BTNBORRPROF
         Me.BTNBORRPROF.Size = New System.Drawing.Size(203, 31)
@@ -257,10 +233,10 @@ Partial Class FRMMAINMENU
         Me.BTNADDITEM.CustomImages.Parent = Me.BTNADDITEM
         Me.BTNADDITEM.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BTNADDITEM.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BTNADDITEM.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BTNADDITEM.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTNADDITEM.ForeColor = System.Drawing.Color.White
         Me.BTNADDITEM.HoverState.Parent = Me.BTNADDITEM
-        Me.BTNADDITEM.Location = New System.Drawing.Point(0, 282)
+        Me.BTNADDITEM.Location = New System.Drawing.Point(0, 302)
         Me.BTNADDITEM.Name = "BTNADDITEM"
         Me.BTNADDITEM.ShadowDecoration.Parent = Me.BTNADDITEM
         Me.BTNADDITEM.Size = New System.Drawing.Size(203, 31)
@@ -280,10 +256,10 @@ Partial Class FRMMAINMENU
         Me.BTNITEM.CustomImages.Parent = Me.BTNITEM
         Me.BTNITEM.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BTNITEM.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BTNITEM.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BTNITEM.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTNITEM.ForeColor = System.Drawing.Color.White
         Me.BTNITEM.HoverState.Parent = Me.BTNITEM
-        Me.BTNITEM.Location = New System.Drawing.Point(0, 245)
+        Me.BTNITEM.Location = New System.Drawing.Point(0, 265)
         Me.BTNITEM.Name = "BTNITEM"
         Me.BTNITEM.ShadowDecoration.Parent = Me.BTNITEM
         Me.BTNITEM.Size = New System.Drawing.Size(203, 31)
@@ -303,13 +279,13 @@ Partial Class FRMMAINMENU
         Me.BTNMANAGE.CustomImages.Parent = Me.BTNMANAGE
         Me.BTNMANAGE.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.BTNMANAGE.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.BTNMANAGE.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BTNMANAGE.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTNMANAGE.ForeColor = System.Drawing.Color.White
         Me.BTNMANAGE.HoverState.CustomBorderColor = System.Drawing.Color.White
         Me.BTNMANAGE.HoverState.FillColor = System.Drawing.Color.SkyBlue
         Me.BTNMANAGE.HoverState.FillColor2 = System.Drawing.Color.SkyBlue
         Me.BTNMANAGE.HoverState.Parent = Me.BTNMANAGE
-        Me.BTNMANAGE.Location = New System.Drawing.Point(0, 208)
+        Me.BTNMANAGE.Location = New System.Drawing.Point(0, 228)
         Me.BTNMANAGE.Name = "BTNMANAGE"
         Me.BTNMANAGE.ShadowDecoration.Parent = Me.BTNMANAGE
         Me.BTNMANAGE.Size = New System.Drawing.Size(203, 31)
@@ -328,6 +304,45 @@ Partial Class FRMMAINMENU
         Me.pnlback.Size = New System.Drawing.Size(818, 527)
         Me.pnlback.TabIndex = 1
         '
+        'Guna2GradientPanel1
+        '
+        Me.Guna2GradientPanel1.Controls.Add(Me.btnExit)
+        Me.Guna2GradientPanel1.Controls.Add(Me.lblgreet)
+        Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
+        Me.Guna2GradientPanel1.ShadowDecoration.Parent = Me.Guna2GradientPanel1
+        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(818, 43)
+        Me.Guna2GradientPanel1.TabIndex = 3
+        '
+        'btnExit
+        '
+        Me.btnExit.BackColor = System.Drawing.Color.Transparent
+        Me.btnExit.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnExit.FlatAppearance.BorderSize = 0
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExit.Location = New System.Drawing.Point(775, 0)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(43, 43)
+        Me.btnExit.TabIndex = 2
+        Me.btnExit.Text = "X"
+        Me.btnExit.UseVisualStyleBackColor = False
+        '
+        'lblgreet
+        '
+        Me.lblgreet.AutoSize = False
+        Me.lblgreet.BackColor = System.Drawing.Color.Transparent
+        Me.lblgreet.Font = New System.Drawing.Font("Stencil", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblgreet.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.lblgreet.Location = New System.Drawing.Point(379, 0)
+        Me.lblgreet.Name = "lblgreet"
+        Me.lblgreet.Size = New System.Drawing.Size(140, 43)
+        Me.lblgreet.TabIndex = 1
+        Me.lblgreet.Text = "USER NAME"
+        Me.lblgreet.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'pnlmainmenu
         '
         Me.pnlmainmenu.BackgroundImage = CType(resources.GetObject("pnlmainmenu.BackgroundImage"), System.Drawing.Image)
@@ -343,30 +358,6 @@ Partial Class FRMMAINMENU
         Me.pnlmainmenu.Size = New System.Drawing.Size(800, 462)
         Me.pnlmainmenu.TabIndex = 2
         '
-        'Guna2GradientPanel1
-        '
-        Me.Guna2GradientPanel1.Controls.Add(Me.btnExit)
-        Me.Guna2GradientPanel1.Controls.Add(Me.lblgreet)
-        Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
-        Me.Guna2GradientPanel1.ShadowDecoration.Parent = Me.Guna2GradientPanel1
-        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(818, 43)
-        Me.Guna2GradientPanel1.TabIndex = 3
-        '
-        'lblgreet
-        '
-        Me.lblgreet.AutoSize = False
-        Me.lblgreet.BackColor = System.Drawing.Color.Transparent
-        Me.lblgreet.Font = New System.Drawing.Font("Stencil", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblgreet.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.lblgreet.Location = New System.Drawing.Point(379, 0)
-        Me.lblgreet.Name = "lblgreet"
-        Me.lblgreet.Size = New System.Drawing.Size(140, 43)
-        Me.lblgreet.TabIndex = 1
-        Me.lblgreet.Text = "USER NAME"
-        Me.lblgreet.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -374,18 +365,6 @@ Partial Class FRMMAINMENU
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(0, 13)
         Me.Label1.TabIndex = 0
-        '
-        'btnExit
-        '
-        Me.btnExit.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btnExit.FlatAppearance.BorderSize = 0
-        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnExit.Location = New System.Drawing.Point(775, 0)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(43, 43)
-        Me.btnExit.TabIndex = 2
-        Me.btnExit.Text = "X"
-        Me.btnExit.UseVisualStyleBackColor = True
         '
         'FRMMAINMENU
         '
@@ -403,9 +382,9 @@ Partial Class FRMMAINMENU
         Me.pnlfrmuser.ResumeLayout(False)
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlback.ResumeLayout(False)
+        Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.pnlmainmenu.ResumeLayout(False)
         Me.pnlmainmenu.PerformLayout()
-        Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -421,8 +400,6 @@ Partial Class FRMMAINMENU
     Friend WithEvents pnlfrmuser As Panel
     Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents BTNLOGOUT As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents chkshowbutton As Guna.UI2.WinForms.Guna2ImageCheckBox
-    Friend WithEvents lblshowhide As Label
     Friend WithEvents pnlback As Guna.UI2.WinForms.Guna2CustomGradientPanel
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents lblgreet As Guna.UI2.WinForms.Guna2HtmlLabel

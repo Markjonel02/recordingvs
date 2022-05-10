@@ -272,7 +272,7 @@ Partial Class usrcrtlITEM1
         'Label6
         '
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Location = New System.Drawing.Point(23, 235)
+        Me.Label6.Location = New System.Drawing.Point(24, 107)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(72, 36)
         Me.Label6.TabIndex = 10
@@ -292,7 +292,7 @@ Partial Class usrcrtlITEM1
         Me.TxtDAdded.FocusedState.Parent = Me.TxtDAdded
         Me.TxtDAdded.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TxtDAdded.HoverState.Parent = Me.TxtDAdded
-        Me.TxtDAdded.Location = New System.Drawing.Point(101, 235)
+        Me.TxtDAdded.Location = New System.Drawing.Point(102, 107)
         Me.TxtDAdded.Name = "TxtDAdded"
         Me.TxtDAdded.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TxtDAdded.PlaceholderText = ""
@@ -304,7 +304,7 @@ Partial Class usrcrtlITEM1
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Location = New System.Drawing.Point(23, 151)
+        Me.Label7.Location = New System.Drawing.Point(334, 23)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(72, 36)
         Me.Label7.TabIndex = 8
@@ -314,7 +314,7 @@ Partial Class usrcrtlITEM1
         'Label8
         '
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Location = New System.Drawing.Point(23, 193)
+        Me.Label8.Location = New System.Drawing.Point(334, 65)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(72, 36)
         Me.Label8.TabIndex = 7
@@ -324,7 +324,7 @@ Partial Class usrcrtlITEM1
         'Label9
         '
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Location = New System.Drawing.Point(23, 109)
+        Me.Label9.Location = New System.Drawing.Point(24, 65)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(72, 36)
         Me.Label9.TabIndex = 6
@@ -334,7 +334,7 @@ Partial Class usrcrtlITEM1
         'Label10
         '
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Location = New System.Drawing.Point(23, 67)
+        Me.Label10.Location = New System.Drawing.Point(24, 23)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(72, 36)
         Me.Label10.TabIndex = 5
@@ -354,7 +354,7 @@ Partial Class usrcrtlITEM1
         Me.CboAddedStock.HoverState.Parent = Me.CboAddedStock
         Me.CboAddedStock.ItemHeight = 30
         Me.CboAddedStock.ItemsAppearance.Parent = Me.CboAddedStock
-        Me.CboAddedStock.Location = New System.Drawing.Point(101, 193)
+        Me.CboAddedStock.Location = New System.Drawing.Point(412, 65)
         Me.CboAddedStock.Name = "CboAddedStock"
         Me.CboAddedStock.ShadowDecoration.Parent = Me.CboAddedStock
         Me.CboAddedStock.Size = New System.Drawing.Size(200, 36)
@@ -373,7 +373,7 @@ Partial Class usrcrtlITEM1
         Me.CboStock.HoverState.Parent = Me.CboStock
         Me.CboStock.ItemHeight = 30
         Me.CboStock.ItemsAppearance.Parent = Me.CboStock
-        Me.CboStock.Location = New System.Drawing.Point(101, 151)
+        Me.CboStock.Location = New System.Drawing.Point(412, 23)
         Me.CboStock.Name = "CboStock"
         Me.CboStock.ShadowDecoration.Parent = Me.CboStock
         Me.CboStock.Size = New System.Drawing.Size(200, 36)
@@ -392,7 +392,7 @@ Partial Class usrcrtlITEM1
         Me.txtIN.FocusedState.Parent = Me.txtIN
         Me.txtIN.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtIN.HoverState.Parent = Me.txtIN
-        Me.txtIN.Location = New System.Drawing.Point(101, 109)
+        Me.txtIN.Location = New System.Drawing.Point(102, 65)
         Me.txtIN.Name = "txtIN"
         Me.txtIN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtIN.PlaceholderText = ""
@@ -414,7 +414,7 @@ Partial Class usrcrtlITEM1
         Me.txtIC.FocusedState.Parent = Me.txtIC
         Me.txtIC.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtIC.HoverState.Parent = Me.txtIC
-        Me.txtIC.Location = New System.Drawing.Point(101, 67)
+        Me.txtIC.Location = New System.Drawing.Point(102, 23)
         Me.txtIC.Name = "txtIC"
         Me.txtIC.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtIC.PlaceholderText = ""
@@ -426,7 +426,7 @@ Partial Class usrcrtlITEM1
         'DataGridView3
         '
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Location = New System.Drawing.Point(26, 297)
+        Me.DataGridView3.Location = New System.Drawing.Point(139, 176)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.Size = New System.Drawing.Size(439, 189)
         Me.DataGridView3.TabIndex = 0

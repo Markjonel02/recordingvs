@@ -4,7 +4,6 @@
     Private Sub FRMLOGIN_Load(sender As Object, e As EventArgs) Handles Me.Load
         btnback.Visible = False
         picsurs.Visible = True
-        lblhome.Visible = False
 
     End Sub
 
@@ -36,7 +35,7 @@
         D.Dock = DockStyle.Fill
         Hide1()
         btnback.Visible = True
-        lblhome.Visible = True
+
 
 
 
@@ -55,7 +54,7 @@
         D.Show()
         D.Dock = DockStyle.Fill
         picsurs.Visible = True
-        lblhome.Visible = True
+
 
     End Sub
 

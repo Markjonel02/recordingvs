@@ -3,7 +3,6 @@ C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Record
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Recording Management.pdb
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Recording Management.xml
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Bunifu_UI_v1.5.3.dll
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\FontAwesome.Net.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Guna.UI2.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\MySql.Data.dll

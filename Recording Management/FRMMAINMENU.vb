@@ -5,33 +5,11 @@
         BTNDASHOARD.FillColor = Color.RoyalBlue
         BTNDASHOARD.FillColor2 = Color.RoyalBlue
         FRMLOGIN.Close()
-        arrowuphide()
+
     End Sub
-    Private Sub arrowuphide()
-        BTNADDITEM.Visible = False
-        BTNBORRPROF.Visible = False
-        BTNITEM.Visible = False
-        BTNDASHOARD.Visible = False
-        BTNMANAGE.Visible = False
-        BTNBORRPROF.Visible = False
-        BTNTRANSAC.Visible = False
-        BTNSYSTEMSET.Visible = False
-        BTNREP.Visible = False
 
 
 
-    End Sub
-    Private Sub arrowdownshow()
-        BTNBORRPROF.Visible = True
-        BTNADDITEM.Visible = True
-        BTNITEM.Visible = True
-        BTNDASHOARD.Visible = True
-        BTNMANAGE.Visible = True
-        BTNBORRPROF.Visible = True
-        BTNTRANSAC.Visible = True
-        BTNSYSTEMSET.Visible = True
-        BTNREP.Visible = True
-    End Sub
 
 
     Private Sub BTNDASHOARD_Click(sender As Object, e As EventArgs) Handles BTNDASHOARD.Click
@@ -201,17 +179,6 @@
         BTNREP.ForeColor = Color.White
     End Sub
 
-    Private Sub chkshowbutton_CheckedChanged(sender As Object, e As EventArgs) Handles chkshowbutton.CheckedChanged
-        If chkshowbutton.Checked = False Then
-            arrowuphide()
-            lblshowhide.Text = "Hide
-"
-        Else
-            arrowdownshow()
-            lblshowhide.Text = "Show"
-
-        End If
-    End Sub
 
     Private Sub Guna2GradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2GradientPanel1.Paint
 
@@ -219,5 +186,9 @@
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         ExitButton()
+    End Sub
+
+    Private Sub pnlfrmuser_Paint(sender As Object, e As PaintEventArgs) Handles pnlfrmuser.Paint
+
     End Sub
 End Class
