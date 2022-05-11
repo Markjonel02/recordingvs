@@ -247,6 +247,11 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_stockaddedDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_userRow">
 <summary>
 Represents strongly named DataRow class.
@@ -263,6 +268,11 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_transactionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_stockaddedRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -287,6 +297,11 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_stockaddedRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_userTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
@@ -303,6 +318,11 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transactionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_stockaddedTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

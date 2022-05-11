@@ -230,4 +230,7 @@ Public Class usrcrtlITEM1
 
     End Sub
 
+    Private Sub txtas_TextChanged(sender As Object, e As EventArgs) Handles txtas.TextChanged
+
+    End Sub
 End Class

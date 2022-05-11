@@ -64,7 +64,7 @@
 
     Private Sub BTNFB_Click(sender As Object, e As EventArgs) Handles BTNFB.Click
         Process.Start("www.facebook.com")
-        'Process.Start("www.pinayflix.com")
+
 
     End Sub
 
