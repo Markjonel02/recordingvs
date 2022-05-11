@@ -5,7 +5,14 @@
         BTNDASHOARD.FillColor = Color.RoyalBlue
         BTNDASHOARD.FillColor2 = Color.RoyalBlue
         FRMLOGIN.Close()
-
+        Dim ctrldash As Integer
+        For ctrldash = 0 To 0
+            pnlmainmenu.Controls.RemoveAt(ctrldash)
+        Next
+        Dim D As New usrctrlDashboard()
+        D.Parent = pnlmainmenu
+        D.Show()
+        D.Dock = DockStyle.Fill
     End Sub
 
 

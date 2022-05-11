@@ -29,7 +29,7 @@ Partial Class usrpnlSet
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Name = "usrpnlSet"
-        Me.Size = New System.Drawing.Size(800, 462)
+        Me.Size = New System.Drawing.Size(832, 493)
         Me.ResumeLayout(False)
 
     End Sub

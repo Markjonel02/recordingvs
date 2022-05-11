@@ -101,7 +101,7 @@ Partial Class usrcrtlITEM1
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.ShadowDecoration.Parent = Me.Guna2GradientPanel1
-        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(800, 462)
+        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(832, 493)
         Me.Guna2GradientPanel1.TabIndex = 0
         '
         'Guna2HtmlLabel4
@@ -264,7 +264,7 @@ Partial Class usrcrtlITEM1
         Me.Guna2GradientPanel2.Location = New System.Drawing.Point(0, 0)
         Me.Guna2GradientPanel2.Name = "Guna2GradientPanel2"
         Me.Guna2GradientPanel2.ShadowDecoration.Parent = Me.Guna2GradientPanel2
-        Me.Guna2GradientPanel2.Size = New System.Drawing.Size(800, 462)
+        Me.Guna2GradientPanel2.Size = New System.Drawing.Size(832, 493)
         Me.Guna2GradientPanel2.TabIndex = 2
         '
         'pnlusrctrlITEM
@@ -292,14 +292,14 @@ Partial Class usrcrtlITEM1
         Me.pnlusrctrlITEM.Location = New System.Drawing.Point(0, 0)
         Me.pnlusrctrlITEM.Name = "pnlusrctrlITEM"
         Me.pnlusrctrlITEM.ShadowDecoration.Parent = Me.pnlusrctrlITEM
-        Me.pnlusrctrlITEM.Size = New System.Drawing.Size(800, 462)
+        Me.pnlusrctrlITEM.Size = New System.Drawing.Size(832, 493)
         Me.pnlusrctrlITEM.TabIndex = 11
         '
         'txtas
         '
         Me.txtas.AutoRoundedCorners = True
         Me.txtas.BackColor = System.Drawing.Color.Transparent
-        Me.txtas.BorderRadius = 20
+        Me.txtas.BorderRadius = 17
         Me.txtas.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.txtas.DefaultText = ""
         Me.txtas.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -313,14 +313,14 @@ Partial Class usrcrtlITEM1
         Me.txtas.ForeColor = System.Drawing.Color.Black
         Me.txtas.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtas.HoverState.Parent = Me.txtas
-        Me.txtas.Location = New System.Drawing.Point(500, 13)
+        Me.txtas.Location = New System.Drawing.Point(515, 13)
         Me.txtas.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
         Me.txtas.Name = "txtas"
         Me.txtas.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtas.PlaceholderText = ""
         Me.txtas.SelectedText = ""
         Me.txtas.ShadowDecoration.Parent = Me.txtas
-        Me.txtas.Size = New System.Drawing.Size(271, 42)
+        Me.txtas.Size = New System.Drawing.Size(263, 36)
         Me.txtas.TabIndex = 3
         Me.txtas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -357,7 +357,7 @@ Partial Class usrcrtlITEM1
         Me.DGV_item.DefaultCellStyle = DataGridViewCellStyle3
         Me.DGV_item.EnableHeadersVisualStyles = False
         Me.DGV_item.GridColor = System.Drawing.Color.White
-        Me.DGV_item.Location = New System.Drawing.Point(16, 229)
+        Me.DGV_item.Location = New System.Drawing.Point(31, 249)
         Me.DGV_item.Name = "DGV_item"
         Me.DGV_item.ReadOnly = True
         Me.DGV_item.RowHeadersVisible = False
@@ -454,7 +454,7 @@ Partial Class usrcrtlITEM1
         Me.btnDelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnDelete.ImageOffset = New System.Drawing.Point(7, 0)
         Me.btnDelete.ImageSize = New System.Drawing.Size(25, 25)
-        Me.btnDelete.Location = New System.Drawing.Point(630, 172)
+        Me.btnDelete.Location = New System.Drawing.Point(658, 178)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.ShadowDecoration.Parent = Me.btnDelete
         Me.btnDelete.Size = New System.Drawing.Size(141, 45)
@@ -481,7 +481,7 @@ Partial Class usrcrtlITEM1
         Me.btnCancel.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnCancel.ImageOffset = New System.Drawing.Point(7, 0)
         Me.btnCancel.ImageSize = New System.Drawing.Size(25, 25)
-        Me.btnCancel.Location = New System.Drawing.Point(480, 173)
+        Me.btnCancel.Location = New System.Drawing.Point(502, 178)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.ShadowDecoration.Parent = Me.btnCancel
         Me.btnCancel.Size = New System.Drawing.Size(141, 45)
@@ -508,7 +508,7 @@ Partial Class usrcrtlITEM1
         Me.btnEdit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnEdit.ImageOffset = New System.Drawing.Point(7, 0)
         Me.btnEdit.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnEdit.Location = New System.Drawing.Point(330, 172)
+        Me.btnEdit.Location = New System.Drawing.Point(346, 178)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.ShadowDecoration.Parent = Me.btnEdit
         Me.btnEdit.Size = New System.Drawing.Size(141, 45)
@@ -534,7 +534,7 @@ Partial Class usrcrtlITEM1
         Me.btnSave.Image = Global.Recording_Management.My.Resources.Resources.floppy_disk
         Me.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnSave.ImageOffset = New System.Drawing.Point(10, 0)
-        Me.btnSave.Location = New System.Drawing.Point(30, 172)
+        Me.btnSave.Location = New System.Drawing.Point(34, 178)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.ShadowDecoration.Parent = Me.btnSave
         Me.btnSave.Size = New System.Drawing.Size(141, 45)
@@ -561,7 +561,7 @@ Partial Class usrcrtlITEM1
         Me.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnAdd.ImageOffset = New System.Drawing.Point(10, 0)
         Me.btnAdd.ImageSize = New System.Drawing.Size(25, 25)
-        Me.btnAdd.Location = New System.Drawing.Point(180, 173)
+        Me.btnAdd.Location = New System.Drawing.Point(190, 179)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.ShadowDecoration.Parent = Me.btnAdd
         Me.btnAdd.Size = New System.Drawing.Size(141, 45)
@@ -586,7 +586,7 @@ Partial Class usrcrtlITEM1
         Me.txtIN.ForeColor = System.Drawing.Color.Black
         Me.txtIN.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtIN.HoverState.Parent = Me.txtIN
-        Me.txtIN.Location = New System.Drawing.Point(127, 63)
+        Me.txtIN.Location = New System.Drawing.Point(123, 61)
         Me.txtIN.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
         Me.txtIN.Name = "txtIN"
         Me.txtIN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -635,13 +635,14 @@ Partial Class usrcrtlITEM1
         Me.DtAdded.FillColor = System.Drawing.Color.Gold
         Me.DtAdded.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.DtAdded.HoverState.Parent = Me.DtAdded
-        Me.DtAdded.Location = New System.Drawing.Point(157, 117)
+        Me.DtAdded.Location = New System.Drawing.Point(123, 117)
         Me.DtAdded.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.DtAdded.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.DtAdded.Name = "DtAdded"
         Me.DtAdded.ShadowDecoration.Parent = Me.DtAdded
-        Me.DtAdded.Size = New System.Drawing.Size(200, 36)
+        Me.DtAdded.Size = New System.Drawing.Size(263, 36)
         Me.DtAdded.TabIndex = 5
+        Me.DtAdded.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.DtAdded.Value = New Date(2022, 5, 10, 16, 43, 58, 931)
         '
         'Label6
@@ -659,7 +660,7 @@ Partial Class usrcrtlITEM1
         '
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label7.Location = New System.Drawing.Point(422, 16)
+        Me.Label7.Location = New System.Drawing.Point(437, 16)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(72, 36)
         Me.Label7.TabIndex = 8
@@ -670,7 +671,7 @@ Partial Class usrcrtlITEM1
         '
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label8.Location = New System.Drawing.Point(426, 65)
+        Me.Label8.Location = New System.Drawing.Point(441, 61)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(72, 36)
         Me.Label8.TabIndex = 7
@@ -715,7 +716,7 @@ Partial Class usrcrtlITEM1
         Me.cboitem.ItemHeight = 30
         Me.cboitem.Items.AddRange(New Object() {" Furnitures", "Audio", "Health Care ", "Cleaning Equipments", "Electronics"})
         Me.cboitem.ItemsAppearance.Parent = Me.cboitem
-        Me.cboitem.Location = New System.Drawing.Point(504, 65)
+        Me.cboitem.Location = New System.Drawing.Point(519, 61)
         Me.cboitem.Name = "cboitem"
         Me.cboitem.ShadowDecoration.Parent = Me.cboitem
         Me.cboitem.Size = New System.Drawing.Size(267, 36)
@@ -895,7 +896,7 @@ Partial Class usrcrtlITEM1
         Me.Controls.Add(Me.Guna2GradientPanel2)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.Name = "usrcrtlITEM1"
-        Me.Size = New System.Drawing.Size(800, 462)
+        Me.Size = New System.Drawing.Size(832, 493)
         Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.Guna2GradientPanel1.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()

@@ -66,7 +66,7 @@ Partial Class usrctrlTRANSACTION
         Me.pnlusrTrans.Location = New System.Drawing.Point(0, 0)
         Me.pnlusrTrans.Name = "pnlusrTrans"
         Me.pnlusrTrans.ShadowDecoration.Parent = Me.pnlusrTrans
-        Me.pnlusrTrans.Size = New System.Drawing.Size(800, 462)
+        Me.pnlusrTrans.Size = New System.Drawing.Size(832, 493)
         Me.pnlusrTrans.TabIndex = 0
         '
         'Guna2DateTimePicker2
@@ -316,7 +316,7 @@ Partial Class usrctrlTRANSACTION
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.pnlusrTrans)
         Me.Name = "usrctrlTRANSACTION"
-        Me.Size = New System.Drawing.Size(800, 462)
+        Me.Size = New System.Drawing.Size(832, 493)
         Me.pnlusrTrans.ResumeLayout(False)
         Me.pnlusrTrans.PerformLayout()
         Me.ResumeLayout(False)

@@ -89,7 +89,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.pnluser.Location = New System.Drawing.Point(0, 0)
         Me.pnluser.Name = "pnluser"
         Me.pnluser.ShadowDecoration.Parent = Me.pnluser
-        Me.pnluser.Size = New System.Drawing.Size(800, 462)
+        Me.pnluser.Size = New System.Drawing.Size(832, 493)
         Me.pnluser.TabIndex = 0
         '
         'btnCancel
@@ -112,7 +112,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.btnCancel.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnCancel.ImageOffset = New System.Drawing.Point(7, 0)
         Me.btnCancel.ImageSize = New System.Drawing.Size(25, 25)
-        Me.btnCancel.Location = New System.Drawing.Point(615, 173)
+        Me.btnCancel.Location = New System.Drawing.Point(624, 173)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.ShadowDecoration.Parent = Me.btnCancel
         Me.btnCancel.Size = New System.Drawing.Size(141, 45)
@@ -142,7 +142,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.TXTCONF.PlaceholderText = ""
         Me.TXTCONF.SelectedText = ""
         Me.TXTCONF.ShadowDecoration.Parent = Me.TXTCONF
-        Me.TXTCONF.Size = New System.Drawing.Size(239, 36)
+        Me.TXTCONF.Size = New System.Drawing.Size(265, 36)
         Me.TXTCONF.TabIndex = 2
         Me.TXTCONF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TXTCONF.UseSystemPasswordChar = True
@@ -209,6 +209,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.txtLN.Enabled = False
         Me.txtLN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtLN.FocusedState.Parent = Me.txtLN
+        Me.txtLN.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLN.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtLN.HoverState.Parent = Me.txtLN
         Me.txtLN.Location = New System.Drawing.Point(98, 62)
@@ -254,7 +255,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.DGUSER.DefaultCellStyle = DataGridViewCellStyle3
         Me.DGUSER.EnableHeadersVisualStyles = False
         Me.DGUSER.GridColor = System.Drawing.Color.White
-        Me.DGUSER.Location = New System.Drawing.Point(62, 240)
+        Me.DGUSER.Location = New System.Drawing.Point(47, 240)
         Me.DGUSER.Name = "DGUSER"
         Me.DGUSER.ReadOnly = True
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -267,7 +268,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.DGUSER.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.DGUSER.RowHeadersVisible = False
         Me.DGUSER.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DGUSER.Size = New System.Drawing.Size(679, 200)
+        Me.DGUSER.Size = New System.Drawing.Size(738, 200)
         Me.DGUSER.TabIndex = 18
         Me.DGUSER.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.DGUSER.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
@@ -357,7 +358,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.btnEdit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnEdit.ImageOffset = New System.Drawing.Point(7, 0)
         Me.btnEdit.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnEdit.Location = New System.Drawing.Point(426, 173)
+        Me.btnEdit.Location = New System.Drawing.Point(435, 173)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.ShadowDecoration.Parent = Me.btnEdit
         Me.btnEdit.Size = New System.Drawing.Size(141, 45)
@@ -383,7 +384,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.btnSave.Image = Global.Recording_Management.My.Resources.Resources.floppy_disk
         Me.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnSave.ImageOffset = New System.Drawing.Point(10, 0)
-        Me.btnSave.Location = New System.Drawing.Point(48, 173)
+        Me.btnSave.Location = New System.Drawing.Point(57, 173)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.ShadowDecoration.Parent = Me.btnSave
         Me.btnSave.Size = New System.Drawing.Size(141, 45)
@@ -410,7 +411,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnAdd.ImageOffset = New System.Drawing.Point(10, 0)
         Me.btnAdd.ImageSize = New System.Drawing.Size(25, 25)
-        Me.btnAdd.Location = New System.Drawing.Point(237, 173)
+        Me.btnAdd.Location = New System.Drawing.Point(246, 173)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.ShadowDecoration.Parent = Me.btnAdd
         Me.btnAdd.Size = New System.Drawing.Size(141, 45)
@@ -482,7 +483,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.CBOUST.Location = New System.Drawing.Point(527, 106)
         Me.CBOUST.Name = "CBOUST"
         Me.CBOUST.ShadowDecoration.Parent = Me.CBOUST
-        Me.CBOUST.Size = New System.Drawing.Size(233, 36)
+        Me.CBOUST.Size = New System.Drawing.Size(259, 36)
         Me.CBOUST.TabIndex = 4
         Me.CBOUST.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -511,8 +512,9 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.TXTPASS.PlaceholderText = ""
         Me.TXTPASS.SelectedText = ""
         Me.TXTPASS.ShadowDecoration.Parent = Me.TXTPASS
-        Me.TXTPASS.Size = New System.Drawing.Size(239, 36)
+        Me.TXTPASS.Size = New System.Drawing.Size(265, 36)
         Me.TXTPASS.TabIndex = 1
+        Me.TXTPASS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TXTPASS.UseSystemPasswordChar = True
         '
         'TXTUSN
@@ -565,7 +567,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.pnluser)
         Me.Name = "UsrctrlMANAGE_ACCOUNT"
-        Me.Size = New System.Drawing.Size(800, 462)
+        Me.Size = New System.Drawing.Size(832, 493)
         Me.pnluser.ResumeLayout(False)
         Me.pnluser.PerformLayout()
         CType(Me.DGUSER, System.ComponentModel.ISupportInitialize).EndInit()

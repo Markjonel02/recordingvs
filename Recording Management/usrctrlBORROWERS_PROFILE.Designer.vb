@@ -58,7 +58,7 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.pnlusrBORR.Location = New System.Drawing.Point(0, 0)
         Me.pnlusrBORR.Name = "pnlusrBORR"
         Me.pnlusrBORR.ShadowDecoration.Parent = Me.pnlusrBORR
-        Me.pnlusrBORR.Size = New System.Drawing.Size(800, 462)
+        Me.pnlusrBORR.Size = New System.Drawing.Size(832, 493)
         Me.pnlusrBORR.TabIndex = 0
         '
         'Guna2HtmlLabel6
@@ -250,7 +250,7 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.pnlusrBORR)
         Me.Name = "usrctrlBORROWERS_PROFILE"
-        Me.Size = New System.Drawing.Size(800, 462)
+        Me.Size = New System.Drawing.Size(832, 493)
         Me.pnlusrBORR.ResumeLayout(False)
         Me.pnlusrBORR.PerformLayout()
         Me.ResumeLayout(False)

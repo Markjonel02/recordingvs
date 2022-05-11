@@ -31,7 +31,7 @@ Partial Class usrctrlREPORTS
         Me.pnlusrRep.Location = New System.Drawing.Point(0, 0)
         Me.pnlusrRep.Name = "pnlusrRep"
         Me.pnlusrRep.ShadowDecoration.Parent = Me.pnlusrRep
-        Me.pnlusrRep.Size = New System.Drawing.Size(800, 462)
+        Me.pnlusrRep.Size = New System.Drawing.Size(832, 493)
         Me.pnlusrRep.TabIndex = 0
         '
         'usrctrlREPORTS
@@ -40,7 +40,7 @@ Partial Class usrctrlREPORTS
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.pnlusrRep)
         Me.Name = "usrctrlREPORTS"
-        Me.Size = New System.Drawing.Size(800, 462)
+        Me.Size = New System.Drawing.Size(832, 493)
         Me.ResumeLayout(False)
 
     End Sub

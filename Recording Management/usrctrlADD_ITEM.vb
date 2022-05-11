@@ -1,11 +1,9 @@
 ﻿Public Class usrctrlADD_ITEM
-    Private Sub Guna2GradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles pnlusrctrlAdditem.Paint
+    Private Sub pnlusrctrlAdditem_Paint(sender As Object, e As PaintEventArgs) Handles pnlusrctrlAdditem.Paint
 
     End Sub
 
-    Private Sub btnExit_Click(sender As Object, e As EventArgs)
-        ExitButton()
+    Private Sub TXTSEARCH_TextChanged(sender As Object, e As EventArgs) Handles TXTSEARCH.TextChanged
+
     End Sub
-
-
 End Class

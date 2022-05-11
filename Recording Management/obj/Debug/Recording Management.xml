@@ -67,6 +67,11 @@ Recording Management
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Recording_Management.My.Resources.Resources.facade">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Recording_Management.My.Resources.Resources.facebook__1_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -103,6 +108,11 @@ Recording Management
 </summary>
 </member>
 <member name="P:Recording_Management.My.Resources.Resources.list">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Recording_Management.My.Resources.Resources.magnifier">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
