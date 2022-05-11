@@ -26,6 +26,7 @@ Partial Class FRMMAINMENU
         Me.pnlfrmmainpanel = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.pnlfrmuser = New System.Windows.Forms.Panel()
         Me.BTNLOGOUT = New Guna.UI2.WinForms.Guna2Button()
+        Me.lblgreet = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.BTNDASHOARD = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.BTNREP = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -38,7 +39,6 @@ Partial Class FRMMAINMENU
         Me.pnlback = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.lblgreet = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.pnlmainmenu = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlfrmmainpanel.SuspendLayout()
@@ -72,13 +72,14 @@ Partial Class FRMMAINMENU
         '
         'pnlfrmuser
         '
-        Me.pnlfrmuser.BackgroundImage = Global.Recording_Management.My.Resources.Resources.urs
+        Me.pnlfrmuser.BackColor = System.Drawing.Color.Transparent
         Me.pnlfrmuser.Controls.Add(Me.BTNLOGOUT)
+        Me.pnlfrmuser.Controls.Add(Me.lblgreet)
         Me.pnlfrmuser.Controls.Add(Me.Guna2CirclePictureBox1)
         Me.pnlfrmuser.Dock = System.Windows.Forms.DockStyle.Top
         Me.pnlfrmuser.Location = New System.Drawing.Point(0, 0)
         Me.pnlfrmuser.Name = "pnlfrmuser"
-        Me.pnlfrmuser.Size = New System.Drawing.Size(203, 140)
+        Me.pnlfrmuser.Size = New System.Drawing.Size(203, 185)
         Me.pnlfrmuser.TabIndex = 1
         '
         'BTNLOGOUT
@@ -90,20 +91,34 @@ Partial Class FRMMAINMENU
         Me.BTNLOGOUT.ForeColor = System.Drawing.Color.White
         Me.BTNLOGOUT.HoverState.Parent = Me.BTNLOGOUT
         Me.BTNLOGOUT.Image = Global.Recording_Management.My.Resources.Resources.power_off
-        Me.BTNLOGOUT.Location = New System.Drawing.Point(166, 3)
+        Me.BTNLOGOUT.Location = New System.Drawing.Point(160, 3)
         Me.BTNLOGOUT.Name = "BTNLOGOUT"
         Me.BTNLOGOUT.ShadowDecoration.Parent = Me.BTNLOGOUT
-        Me.BTNLOGOUT.Size = New System.Drawing.Size(34, 27)
+        Me.BTNLOGOUT.Size = New System.Drawing.Size(40, 40)
         Me.BTNLOGOUT.TabIndex = 1
+        '
+        'lblgreet
+        '
+        Me.lblgreet.AutoSize = False
+        Me.lblgreet.BackColor = System.Drawing.Color.Transparent
+        Me.lblgreet.Font = New System.Drawing.Font("Stencil", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblgreet.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.lblgreet.Location = New System.Drawing.Point(19, 140)
+        Me.lblgreet.Name = "lblgreet"
+        Me.lblgreet.Size = New System.Drawing.Size(152, 42)
+        Me.lblgreet.TabIndex = 1
+        Me.lblgreet.Text = "USER NAME"
+        Me.lblgreet.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Guna2CirclePictureBox1
         '
-        Me.Guna2CirclePictureBox1.Image = Global.Recording_Management.My.Resources.Resources.user__1_
-        Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(66, 53)
+        Me.Guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2CirclePictureBox1.Image = Global.Recording_Management.My.Resources.Resources.profile
+        Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(35, 26)
         Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
         Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CirclePictureBox1.ShadowDecoration.Parent = Me.Guna2CirclePictureBox1
-        Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(79, 75)
+        Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(119, 108)
         Me.Guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Guna2CirclePictureBox1.TabIndex = 1
         Me.Guna2CirclePictureBox1.TabStop = False
@@ -307,10 +322,9 @@ Partial Class FRMMAINMENU
         'Guna2GradientPanel1
         '
         Me.Guna2GradientPanel1.Controls.Add(Me.btnExit)
-        Me.Guna2GradientPanel1.Controls.Add(Me.lblgreet)
         Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
-        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(99, Byte), Integer), CType(CType(164, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.ShadowDecoration.Parent = Me.Guna2GradientPanel1
@@ -329,19 +343,6 @@ Partial Class FRMMAINMENU
         Me.btnExit.TabIndex = 2
         Me.btnExit.Text = "X"
         Me.btnExit.UseVisualStyleBackColor = False
-        '
-        'lblgreet
-        '
-        Me.lblgreet.AutoSize = False
-        Me.lblgreet.BackColor = System.Drawing.Color.Transparent
-        Me.lblgreet.Font = New System.Drawing.Font("Stencil", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblgreet.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.lblgreet.Location = New System.Drawing.Point(379, 0)
-        Me.lblgreet.Name = "lblgreet"
-        Me.lblgreet.Size = New System.Drawing.Size(140, 43)
-        Me.lblgreet.TabIndex = 1
-        Me.lblgreet.Text = "USER NAME"
-        Me.lblgreet.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter
         '
         'pnlmainmenu
         '

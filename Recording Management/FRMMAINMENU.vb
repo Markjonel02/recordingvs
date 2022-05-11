@@ -155,7 +155,7 @@
     Private Sub BTNSYSTEMSET_Leave(sender As Object, e As EventArgs) Handles BTNSYSTEMSET.Leave
         BTNSYSTEMSET.FillColor = Color.Transparent
         BTNSYSTEMSET.FillColor2 = Color.Transparent
-        BTNSYSTEMSET.ForeColor = Color.RoyalBlue
+        BTNSYSTEMSET.ForeColor = Color.White
     End Sub
 
     Private Sub BTNREP_Click(sender As Object, e As EventArgs) Handles BTNREP.Click
@@ -180,15 +180,10 @@
     End Sub
 
 
-    Private Sub Guna2GradientPanel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2GradientPanel1.Paint
-
-    End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         ExitButton()
     End Sub
 
-    Private Sub pnlfrmuser_Paint(sender As Object, e As PaintEventArgs) Handles pnlfrmuser.Paint
 
-    End Sub
 End Class

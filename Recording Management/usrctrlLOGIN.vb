@@ -18,14 +18,14 @@
         If dr.HasRows Then
             dr.Read()
 
-            If dr(3) = "GSO" Then
-                FRMMAINMENU.lblgreet.Text = "GSO"
+            If dr(3) = "gso" Then
+                FRMMAINMENU.lblgreet.Text = "gso"
                 FRMMAINMENU.Show()
                 FRMLOGIN.pnlmainpanel.Dock = DockStyle.None
                 Me.Controls.Clear()
                 n = Nothing
-            ElseIf dr(3) = "STAFF" Then
-                FRMMAINMENU.lblgreet.Text = "Staff"
+            ElseIf dr(3) = "staff" Then
+                FRMMAINMENU.lblgreet.Text = "staff"
                 FRMMAINMENU.Show()
                 disable()
 

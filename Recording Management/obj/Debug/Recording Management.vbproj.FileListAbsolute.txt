@@ -16,7 +16,6 @@ C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Record
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\K4os.Compression.LZ4.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\FontAwesome.Net.pdb
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\MySql.Data.xml
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.exe.config
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.FRMLOGIN.resources
@@ -29,6 +28,7 @@ C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Record
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlLOGIN.resources
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrctrlMANAGE_ACCOUNT.resources
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlREPORTS.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrpnlSet.resources
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlTRANSACTION.resources
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrctrlWelcome.resources
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.vbproj.GenerateResource.cache
@@ -38,4 +38,3 @@ C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Record
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.xml
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.pdb
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.vbprojAssemblyReference.cache
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrpnlSet.resources

@@ -24,9 +24,6 @@
 
     End Sub
 
-    Private Sub pnluser_Paint(sender As Object, e As PaintEventArgs) Handles pnluser.Paint
-
-    End Sub
 
     Private Sub UsrctrlMANAGE_ACCOUNT_Load(sender As Object, e As EventArgs) Handles Me.Load
         Me.Tbl_userTableAdapter.Fill(Me.Record_management_systemDataSet.tbl_user)
@@ -121,6 +118,7 @@
         function_enabled()
         btnEdit.Enabled = True
         btnAdd.Enabled = False
+
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow
             row = DGUSER.Rows(e.RowIndex)
@@ -130,7 +128,7 @@
             txtLN.Text = row.Cells(2).Value
             CBOUST.Text = row.Cells(3).Value
             CBOSTAT.Text = row.Cells(4).Value
-
+            TXTUSN.Enabled = False
         End If
     End Sub
 
@@ -178,8 +176,8 @@
             TXTPASS.Text = ""
             TXTCONF.Text = ""
             txtLN.Text = ""
-            CBOUST.Text = ""
-            CBOSTAT.Text = ""
+            CBOUST.SelectedIndex = -1
+            CBOSTAT.SelectedIndex = -1
             refreshgrid()
         End If
 
@@ -193,11 +191,12 @@
 
     Private Sub TXTPASS_TextChanged(sender As Object, e As EventArgs) Handles TXTPASS.TextChanged
         If TXTPASS.Text = String.Empty Then
-            TXTCONF.Enabled = False
-        Else
-            TXTCONF.Enabled = True
+            TXTCONF.Text = ""
+
         End If
 
 
     End Sub
+
+
 End Class

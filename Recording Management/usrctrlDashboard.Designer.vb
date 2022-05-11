@@ -23,11 +23,13 @@ Partial Class usrctrlDashboard
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(usrctrlDashboard))
         Me.pnldash = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lbltime = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.tmclock = New System.Windows.Forms.Timer(Me.components)
+        Me.BunifuCircleProgressbar1 = New Bunifu.Framework.UI.BunifuCircleProgressbar()
         Me.pnldash.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -36,6 +38,7 @@ Partial Class usrctrlDashboard
         '
         Me.pnldash.BackColor = System.Drawing.Color.Transparent
         Me.pnldash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.pnldash.Controls.Add(Me.BunifuCircleProgressbar1)
         Me.pnldash.Controls.Add(Me.PictureBox1)
         Me.pnldash.Controls.Add(Me.lbltime)
         Me.pnldash.Controls.Add(Me.Label1)
@@ -81,6 +84,28 @@ Partial Class usrctrlDashboard
         'tmclock
         '
         '
+        'BunifuCircleProgressbar1
+        '
+        Me.BunifuCircleProgressbar1.animated = False
+        Me.BunifuCircleProgressbar1.animationIterval = 5
+        Me.BunifuCircleProgressbar1.animationSpeed = 300
+        Me.BunifuCircleProgressbar1.BackColor = System.Drawing.Color.Transparent
+        Me.BunifuCircleProgressbar1.BackgroundImage = CType(resources.GetObject("BunifuCircleProgressbar1.BackgroundImage"), System.Drawing.Image)
+        Me.BunifuCircleProgressbar1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!)
+        Me.BunifuCircleProgressbar1.ForeColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCircleProgressbar1.LabelVisible = True
+        Me.BunifuCircleProgressbar1.LineProgressThickness = 8
+        Me.BunifuCircleProgressbar1.LineThickness = 5
+        Me.BunifuCircleProgressbar1.Location = New System.Drawing.Point(251, 22)
+        Me.BunifuCircleProgressbar1.Margin = New System.Windows.Forms.Padding(10, 9, 10, 9)
+        Me.BunifuCircleProgressbar1.MaxValue = 100
+        Me.BunifuCircleProgressbar1.Name = "BunifuCircleProgressbar1"
+        Me.BunifuCircleProgressbar1.ProgressBackColor = System.Drawing.Color.Gainsboro
+        Me.BunifuCircleProgressbar1.ProgressColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCircleProgressbar1.Size = New System.Drawing.Size(116, 116)
+        Me.BunifuCircleProgressbar1.TabIndex = 11
+        Me.BunifuCircleProgressbar1.Value = 0
+        '
         'usrctrlDashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -100,4 +125,5 @@ Partial Class usrctrlDashboard
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents tmclock As Timer
+    Friend WithEvents BunifuCircleProgressbar1 As Bunifu.Framework.UI.BunifuCircleProgressbar
 End Class

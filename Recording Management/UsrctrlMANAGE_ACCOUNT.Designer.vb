@@ -105,6 +105,8 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.btnCancel.FillColor2 = System.Drawing.Color.White
         Me.btnCancel.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnCancel.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.btnCancel.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.btnCancel.HoverState.Parent = Me.btnCancel
         Me.btnCancel.Image = Global.Recording_Management.My.Resources.Resources.cross
         Me.btnCancel.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -134,13 +136,13 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.TXTCONF.FocusedState.Parent = Me.TXTCONF
         Me.TXTCONF.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TXTCONF.HoverState.Parent = Me.TXTCONF
-        Me.TXTCONF.Location = New System.Drawing.Point(519, 64)
+        Me.TXTCONF.Location = New System.Drawing.Point(527, 62)
         Me.TXTCONF.Name = "TXTCONF"
         Me.TXTCONF.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TXTCONF.PlaceholderText = ""
         Me.TXTCONF.SelectedText = ""
         Me.TXTCONF.ShadowDecoration.Parent = Me.TXTCONF
-        Me.TXTCONF.Size = New System.Drawing.Size(202, 36)
+        Me.TXTCONF.Size = New System.Drawing.Size(239, 36)
         Me.TXTCONF.TabIndex = 2
         Me.TXTCONF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.TXTCONF.UseSystemPasswordChar = True
@@ -150,7 +152,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel6.ForeColor = System.Drawing.SystemColors.Control
-        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(380, 73)
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(384, 73)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
         Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(137, 16)
         Me.Guna2HtmlLabel6.TabIndex = 23
@@ -161,7 +163,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.SystemColors.Control
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(24, 120)
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(22, 120)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
         Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(52, 16)
         Me.Guna2HtmlLabel5.TabIndex = 21
@@ -172,6 +174,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.CBOSTAT.AutoRoundedCorners = True
         Me.CBOSTAT.BackColor = System.Drawing.Color.Transparent
         Me.CBOSTAT.BorderRadius = 17
+        Me.CBOSTAT.BorderThickness = 0
         Me.CBOSTAT.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CBOSTAT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBOSTAT.Enabled = False
@@ -184,10 +187,10 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.CBOSTAT.ItemHeight = 30
         Me.CBOSTAT.Items.AddRange(New Object() {"Active", "Deactivate"})
         Me.CBOSTAT.ItemsAppearance.Parent = Me.CBOSTAT
-        Me.CBOSTAT.Location = New System.Drawing.Point(109, 110)
+        Me.CBOSTAT.Location = New System.Drawing.Point(98, 106)
         Me.CBOSTAT.Name = "CBOSTAT"
         Me.CBOSTAT.ShadowDecoration.Parent = Me.CBOSTAT
-        Me.CBOSTAT.Size = New System.Drawing.Size(202, 36)
+        Me.CBOSTAT.Size = New System.Drawing.Size(280, 36)
         Me.CBOSTAT.TabIndex = 5
         Me.CBOSTAT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -208,13 +211,13 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.txtLN.FocusedState.Parent = Me.txtLN
         Me.txtLN.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtLN.HoverState.Parent = Me.txtLN
-        Me.txtLN.Location = New System.Drawing.Point(109, 64)
+        Me.txtLN.Location = New System.Drawing.Point(98, 62)
         Me.txtLN.Name = "txtLN"
         Me.txtLN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.txtLN.PlaceholderText = ""
         Me.txtLN.SelectedText = ""
         Me.txtLN.ShadowDecoration.Parent = Me.txtLN
-        Me.txtLN.Size = New System.Drawing.Size(202, 36)
+        Me.txtLN.Size = New System.Drawing.Size(280, 36)
         Me.txtLN.TabIndex = 3
         Me.txtLN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -242,10 +245,10 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.DGUSER.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.StatusDataGridViewTextBoxColumn})
         Me.DGUSER.DataSource = Me.TbluserBindingSource
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.Gray
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.RoyalBlue
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DGUSER.DefaultCellStyle = DataGridViewCellStyle3
@@ -347,6 +350,8 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.btnEdit.FillColor2 = System.Drawing.Color.White
         Me.btnEdit.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEdit.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnEdit.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.btnEdit.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.btnEdit.HoverState.Parent = Me.btnEdit
         Me.btnEdit.Image = Global.Recording_Management.My.Resources.Resources.edit
         Me.btnEdit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -372,6 +377,8 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.btnSave.FillColor2 = System.Drawing.Color.White
         Me.btnSave.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSave.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnSave.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.btnSave.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.btnSave.HoverState.Parent = Me.btnSave
         Me.btnSave.Image = Global.Recording_Management.My.Resources.Resources.floppy_disk
         Me.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -396,6 +403,8 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.btnAdd.FillColor2 = System.Drawing.Color.White
         Me.btnAdd.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAdd.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.btnAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.btnAdd.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.btnAdd.HoverState.Parent = Me.btnAdd
         Me.btnAdd.Image = Global.Recording_Management.My.Resources.Resources.plus__2_
         Me.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -413,7 +422,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.Control
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(415, 28)
+        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(430, 28)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(74, 16)
         Me.Guna2HtmlLabel3.TabIndex = 8
@@ -424,7 +433,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel4.ForeColor = System.Drawing.SystemColors.Control
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(440, 118)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(433, 115)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
         Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(70, 16)
         Me.Guna2HtmlLabel4.TabIndex = 7
@@ -446,7 +455,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Stencil", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(15, 73)
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(10, 72)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(81, 16)
         Me.Guna2HtmlLabel1.TabIndex = 5
@@ -457,6 +466,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.CBOUST.AutoRoundedCorners = True
         Me.CBOUST.BackColor = System.Drawing.Color.Transparent
         Me.CBOUST.BorderRadius = 17
+        Me.CBOUST.BorderThickness = 0
         Me.CBOUST.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CBOUST.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBOUST.Enabled = False
@@ -469,10 +479,10 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.CBOUST.ItemHeight = 30
         Me.CBOUST.Items.AddRange(New Object() {"gso", "staff"})
         Me.CBOUST.ItemsAppearance.Parent = Me.CBOUST
-        Me.CBOUST.Location = New System.Drawing.Point(519, 110)
+        Me.CBOUST.Location = New System.Drawing.Point(527, 106)
         Me.CBOUST.Name = "CBOUST"
         Me.CBOUST.ShadowDecoration.Parent = Me.CBOUST
-        Me.CBOUST.Size = New System.Drawing.Size(202, 36)
+        Me.CBOUST.Size = New System.Drawing.Size(233, 36)
         Me.CBOUST.TabIndex = 4
         Me.CBOUST.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -495,13 +505,13 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.TXTPASS.HoverState.Parent = Me.TXTPASS
         Me.TXTPASS.IconLeft = Global.Recording_Management.My.Resources.Resources.padlock
         Me.TXTPASS.IconLeftOffset = New System.Drawing.Point(5, 0)
-        Me.TXTPASS.Location = New System.Drawing.Point(495, 18)
+        Me.TXTPASS.Location = New System.Drawing.Point(527, 18)
         Me.TXTPASS.Name = "TXTPASS"
         Me.TXTPASS.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TXTPASS.PlaceholderText = ""
         Me.TXTPASS.SelectedText = ""
         Me.TXTPASS.ShadowDecoration.Parent = Me.TXTPASS
-        Me.TXTPASS.Size = New System.Drawing.Size(270, 36)
+        Me.TXTPASS.Size = New System.Drawing.Size(239, 36)
         Me.TXTPASS.TabIndex = 1
         Me.TXTPASS.UseSystemPasswordChar = True
         '
@@ -525,7 +535,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.TXTUSN.IconLeft = Global.Recording_Management.My.Resources.Resources.user1
         Me.TXTUSN.IconLeftCursor = System.Windows.Forms.Cursors.No
         Me.TXTUSN.IconLeftOffset = New System.Drawing.Point(5, 0)
-        Me.TXTUSN.Location = New System.Drawing.Point(109, 18)
+        Me.TXTUSN.Location = New System.Drawing.Point(98, 18)
         Me.TXTUSN.Name = "TXTUSN"
         Me.TXTUSN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TXTUSN.PlaceholderText = ""
@@ -533,12 +543,12 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.TXTUSN.ShadowDecoration.Parent = Me.TXTUSN
         Me.TXTUSN.Size = New System.Drawing.Size(280, 36)
         Me.TXTUSN.TabIndex = 0
-        Me.TXTUSN.TextOffset = New System.Drawing.Point(50, 0)
+        Me.TXTUSN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TXTDUN
         '
         Me.TXTDUN.Enabled = False
-        Me.TXTDUN.Location = New System.Drawing.Point(580, 121)
+        Me.TXTDUN.Location = New System.Drawing.Point(606, 120)
         Me.TXTDUN.Name = "TXTDUN"
         Me.TXTDUN.Size = New System.Drawing.Size(100, 20)
         Me.TXTDUN.TabIndex = 22

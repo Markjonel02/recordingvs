@@ -147,7 +147,17 @@ Recording Management
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Recording_Management.My.Resources.Resources.profile">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Recording_Management.My.Resources.Resources.profile_user">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Recording_Management.My.Resources.Resources.trash">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -168,6 +178,21 @@ Recording Management
 </summary>
 </member>
 <member name="P:Recording_Management.My.Resources.Resources.user__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Recording_Management.My.Resources.Resources.user__2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Recording_Management.My.Resources.Resources.user__3_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Recording_Management.My.Resources.Resources.user_main">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -197,7 +222,37 @@ Represents a strongly typed in-memory cache of data.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_borrowers_profileDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_itemsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transactionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_userRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_borrowers_profileRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_itemsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transactionRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -207,7 +262,37 @@ Represents strongly named DataRow class.
 Row event argument class
 </summary>
 </member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_borrowers_profileRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_itemsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transactionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_userTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_borrowers_profileTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_itemsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transactionTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
