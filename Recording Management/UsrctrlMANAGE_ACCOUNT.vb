@@ -115,14 +115,14 @@
         MsgBox("all fields are cleared", vbInformation)
     End Sub
 
-    Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGUSER.CellContentClick
+    Private Sub DG_user_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DG_user.CellContentClick
         function_enabled()
         btnEdit.Enabled = True
         btnAdd.Enabled = False
 
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow
-            row = DGUSER.Rows(e.RowIndex)
+            row = DG_user.Rows(e.RowIndex)
             TXTUSN.Text = row.Cells(0).Value
             TXTPASS.Text = row.Cells(1).Value
             TXTCONF.Text = row.Cells(1).Value
@@ -132,6 +132,7 @@
             TXTUSN.Enabled = False
         End If
     End Sub
+
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         If btnEdit.Text = "EDIT" Then
@@ -184,7 +185,7 @@
 
     End Sub
 
-    Private Sub DGUSER_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles DGUSER.CellFormatting
+    Private Sub DGUSER_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs)
         If e.ColumnIndex = 1 Then
             e.Value = New String("*", e.Value.ToString.Length)
         End If
@@ -198,6 +199,7 @@
 
 
     End Sub
+
 
 
 End Class

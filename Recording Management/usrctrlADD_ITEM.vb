@@ -21,8 +21,14 @@
         TXTDATEADDED.Text = ""
     End Sub
     Private Sub TXTSEARCH_TextChanged(sender As Object, e As EventArgs) Handles TXTSEARCH.TextChanged
-        TblitemsBindingSource.Filter = "itemname like '%" + TXTSEARCH.Text + "%' "
-        TblstockaddedBindingSource.Filter = "itemname like '%" + TXTSEARCH.Text + "%' "
+        If TXTSEARCH.Text = "" Then
+            TblstockaddedBindingSource.Filter = Nothing
+            TblitemsBindingSource.Filter = Nothing
+        Else
+            TblitemsBindingSource.Filter = "itemname like '%" + TXTSEARCH.Text + "%' "
+            TblstockaddedBindingSource.Filter = "itemname like '%" + TXTSEARCH.Text + "%' "
+        End If
+
     End Sub
 
 

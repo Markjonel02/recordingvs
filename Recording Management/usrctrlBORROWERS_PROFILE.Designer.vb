@@ -29,6 +29,15 @@ Partial Class usrctrlBORROWERS_PROFILE
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnlusrBORR = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.DGV_borr = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FirstnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MiddlenameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LastnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BorrowertypeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ContactnumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TblborrowerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Record_management_systemDataSet = New Recording_Management.record_management_systemDataSet()
         Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.TXTMID = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnCancel = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -45,20 +54,11 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.TXTLN = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TXTFNAME = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtSF = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.DGV_borr = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Record_management_systemDataSet = New Recording_Management.record_management_systemDataSet()
-        Me.TblborrowerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Tbl_borrowerTableAdapter = New Recording_Management.record_management_systemDataSetTableAdapters.tbl_borrowerTableAdapter()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FirstnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MiddlenameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LastnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BorrowertypeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ContactnumberDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pnlusrBORR.SuspendLayout()
         CType(Me.DGV_borr, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Record_management_systemDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblborrowerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Record_management_systemDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlusrBORR
@@ -89,6 +89,138 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.pnlusrBORR.ShadowDecoration.Parent = Me.pnlusrBORR
         Me.pnlusrBORR.Size = New System.Drawing.Size(832, 493)
         Me.pnlusrBORR.TabIndex = 0
+        '
+        'DGV_borr
+        '
+        Me.DGV_borr.AllowUserToAddRows = False
+        Me.DGV_borr.AllowUserToDeleteRows = False
+        Me.DGV_borr.AllowUserToResizeColumns = False
+        Me.DGV_borr.AllowUserToResizeRows = False
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        Me.DGV_borr.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle6
+        Me.DGV_borr.AutoGenerateColumns = False
+        Me.DGV_borr.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DGV_borr.BackgroundColor = System.Drawing.Color.White
+        Me.DGV_borr.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DGV_borr.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DGV_borr.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_borr.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        Me.DGV_borr.ColumnHeadersHeight = 17
+        Me.DGV_borr.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.FirstnameDataGridViewTextBoxColumn, Me.MiddlenameDataGridViewTextBoxColumn, Me.LastnameDataGridViewTextBoxColumn, Me.BorrowertypeDataGridViewTextBoxColumn, Me.ContactnumberDataGridViewTextBoxColumn})
+        Me.DGV_borr.DataSource = Me.TblborrowerBindingSource
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_borr.DefaultCellStyle = DataGridViewCellStyle8
+        Me.DGV_borr.EnableHeadersVisualStyles = False
+        Me.DGV_borr.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_borr.Location = New System.Drawing.Point(50, 229)
+        Me.DGV_borr.Name = "DGV_borr"
+        Me.DGV_borr.ReadOnly = True
+        Me.DGV_borr.RightToLeft = System.Windows.Forms.RightToLeft.No
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_borr.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
+        Me.DGV_borr.RowHeadersVisible = False
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black
+        Me.DGV_borr.RowsDefaultCellStyle = DataGridViewCellStyle10
+        Me.DGV_borr.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
+        Me.DGV_borr.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGV_borr.Size = New System.Drawing.Size(737, 244)
+        Me.DGV_borr.TabIndex = 21
+        Me.DGV_borr.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
+        Me.DGV_borr.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.DGV_borr.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.DGV_borr.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black
+        Me.DGV_borr.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.DGV_borr.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.DGV_borr.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.DGV_borr.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_borr.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_borr.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DGV_borr.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DGV_borr.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.DGV_borr.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.DGV_borr.ThemeStyle.HeaderStyle.Height = 17
+        Me.DGV_borr.ThemeStyle.ReadOnly = True
+        Me.DGV_borr.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.DGV_borr.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DGV_borr.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DGV_borr.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White
+        Me.DGV_borr.ThemeStyle.RowsStyle.Height = 22
+        Me.DGV_borr.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_borr.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "stud_facultyno"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "stud_facultyno"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'FirstnameDataGridViewTextBoxColumn
+        '
+        Me.FirstnameDataGridViewTextBoxColumn.DataPropertyName = "firstname"
+        Me.FirstnameDataGridViewTextBoxColumn.HeaderText = "firstname"
+        Me.FirstnameDataGridViewTextBoxColumn.Name = "FirstnameDataGridViewTextBoxColumn"
+        Me.FirstnameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'MiddlenameDataGridViewTextBoxColumn
+        '
+        Me.MiddlenameDataGridViewTextBoxColumn.DataPropertyName = "middlename"
+        Me.MiddlenameDataGridViewTextBoxColumn.HeaderText = "middlename"
+        Me.MiddlenameDataGridViewTextBoxColumn.Name = "MiddlenameDataGridViewTextBoxColumn"
+        Me.MiddlenameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'LastnameDataGridViewTextBoxColumn
+        '
+        Me.LastnameDataGridViewTextBoxColumn.DataPropertyName = "lastname"
+        Me.LastnameDataGridViewTextBoxColumn.HeaderText = "lastname"
+        Me.LastnameDataGridViewTextBoxColumn.Name = "LastnameDataGridViewTextBoxColumn"
+        Me.LastnameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'BorrowertypeDataGridViewTextBoxColumn
+        '
+        Me.BorrowertypeDataGridViewTextBoxColumn.DataPropertyName = "borrower_type"
+        Me.BorrowertypeDataGridViewTextBoxColumn.HeaderText = "borrower_type"
+        Me.BorrowertypeDataGridViewTextBoxColumn.Name = "BorrowertypeDataGridViewTextBoxColumn"
+        Me.BorrowertypeDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'ContactnumberDataGridViewTextBoxColumn
+        '
+        Me.ContactnumberDataGridViewTextBoxColumn.DataPropertyName = "contact_number"
+        Me.ContactnumberDataGridViewTextBoxColumn.HeaderText = "contact_number"
+        Me.ContactnumberDataGridViewTextBoxColumn.Name = "ContactnumberDataGridViewTextBoxColumn"
+        Me.ContactnumberDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TblborrowerBindingSource
+        '
+        Me.TblborrowerBindingSource.DataMember = "tbl_borrower"
+        Me.TblborrowerBindingSource.DataSource = Me.Record_management_systemDataSet
+        '
+        'Record_management_systemDataSet
+        '
+        Me.Record_management_systemDataSet.DataSetName = "record_management_systemDataSet"
+        Me.Record_management_systemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Guna2HtmlLabel7
         '
@@ -416,141 +548,9 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.txtSF.TabIndex = 0
         Me.txtSF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'DGV_borr
-        '
-        Me.DGV_borr.AllowUserToAddRows = False
-        Me.DGV_borr.AllowUserToDeleteRows = False
-        Me.DGV_borr.AllowUserToResizeColumns = False
-        Me.DGV_borr.AllowUserToResizeRows = False
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        Me.DGV_borr.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle6
-        Me.DGV_borr.AutoGenerateColumns = False
-        Me.DGV_borr.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DGV_borr.BackgroundColor = System.Drawing.Color.White
-        Me.DGV_borr.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DGV_borr.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DGV_borr.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGV_borr.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
-        Me.DGV_borr.ColumnHeadersHeight = 17
-        Me.DGV_borr.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.FirstnameDataGridViewTextBoxColumn, Me.MiddlenameDataGridViewTextBoxColumn, Me.LastnameDataGridViewTextBoxColumn, Me.BorrowertypeDataGridViewTextBoxColumn, Me.ContactnumberDataGridViewTextBoxColumn})
-        Me.DGV_borr.DataSource = Me.TblborrowerBindingSource
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGV_borr.DefaultCellStyle = DataGridViewCellStyle8
-        Me.DGV_borr.EnableHeadersVisualStyles = False
-        Me.DGV_borr.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DGV_borr.Location = New System.Drawing.Point(50, 229)
-        Me.DGV_borr.Name = "DGV_borr"
-        Me.DGV_borr.ReadOnly = True
-        Me.DGV_borr.RightToLeft = System.Windows.Forms.RightToLeft.No
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGV_borr.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
-        Me.DGV_borr.RowHeadersVisible = False
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black
-        Me.DGV_borr.RowsDefaultCellStyle = DataGridViewCellStyle10
-        Me.DGV_borr.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
-        Me.DGV_borr.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DGV_borr.Size = New System.Drawing.Size(737, 230)
-        Me.DGV_borr.TabIndex = 21
-        Me.DGV_borr.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
-        Me.DGV_borr.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.DGV_borr.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.DGV_borr.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black
-        Me.DGV_borr.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.DGV_borr.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.DGV_borr.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.DGV_borr.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DGV_borr.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DGV_borr.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.DGV_borr.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DGV_borr.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.DGV_borr.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.DGV_borr.ThemeStyle.HeaderStyle.Height = 17
-        Me.DGV_borr.ThemeStyle.ReadOnly = True
-        Me.DGV_borr.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.DGV_borr.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DGV_borr.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DGV_borr.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White
-        Me.DGV_borr.ThemeStyle.RowsStyle.Height = 22
-        Me.DGV_borr.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DGV_borr.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'Record_management_systemDataSet
-        '
-        Me.Record_management_systemDataSet.DataSetName = "record_management_systemDataSet"
-        Me.Record_management_systemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TblborrowerBindingSource
-        '
-        Me.TblborrowerBindingSource.DataMember = "tbl_borrower"
-        Me.TblborrowerBindingSource.DataSource = Me.Record_management_systemDataSet
-        '
         'Tbl_borrowerTableAdapter
         '
         Me.Tbl_borrowerTableAdapter.ClearBeforeFill = True
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "stud_facultyno"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "stud_facultyno"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'FirstnameDataGridViewTextBoxColumn
-        '
-        Me.FirstnameDataGridViewTextBoxColumn.DataPropertyName = "firstname"
-        Me.FirstnameDataGridViewTextBoxColumn.HeaderText = "firstname"
-        Me.FirstnameDataGridViewTextBoxColumn.Name = "FirstnameDataGridViewTextBoxColumn"
-        Me.FirstnameDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'MiddlenameDataGridViewTextBoxColumn
-        '
-        Me.MiddlenameDataGridViewTextBoxColumn.DataPropertyName = "middlename"
-        Me.MiddlenameDataGridViewTextBoxColumn.HeaderText = "middlename"
-        Me.MiddlenameDataGridViewTextBoxColumn.Name = "MiddlenameDataGridViewTextBoxColumn"
-        Me.MiddlenameDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'LastnameDataGridViewTextBoxColumn
-        '
-        Me.LastnameDataGridViewTextBoxColumn.DataPropertyName = "lastname"
-        Me.LastnameDataGridViewTextBoxColumn.HeaderText = "lastname"
-        Me.LastnameDataGridViewTextBoxColumn.Name = "LastnameDataGridViewTextBoxColumn"
-        Me.LastnameDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'BorrowertypeDataGridViewTextBoxColumn
-        '
-        Me.BorrowertypeDataGridViewTextBoxColumn.DataPropertyName = "borrower_type"
-        Me.BorrowertypeDataGridViewTextBoxColumn.HeaderText = "borrower_type"
-        Me.BorrowertypeDataGridViewTextBoxColumn.Name = "BorrowertypeDataGridViewTextBoxColumn"
-        Me.BorrowertypeDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'ContactnumberDataGridViewTextBoxColumn
-        '
-        Me.ContactnumberDataGridViewTextBoxColumn.DataPropertyName = "contact_number"
-        Me.ContactnumberDataGridViewTextBoxColumn.HeaderText = "contact_number"
-        Me.ContactnumberDataGridViewTextBoxColumn.Name = "ContactnumberDataGridViewTextBoxColumn"
-        Me.ContactnumberDataGridViewTextBoxColumn.ReadOnly = True
         '
         'usrctrlBORROWERS_PROFILE
         '
@@ -563,8 +563,8 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.pnlusrBORR.ResumeLayout(False)
         Me.pnlusrBORR.PerformLayout()
         CType(Me.DGV_borr, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Record_management_systemDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TblborrowerBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Record_management_systemDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

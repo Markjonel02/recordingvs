@@ -27,6 +27,7 @@ Partial Class usrcrtlITEM1
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -39,7 +40,6 @@ Partial Class usrcrtlITEM1
         Me.TXTCODE = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2GradientPanel2 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.pnlusrctrlITEM = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.txtas = New Guna.UI2.WinForms.Guna2TextBox()
         Me.DGV_item = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.ItemcodeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ItemnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -48,6 +48,7 @@ Partial Class usrcrtlITEM1
         Me.DateaddedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TblitemsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Record_management_systemDataSet = New Recording_Management.record_management_systemDataSet()
+        Me.txtas = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnDelete = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.btnCancel = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.btnEdit = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -269,8 +270,8 @@ Partial Class usrcrtlITEM1
         '
         'pnlusrctrlITEM
         '
-        Me.pnlusrctrlITEM.Controls.Add(Me.txtas)
         Me.pnlusrctrlITEM.Controls.Add(Me.DGV_item)
+        Me.pnlusrctrlITEM.Controls.Add(Me.txtas)
         Me.pnlusrctrlITEM.Controls.Add(Me.btnDelete)
         Me.pnlusrctrlITEM.Controls.Add(Me.btnCancel)
         Me.pnlusrctrlITEM.Controls.Add(Me.btnEdit)
@@ -295,40 +296,13 @@ Partial Class usrcrtlITEM1
         Me.pnlusrctrlITEM.Size = New System.Drawing.Size(832, 493)
         Me.pnlusrctrlITEM.TabIndex = 11
         '
-        'txtas
-        '
-        Me.txtas.AutoRoundedCorners = True
-        Me.txtas.BackColor = System.Drawing.Color.Transparent
-        Me.txtas.BorderRadius = 17
-        Me.txtas.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtas.DefaultText = ""
-        Me.txtas.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.txtas.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.txtas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtas.DisabledState.Parent = Me.txtas
-        Me.txtas.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.txtas.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtas.FocusedState.Parent = Me.txtas
-        Me.txtas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtas.ForeColor = System.Drawing.Color.Black
-        Me.txtas.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtas.HoverState.Parent = Me.txtas
-        Me.txtas.Location = New System.Drawing.Point(515, 13)
-        Me.txtas.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
-        Me.txtas.Name = "txtas"
-        Me.txtas.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtas.PlaceholderText = ""
-        Me.txtas.SelectedText = ""
-        Me.txtas.ShadowDecoration.Parent = Me.txtas
-        Me.txtas.Size = New System.Drawing.Size(263, 36)
-        Me.txtas.TabIndex = 3
-        Me.txtas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'DGV_item
         '
         Me.DGV_item.AllowUserToAddRows = False
         Me.DGV_item.AllowUserToDeleteRows = False
         Me.DGV_item.AllowUserToResizeColumns = False
+        Me.DGV_item.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
         Me.DGV_item.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGV_item.AutoGenerateColumns = False
@@ -336,20 +310,20 @@ Partial Class usrcrtlITEM1
         Me.DGV_item.BackgroundColor = System.Drawing.Color.White
         Me.DGV_item.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DGV_item.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DGV_item.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue
+        Me.DGV_item.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DGV_item.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.DGV_item.ColumnHeadersHeight = 30
+        Me.DGV_item.ColumnHeadersHeight = 17
         Me.DGV_item.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ItemcodeDataGridViewTextBoxColumn, Me.ItemnameDataGridViewTextBoxColumn, Me.ItemcategoryDataGridViewTextBoxColumn, Me.AvailablestockDataGridViewTextBoxColumn, Me.DateaddedDataGridViewTextBoxColumn})
         Me.DGV_item.DataSource = Me.TblitemsBindingSource
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.Gray
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -357,16 +331,24 @@ Partial Class usrcrtlITEM1
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DGV_item.DefaultCellStyle = DataGridViewCellStyle3
         Me.DGV_item.EnableHeadersVisualStyles = False
-        Me.DGV_item.GridColor = System.Drawing.Color.White
-        Me.DGV_item.Location = New System.Drawing.Point(31, 249)
+        Me.DGV_item.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_item.Location = New System.Drawing.Point(24, 242)
         Me.DGV_item.Name = "DGV_item"
         Me.DGV_item.ReadOnly = True
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_item.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.DGV_item.RowHeadersVisible = False
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gold
-        Me.DGV_item.RowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DGV_item.RowsDefaultCellStyle = DataGridViewCellStyle5
         Me.DGV_item.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DGV_item.Size = New System.Drawing.Size(770, 217)
-        Me.DGV_item.TabIndex = 20
+        Me.DGV_item.Size = New System.Drawing.Size(782, 230)
+        Me.DGV_item.TabIndex = 11
         Me.DGV_item.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
         Me.DGV_item.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.DGV_item.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -374,15 +356,15 @@ Partial Class usrcrtlITEM1
         Me.DGV_item.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
         Me.DGV_item.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
         Me.DGV_item.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.DGV_item.ThemeStyle.GridColor = System.Drawing.Color.White
-        Me.DGV_item.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue
-        Me.DGV_item.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
+        Me.DGV_item.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_item.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_item.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.DGV_item.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DGV_item.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
         Me.DGV_item.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.DGV_item.ThemeStyle.HeaderStyle.Height = 30
+        Me.DGV_item.ThemeStyle.HeaderStyle.Height = 17
         Me.DGV_item.ThemeStyle.ReadOnly = True
-        Me.DGV_item.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.Gray
+        Me.DGV_item.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
         Me.DGV_item.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DGV_item.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DGV_item.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
@@ -434,6 +416,35 @@ Partial Class usrcrtlITEM1
         '
         Me.Record_management_systemDataSet.DataSetName = "record_management_systemDataSet"
         Me.Record_management_systemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'txtas
+        '
+        Me.txtas.AutoRoundedCorners = True
+        Me.txtas.BackColor = System.Drawing.Color.Transparent
+        Me.txtas.BorderRadius = 17
+        Me.txtas.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtas.DefaultText = ""
+        Me.txtas.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtas.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtas.DisabledState.Parent = Me.txtas
+        Me.txtas.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtas.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtas.FocusedState.Parent = Me.txtas
+        Me.txtas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtas.ForeColor = System.Drawing.Color.Black
+        Me.txtas.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtas.HoverState.Parent = Me.txtas
+        Me.txtas.Location = New System.Drawing.Point(515, 13)
+        Me.txtas.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
+        Me.txtas.Name = "txtas"
+        Me.txtas.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtas.PlaceholderText = ""
+        Me.txtas.SelectedText = ""
+        Me.txtas.ShadowDecoration.Parent = Me.txtas
+        Me.txtas.Size = New System.Drawing.Size(263, 36)
+        Me.txtas.TabIndex = 3
+        Me.txtas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnDelete
         '
@@ -948,6 +959,8 @@ Partial Class usrcrtlITEM1
     Friend WithEvents btnEdit As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents btnSave As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents btnAdd As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents txtas As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents DGV_item As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents ItemcodeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents ItemnameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents ItemcategoryDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
@@ -956,6 +969,4 @@ Partial Class usrcrtlITEM1
     Friend WithEvents TblitemsBindingSource As BindingSource
     Friend WithEvents Record_management_systemDataSet As record_management_systemDataSet
     Friend WithEvents Tbl_itemsTableAdapter As record_management_systemDataSetTableAdapters.tbl_itemsTableAdapter
-    Friend WithEvents txtas As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents DGV_item As Guna.UI2.WinForms.Guna2DataGridView
 End Class

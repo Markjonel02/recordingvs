@@ -27,14 +27,9 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnluser = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.btnCancel = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.TXTCONF = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.CBOSTAT = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.txtLN = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.DGUSER = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.DG_user = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -42,6 +37,12 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.StatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TbluserBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Record_management_systemDataSet = New Recording_Management.record_management_systemDataSet()
+        Me.btnCancel = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.TXTCONF = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.CBOSTAT = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.txtLN = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnEdit = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.btnSave = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.btnAdd = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -54,10 +55,8 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.TXTUSN = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TXTDUN = New System.Windows.Forms.TextBox()
         Me.Tbl_userTableAdapter = New Recording_Management.record_management_systemDataSetTableAdapters.tbl_userTableAdapter()
-        Me.Guna2MouseStateHandler1 = New Guna.UI2.WinForms.Guna2MouseStateHandler(Me.components)
-        Me.Guna2MouseStateHandler2 = New Guna.UI2.WinForms.Guna2MouseStateHandler(Me.components)
         Me.pnluser.SuspendLayout()
-        CType(Me.DGUSER, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DG_user, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TbluserBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Record_management_systemDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -65,13 +64,13 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         'pnluser
         '
         Me.pnluser.BorderColor = System.Drawing.Color.White
+        Me.pnluser.Controls.Add(Me.DG_user)
         Me.pnluser.Controls.Add(Me.btnCancel)
         Me.pnluser.Controls.Add(Me.TXTCONF)
         Me.pnluser.Controls.Add(Me.Guna2HtmlLabel6)
         Me.pnluser.Controls.Add(Me.Guna2HtmlLabel5)
         Me.pnluser.Controls.Add(Me.CBOSTAT)
         Me.pnluser.Controls.Add(Me.txtLN)
-        Me.pnluser.Controls.Add(Me.DGUSER)
         Me.pnluser.Controls.Add(Me.btnEdit)
         Me.pnluser.Controls.Add(Me.btnSave)
         Me.pnluser.Controls.Add(Me.btnAdd)
@@ -91,6 +90,127 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.pnluser.ShadowDecoration.Parent = Me.pnluser
         Me.pnluser.Size = New System.Drawing.Size(832, 493)
         Me.pnluser.TabIndex = 0
+        '
+        'DG_user
+        '
+        Me.DG_user.AllowUserToAddRows = False
+        Me.DG_user.AllowUserToDeleteRows = False
+        Me.DG_user.AllowUserToResizeColumns = False
+        Me.DG_user.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.DG_user.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.DG_user.AutoGenerateColumns = False
+        Me.DG_user.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DG_user.BackgroundColor = System.Drawing.Color.White
+        Me.DG_user.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DG_user.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DG_user.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DG_user.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DG_user.ColumnHeadersHeight = 17
+        Me.DG_user.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.StatusDataGridViewTextBoxColumn})
+        Me.DG_user.DataSource = Me.TbluserBindingSource
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DG_user.DefaultCellStyle = DataGridViewCellStyle3
+        Me.DG_user.EnableHeadersVisualStyles = False
+        Me.DG_user.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DG_user.Location = New System.Drawing.Point(49, 238)
+        Me.DG_user.Name = "DG_user"
+        Me.DG_user.ReadOnly = True
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DG_user.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.DG_user.RowHeadersVisible = False
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DG_user.RowsDefaultCellStyle = DataGridViewCellStyle5
+        Me.DG_user.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DG_user.Size = New System.Drawing.Size(737, 230)
+        Me.DG_user.TabIndex = 24
+        Me.DG_user.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
+        Me.DG_user.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.DG_user.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.DG_user.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.DG_user.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.DG_user.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.DG_user.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.DG_user.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DG_user.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DG_user.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DG_user.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DG_user.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.DG_user.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.DG_user.ThemeStyle.HeaderStyle.Height = 17
+        Me.DG_user.ThemeStyle.ReadOnly = True
+        Me.DG_user.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.DG_user.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DG_user.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DG_user.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.DG_user.ThemeStyle.RowsStyle.Height = 22
+        Me.DG_user.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DG_user.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "username"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "username"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "password"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "password"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "loginame"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "loginame"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "usertype"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "usertype"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        '
+        'StatusDataGridViewTextBoxColumn
+        '
+        Me.StatusDataGridViewTextBoxColumn.DataPropertyName = "status"
+        Me.StatusDataGridViewTextBoxColumn.HeaderText = "status"
+        Me.StatusDataGridViewTextBoxColumn.Name = "StatusDataGridViewTextBoxColumn"
+        Me.StatusDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TbluserBindingSource
+        '
+        Me.TbluserBindingSource.DataMember = "tbl_user"
+        Me.TbluserBindingSource.DataSource = Me.Record_management_systemDataSet
+        '
+        'Record_management_systemDataSet
+        '
+        Me.Record_management_systemDataSet.DataSetName = "record_management_systemDataSet"
+        Me.Record_management_systemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'btnCancel
         '
@@ -221,122 +341,6 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.txtLN.Size = New System.Drawing.Size(280, 36)
         Me.txtLN.TabIndex = 3
         Me.txtLN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'DGUSER
-        '
-        Me.DGUSER.AllowUserToAddRows = False
-        Me.DGUSER.AllowUserToDeleteRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.DGUSER.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.DGUSER.AutoGenerateColumns = False
-        Me.DGUSER.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DGUSER.BackgroundColor = System.Drawing.Color.White
-        Me.DGUSER.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DGUSER.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DGUSER.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGUSER.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.DGUSER.ColumnHeadersHeight = 30
-        Me.DGUSER.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.StatusDataGridViewTextBoxColumn})
-        Me.DGUSER.DataSource = Me.TbluserBindingSource
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.Gray
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGUSER.DefaultCellStyle = DataGridViewCellStyle3
-        Me.DGUSER.EnableHeadersVisualStyles = False
-        Me.DGUSER.GridColor = System.Drawing.Color.White
-        Me.DGUSER.Location = New System.Drawing.Point(47, 240)
-        Me.DGUSER.Name = "DGUSER"
-        Me.DGUSER.ReadOnly = True
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGUSER.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
-        Me.DGUSER.RowHeadersVisible = False
-        Me.DGUSER.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DGUSER.Size = New System.Drawing.Size(738, 200)
-        Me.DGUSER.TabIndex = 18
-        Me.DGUSER.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
-        Me.DGUSER.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.DGUSER.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.DGUSER.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.DGUSER.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.DGUSER.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.DGUSER.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.DGUSER.ThemeStyle.GridColor = System.Drawing.Color.White
-        Me.DGUSER.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue
-        Me.DGUSER.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        Me.DGUSER.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.DGUSER.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.DGUSER.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.DGUSER.ThemeStyle.HeaderStyle.Height = 30
-        Me.DGUSER.ThemeStyle.ReadOnly = True
-        Me.DGUSER.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.Gray
-        Me.DGUSER.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.DGUSER.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.DGUSER.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.DGUSER.ThemeStyle.RowsStyle.Height = 22
-        Me.DGUSER.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DGUSER.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "username"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "username"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "password"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "password"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "loginame"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "loginame"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "usertype"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "usertype"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
-        '
-        'StatusDataGridViewTextBoxColumn
-        '
-        Me.StatusDataGridViewTextBoxColumn.DataPropertyName = "status"
-        Me.StatusDataGridViewTextBoxColumn.HeaderText = "status"
-        Me.StatusDataGridViewTextBoxColumn.Name = "StatusDataGridViewTextBoxColumn"
-        Me.StatusDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'TbluserBindingSource
-        '
-        Me.TbluserBindingSource.DataMember = "tbl_user"
-        Me.TbluserBindingSource.DataSource = Me.Record_management_systemDataSet
-        '
-        'Record_management_systemDataSet
-        '
-        Me.Record_management_systemDataSet.DataSetName = "record_management_systemDataSet"
-        Me.Record_management_systemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'btnEdit
         '
@@ -570,7 +574,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.Size = New System.Drawing.Size(832, 493)
         Me.pnluser.ResumeLayout(False)
         Me.pnluser.PerformLayout()
-        CType(Me.DGUSER, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DG_user, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TbluserBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Record_management_systemDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -589,20 +593,9 @@ Partial Class UsrctrlMANAGE_ACCOUNT
     Friend WithEvents PasswordDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents LoginameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents UsertypeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DGUSER As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents StatusDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TbluserBindingSource As BindingSource
-    Friend WithEvents Record_management_systemDataSet As record_management_systemDataSet
     Friend WithEvents btnEdit As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents btnSave As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents btnAdd As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Tbl_userTableAdapter As record_management_systemDataSetTableAdapters.tbl_userTableAdapter
-    Friend WithEvents Guna2MouseStateHandler1 As Guna.UI2.WinForms.Guna2MouseStateHandler
-    Friend WithEvents Guna2MouseStateHandler2 As Guna.UI2.WinForms.Guna2MouseStateHandler
     Friend WithEvents txtLN As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents CBOSTAT As Guna.UI2.WinForms.Guna2ComboBox
@@ -610,4 +603,13 @@ Partial Class UsrctrlMANAGE_ACCOUNT
     Friend WithEvents btnCancel As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents TXTCONF As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents DG_user As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents StatusDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents TbluserBindingSource As BindingSource
+    Friend WithEvents Record_management_systemDataSet As record_management_systemDataSet
+    Friend WithEvents Tbl_userTableAdapter As record_management_systemDataSetTableAdapters.tbl_userTableAdapter
 End Class

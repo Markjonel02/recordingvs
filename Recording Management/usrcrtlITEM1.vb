@@ -164,7 +164,6 @@ Public Class usrcrtlITEM1
         End If
 
     End Sub
-
     Private Sub DGV_item_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_item.CellContentClick
 
         If e.RowIndex >= 0 Then
@@ -182,10 +181,6 @@ Public Class usrcrtlITEM1
             btnSave.Enabled = False
 
         End If
-    End Sub
-
-    Private Sub pnlusrctrlITEM_Paint(sender As Object, e As PaintEventArgs) Handles pnlusrctrlITEM.Paint
-
     End Sub
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
@@ -230,7 +225,5 @@ Public Class usrcrtlITEM1
 
     End Sub
 
-    Private Sub txtas_TextChanged(sender As Object, e As EventArgs) Handles txtas.TextChanged
 
-    End Sub
 End Class

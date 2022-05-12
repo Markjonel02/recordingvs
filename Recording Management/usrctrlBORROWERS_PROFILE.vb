@@ -85,7 +85,7 @@
         TXTFNAME.Text = ""
         TXTLN.Text = ""
         TXTMID.Text = ""
-
+        TXTCN.Text = ""
         CBOBORR.SelectedIndex = -1
         refreshgrid()
     End Sub
@@ -93,37 +93,7 @@
         Me.Tbl_borrowerTableAdapter.Fill(Me.Record_management_systemDataSet.tbl_borrower)
 
     End Sub
-
-    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
-        'code for upate
-        opencon()
-        cmd.CommandText = "Update tbl_borrower set stud_facultyno=@sf, firstname=@fn, middlename=@mid, lastname=@ln, borrower_type=@brt, contact_number=@cn  where stud_facultyno= @sf"
-        With cmd.Parameters
-            .Clear()
-            .AddWithValue("sf", txtSF.Text)
-            .AddWithValue("fn", TXTFNAME.Text)
-            .AddWithValue("mid", TXTMID.Text)
-            .AddWithValue("ln", TXTLN.Text)
-            .AddWithValue("brt", CBOBORR.Text)
-            .AddWithValue("cn", TXTCN.Text)
-
-        End With
-        cmd.ExecuteNonQuery()
-        con.Close()
-        MsgBox("Record has been updated!", vbOKOnly + vbInformation, "Editing Successful")
-        btnEdit.Text = "EDIT"
-        function_enabled()
-        txtSF.Text = ""
-        TXTFNAME.Text = ""
-        TXTMID.Text = ""
-        TXTLN.Text = ""
-        TXTCN.Text = ""
-        CBOBORR.SelectedIndex = -1
-        refreshgrid()
-
-    End Sub
-
-    Private Sub DGV_borr_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+    Private Sub DGV_borr_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_borr.CellContentClick
         function_enabled()
         btnEdit.Enabled = True
         btnAdd.Enabled = False
@@ -140,6 +110,52 @@
             txtSF.Enabled = False
         End If
     End Sub
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        If btnEdit.Text = "EDIT" Then
+            If TXTFNAME.Text = "" Or TXTMID.Text = "" Or TXTLN.Text = "" Or CBOBORR.Text = "" Or TXTCN.Text = "" Then
+                MsgBox("All Fields are required!", vbOKOnly + vbCritical, "Error Editing")
+                Exit Sub
+            End If
+            function_enabled()
+            btnSave.Enabled = False
+            btnEdit.Enabled = True
+            txtSF.Enabled = False
+
+            TXTFNAME.Focus()
+            'Error trapping
+
+            'code for upate
+            opencon()
+            cmd.CommandText = "Update tbl_borrower set stud_facultyno =@sf, firstname=@fn, middlename=@md, lastname=@ln, borrower_type=@bt, contact_number=@cn where stud_facultyno= @sf"
+            With cmd.Parameters
+                .Clear()
+
+                .AddWithValue("sf", txtSF.Text)
+                .AddWithValue("fn", TXTFNAME.Text)
+                .AddWithValue("md", TXTMID.Text)
+                .AddWithValue("ln", TXTLN.Text)
+                .AddWithValue("bt", CBOBORR.Text)
+                .AddWithValue("cn", TXTCN.Text)
+
+            End With
+
+            cmd.ExecuteNonQuery()
+            con.Close()
+            MsgBox("Record has been updated!", vbOKOnly + vbInformation, "Editing    Successful")
+            btnEdit.Text = "EDIT"
+            function_enabled()
+            txtSF.Text = String.Empty
+            TXTFNAME.Text = String.Empty
+            TXTMID.Text = String.Empty
+            TXTLN.Text = String.Empty
+            TXTCN.Text = String.Empty
+            CBOBORR.SelectedIndex = -1
+            refreshgrid()
+        End If
+
+    End Sub
+
+
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
@@ -163,4 +179,12 @@
         TXTCN.Text = ""
         CBOBORR.SelectedIndex = -1
     End Sub
+
+    Private Sub txtSF_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtSF.KeyPress
+        If Not Char.IsNumber(e.KeyChar) And Not Char.IsControl(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
+
 End Class
