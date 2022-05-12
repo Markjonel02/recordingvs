@@ -27,6 +27,7 @@
 
     Private Sub UsrctrlMANAGE_ACCOUNT_Load(sender As Object, e As EventArgs) Handles Me.Load
         Me.Tbl_userTableAdapter.Fill(Me.Record_management_systemDataSet.tbl_user)
+
         funtion_disabled()
 
 

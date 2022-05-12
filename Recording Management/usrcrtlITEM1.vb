@@ -201,9 +201,9 @@ Public Class usrcrtlITEM1
             btnEdit.Text = "UPDATE"
             txtIN.Focus()
             'Error trapping
+
             'code for upate
             opencon()
-
             cmd.CommandText = "Update tbl_items set itemname =@in, itemcategory=@itc, available_stock=@as where itemcode= @ic"
             Dim availstock = Val(txtas.Text)
             Dim itemcode = Val(txtIC.Text)

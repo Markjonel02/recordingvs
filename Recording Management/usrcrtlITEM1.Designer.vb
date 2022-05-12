@@ -328,6 +328,7 @@ Partial Class usrcrtlITEM1
         '
         Me.DGV_item.AllowUserToAddRows = False
         Me.DGV_item.AllowUserToDeleteRows = False
+        Me.DGV_item.AllowUserToResizeColumns = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
         Me.DGV_item.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DGV_item.AutoGenerateColumns = False

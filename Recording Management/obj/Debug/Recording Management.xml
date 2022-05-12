@@ -232,11 +232,6 @@ Represents a strongly typed in-memory cache of data.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_borrowers_profileDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_itemsDataTable">
 <summary>
 Represents the strongly named DataTable class.
@@ -252,12 +247,12 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_userRow">
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_borrowerDataTable">
 <summary>
-Represents strongly named DataRow class.
+Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_borrowers_profileRow">
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_userRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -277,12 +272,12 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_userRowChangeEvent">
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_borrowerRow">
 <summary>
-Row event argument class
+Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_borrowers_profileRowChangeEvent">
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_userRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
@@ -302,12 +297,12 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_userTableAdapter">
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_borrowerRowChangeEvent">
 <summary>
-Represents the connection and commands used to retrieve and save data.
+Row event argument class
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_borrowers_profileTableAdapter">
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_userTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -323,6 +318,11 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_stockaddedTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_borrowerTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
