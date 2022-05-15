@@ -28,6 +28,8 @@ Partial Class usrctrlREPORTS
         'pnlusrRep
         '
         Me.pnlusrRep.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlusrRep.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
+        Me.pnlusrRep.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(96, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.pnlusrRep.Location = New System.Drawing.Point(0, 0)
         Me.pnlusrRep.Name = "pnlusrRep"
         Me.pnlusrRep.ShadowDecoration.Parent = Me.pnlusrRep

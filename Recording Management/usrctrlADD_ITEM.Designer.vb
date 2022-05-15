@@ -34,6 +34,7 @@ Partial Class usrctrlADD_ITEM
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnlusrctrlAdditem = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Me.chkeclearsearch = New Guna.UI2.WinForms.Guna2ImageCheckBox()
         Me.TXTDATEADDED = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnCancel = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.btnAdd = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -66,7 +67,6 @@ Partial Class usrctrlADD_ITEM
         Me.TXTITCODE = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Tbl_itemsTableAdapter = New Recording_Management.record_management_systemDataSetTableAdapters.tbl_itemsTableAdapter()
         Me.Tbl_stockaddedTableAdapter = New Recording_Management.record_management_systemDataSetTableAdapters.tbl_stockaddedTableAdapter()
-        Me.chkeclearsearch = New Guna.UI2.WinForms.Guna2ImageCheckBox()
         Me.pnlusrctrlAdditem.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -96,13 +96,27 @@ Partial Class usrctrlADD_ITEM
         Me.pnlusrctrlAdditem.Controls.Add(Me.TXTIName)
         Me.pnlusrctrlAdditem.Controls.Add(Me.TXTITCODE)
         Me.pnlusrctrlAdditem.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlusrctrlAdditem.FillColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(254, Byte), Integer))
-        Me.pnlusrctrlAdditem.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(251, Byte), Integer))
+        Me.pnlusrctrlAdditem.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
+        Me.pnlusrctrlAdditem.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(96, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.pnlusrctrlAdditem.Location = New System.Drawing.Point(0, 0)
         Me.pnlusrctrlAdditem.Name = "pnlusrctrlAdditem"
         Me.pnlusrctrlAdditem.ShadowDecoration.Parent = Me.pnlusrctrlAdditem
         Me.pnlusrctrlAdditem.Size = New System.Drawing.Size(832, 493)
         Me.pnlusrctrlAdditem.TabIndex = 1
+        '
+        'chkeclearsearch
+        '
+        Me.chkeclearsearch.BackColor = System.Drawing.Color.Transparent
+        Me.chkeclearsearch.CheckedState.Image = Global.Recording_Management.My.Resources.Resources.cross
+        Me.chkeclearsearch.CheckedState.Parent = Me.chkeclearsearch
+        Me.chkeclearsearch.HoverState.Parent = Me.chkeclearsearch
+        Me.chkeclearsearch.Image = Global.Recording_Management.My.Resources.Resources.cross
+        Me.chkeclearsearch.Location = New System.Drawing.Point(751, 130)
+        Me.chkeclearsearch.Name = "chkeclearsearch"
+        Me.chkeclearsearch.PressedState.Parent = Me.chkeclearsearch
+        Me.chkeclearsearch.Size = New System.Drawing.Size(31, 23)
+        Me.chkeclearsearch.TabIndex = 1
+        Me.chkeclearsearch.UseTransparentBackground = True
         '
         'TXTDATEADDED
         '
@@ -659,20 +673,6 @@ Partial Class usrctrlADD_ITEM
         'Tbl_stockaddedTableAdapter
         '
         Me.Tbl_stockaddedTableAdapter.ClearBeforeFill = True
-        '
-        'chkeclearsearch
-        '
-        Me.chkeclearsearch.BackColor = System.Drawing.Color.Transparent
-        Me.chkeclearsearch.CheckedState.Image = Global.Recording_Management.My.Resources.Resources.cross
-        Me.chkeclearsearch.CheckedState.Parent = Me.chkeclearsearch
-        Me.chkeclearsearch.HoverState.Parent = Me.chkeclearsearch
-        Me.chkeclearsearch.Image = Global.Recording_Management.My.Resources.Resources.cross
-        Me.chkeclearsearch.Location = New System.Drawing.Point(751, 130)
-        Me.chkeclearsearch.Name = "chkeclearsearch"
-        Me.chkeclearsearch.PressedState.Parent = Me.chkeclearsearch
-        Me.chkeclearsearch.Size = New System.Drawing.Size(31, 23)
-        Me.chkeclearsearch.TabIndex = 1
-        Me.chkeclearsearch.UseTransparentBackground = True
         '
         'usrctrlADD_ITEM
         '

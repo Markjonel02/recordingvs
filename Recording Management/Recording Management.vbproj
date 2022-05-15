@@ -141,6 +141,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>record_management_systemDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="record_management_systemDataSet.vb">
+      <DependentUpon>record_management_systemDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UsrCrlforgotpass.Designer.vb">
       <DependentUpon>UsrCrlforgotpass.vb</DependentUpon>
     </Compile>

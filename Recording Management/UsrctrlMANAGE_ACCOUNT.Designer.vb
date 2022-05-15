@@ -83,7 +83,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.pnluser.Controls.Add(Me.TXTUSN)
         Me.pnluser.Controls.Add(Me.TXTDUN)
         Me.pnluser.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnluser.FillColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(254, Byte), Integer))
+        Me.pnluser.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
         Me.pnluser.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(96, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(205, Byte), Integer))
         Me.pnluser.Location = New System.Drawing.Point(0, 0)
         Me.pnluser.Name = "pnluser"

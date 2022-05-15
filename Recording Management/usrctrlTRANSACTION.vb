@@ -1,5 +1,5 @@
 ﻿Public Class usrctrlTRANSACTION
-
+    Dim switch As Boolean = True
     Private Sub usrctrlTRANSACTION_Load(sender As Object, e As EventArgs) Handles Me.Load
         Me.Tbl_borrowerTableAdapter.Fill(Me.Record_management_systemDataSet.tbl_borrower)
         Me.Tbl_addtocartTableAdapter.Fill(Me.Record_management_systemDataSet.tbl_addtocart)
@@ -33,6 +33,26 @@
     End Sub
     Private Sub Getmax()
         opencon()
+        cmd.CommandText = "Select * from tbl_transaction"
+        dr = cmd.ExecuteReader
+        If dr.HasRows Then
+            Dim getno As Integer
+            con.Close()
+            opencon()
+            cmd.CommandText = "Select Max(transaction_id) from tbl_transaction"
+            getno = Convert.ToInt64(cmd.ExecuteScalar())
+            con.Close()
+            TXTID.Text = getno + 1
+        Else
+            TXTID.Text = 1
+            con.Close()
+        End If
+    End Sub
+
+
+
+    Private Sub Getmaxcart()
+        opencon()
         cmd.CommandText = "Select * from tbl_addtocart"
         dr = cmd.ExecuteReader
         If dr.HasRows Then
@@ -49,13 +69,21 @@
         End If
     End Sub
 
+
+
     Private Sub btnBrowse_Click(sender As Object, e As EventArgs) Handles btnBrowse.Click
         DGV_borrow.Visible = True
         DGV_borrow.Location = New Point(13, 8)
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        Getmax()
+        If switch = False Then
+            Getmaxcart()
+        Else
+            Getmax()
+            switch = False
+        End If
+
         enable()
 
     End Sub
@@ -64,6 +92,10 @@
     'save 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         Dim i As Integer
+
+        'transactionid increment 
+
+
         ' insert to tbl_transaction
 
         For i = 0 To DGV_cart.Rows.Count - 1
@@ -74,10 +106,10 @@
                 .Clear()
                 .AddWithValue("tid", DGV_cart.Rows(i).Cells(0).Value.ToString)
                 .AddWithValue("fn", DGV_cart.Rows(i).Cells(1).Value.ToString)
-                .AddWithValue("sfn", DGV_cart.Rows(i).Cells(2).Value.ToString)
-                .AddWithValue("ic", DGV_cart.Rows(i).Cells(3).Value.ToString)
-                .AddWithValue("in", DGV_cart.Rows(i).Cells(4).Value.ToString)
-                .AddWithValue("bt", DGV_cart.Rows(i).Cells(5).Value.ToString)
+                .AddWithValue("sfn", DGV_cart.Rows(i).Cells(3).Value.ToString)
+                .AddWithValue("ic", DGV_cart.Rows(i).Cells(4).Value.ToString)
+                .AddWithValue("in", DGV_cart.Rows(i).Cells(5).Value.ToString)
+                .AddWithValue("bt", DGV_cart.Rows(i).Cells(2).Value.ToString)
                 .AddWithValue("qt", DGV_cart.Rows(i).Cells(6).Value.ToString)
                 .AddWithValue("db", Format(Date.Now, "dd MM yyyy"))
                 .AddWithValue("drd", "")
@@ -127,16 +159,29 @@
             cmd.ExecuteNonQuery()
             con.Close()
         Next
+
+        'delete to cart after save 
+
+        con.Open()
+        cmd.CommandText = "delete from tbl_addtocart"
+        cmd.ExecuteNonQuery()
+        con.Close()
+        MsgBox("Items successfully borrowed!", vbOKOnly + vbInformation)
+
+
+
+        TXTID.Text = ""
         TXTIC.Text = ""
         TXTSTUDF.Text = ""
         TXTIN.Text = ""
         TXTSTUDF.Text = ""
-        'TXTFULLN.Text = ""
+        TXTFULLN.Text = ""
         TXTBORR.Text = ""
         TXTQTY.Text = ""
         TXTAVAILS.Text = ""
         refreshgrid()
         disabled()
+        switch = True
     End Sub
 
 
@@ -273,4 +318,28 @@
 
     End Sub
 
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        TXTID.Text = ""
+        TXTIC.Text = ""
+        TXTSTUDF.Text = ""
+        TXTIN.Text = ""
+        TXTSTUDF.Text = ""
+        TXTFULLN.Text = ""
+        TXTBORR.Text = ""
+        TXTQTY.Text = ""
+        TXTAVAILS.Text = ""
+        disabled()
+    End Sub
+
+    Private Sub TXTQTY_TextChanged(sender As Object, e As EventArgs) Handles TXTQTY.TextChanged
+        If TXTQTY.Text = String.Empty Then
+            btnCancel.Enabled = False
+        Else
+            btnCancel.Enabled = True
+        End If
+    End Sub
+
+    Private Sub pnlusrTrans_Paint(sender As Object, e As PaintEventArgs) Handles pnlusrTrans.Paint
+
+    End Sub
 End Class

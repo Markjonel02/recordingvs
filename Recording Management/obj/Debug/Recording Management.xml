@@ -202,22 +202,7 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transactionDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_stockaddedDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction1DataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction2DataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -227,17 +212,12 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction3DataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction4DataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_addtocartDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transactionDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -252,22 +232,7 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transactionRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_stockaddedRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction1Row">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction2Row">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -277,17 +242,12 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction3Row">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction4Row">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_addtocartRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transactionRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -302,22 +262,7 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transactionRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_stockaddedRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction1RowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction2RowChangeEvent">
 <summary>
 Row event argument class
 </summary>
@@ -327,17 +272,12 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction3RowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction4RowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_addtocartRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transactionRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
@@ -352,22 +292,7 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transactionTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
 <member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_stockaddedTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transaction1TableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transaction2TableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -377,17 +302,12 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transaction3TableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transaction4TableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
 <member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_addtocartTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transactionTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

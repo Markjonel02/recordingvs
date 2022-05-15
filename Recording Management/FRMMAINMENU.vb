@@ -31,8 +31,6 @@
         D.Dock = DockStyle.Fill
 
 
-
-
     End Sub
 
     Private Sub BTNDASHOARD_Leave(sender As Object, e As EventArgs) Handles BTNDASHOARD.Leave
@@ -224,5 +222,26 @@
         ExitButton()
     End Sub
 
+    Private Sub BTNRETURN_Click(sender As Object, e As EventArgs) Handles BTNRETURN.Click
+        Dim ctrl As Integer
+        For ctrl = 0 To 0
+            pnlmainmenu.Controls.RemoveAt(ctrl)
+        Next
+        Dim D As New UsrCtrlReturnitems()
+        D.Parent = pnlmainmenu
+        D.Show()
+        D.Dock = DockStyle.Fill
+        BTNRETURN.FillColor = Color.WhiteSmoke
+        BTNRETURN.FillColor2 = Color.WhiteSmoke
+        BTNRETURN.ForeColor = Color.RoyalBlue
+        BTNRETURN.CustomBorderColor = Color.RoyalBlue
+    End Sub
 
+    Private Sub BTNRETURN_Leave(sender As Object, e As EventArgs) Handles BTNRETURN.Leave
+        BTNRETURN.FillColor = Color.Transparent
+        BTNRETURN.FillColor2 = Color.Transparent
+        BTNRETURN.ForeColor = Color.White
+        BTNRETURN.CustomBorderColor = Color.Transparent
+
+    End Sub
 End Class

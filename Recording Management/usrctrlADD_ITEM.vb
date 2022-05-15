@@ -94,6 +94,7 @@
             MsgBox("Stocks has been Added!", vbOKOnly + vbInformation, "Editing Successful")
 
 
+
             opencon()
             cmd.CommandText = "Select * from tbl_stockadded"
             dr = cmd.ExecuteReader
@@ -109,7 +110,6 @@
                 stockid = 1
                 con.Close()
             End If
-
 
             'inserting stock
             opencon()

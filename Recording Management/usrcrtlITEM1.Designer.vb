@@ -283,8 +283,8 @@ Partial Class usrcrtlITEM1
         Me.pnlusrctrlITEM.Controls.Add(Me.Label10)
         Me.pnlusrctrlITEM.Controls.Add(Me.cboitem)
         Me.pnlusrctrlITEM.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlusrctrlITEM.FillColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(254, Byte), Integer))
-        Me.pnlusrctrlITEM.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(251, Byte), Integer))
+        Me.pnlusrctrlITEM.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
+        Me.pnlusrctrlITEM.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(206, Byte), Integer))
         Me.pnlusrctrlITEM.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pnlusrctrlITEM.Location = New System.Drawing.Point(0, 0)
         Me.pnlusrctrlITEM.Name = "pnlusrctrlITEM"
