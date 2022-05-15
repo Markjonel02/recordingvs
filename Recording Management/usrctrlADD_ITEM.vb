@@ -24,9 +24,11 @@
         If TXTSEARCH.Text = "" Then
             TblstockaddedBindingSource.Filter = Nothing
             TblitemsBindingSource.Filter = Nothing
+            chkeclearsearch.Visible = False
         Else
             TblitemsBindingSource.Filter = "itemname like '%" + TXTSEARCH.Text + "%' "
             TblstockaddedBindingSource.Filter = "itemname like '%" + TXTSEARCH.Text + "%' "
+            chkeclearsearch.Visible = True
         End If
 
     End Sub
@@ -129,6 +131,15 @@
             dg_refresh()
             clear()
         End If
+
+    End Sub
+
+    Private Sub chkeclearsearch_CheckedChanged(sender As Object, e As EventArgs) Handles chkeclearsearch.CheckedChanged
+        TXTSEARCH.Text = String.Empty
+
+    End Sub
+
+    Private Sub pnlusrctrlAdditem_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 End Class

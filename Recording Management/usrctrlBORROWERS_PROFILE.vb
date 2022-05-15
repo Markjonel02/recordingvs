@@ -56,14 +56,14 @@
         opencon()
         cmd.CommandText = "Select * from tbl_borrower where stud_facultyno = '" & txtSF.Text & "' "
         dr = cmd.ExecuteReader()
-            If dr.HasRows Then
+        If dr.HasRows Then
             MsgBox("Sorry this number already exist!", vbOKOnly + vbCritical, "Error Saving")
             con.Close()
-                txtSF.Text = ""
-                txtSF.Focus()
-                Exit Sub
-            End If
-            con.Close()
+            txtSF.Text = ""
+            txtSF.Focus()
+            Exit Sub
+        End If
+        con.Close()
 
         'Saving code
         opencon()
@@ -186,5 +186,7 @@
         End If
     End Sub
 
+    Private Sub Guna2ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CBOBORR.SelectedIndexChanged
 
+    End Sub
 End Class

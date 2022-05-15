@@ -23,11 +23,11 @@ Partial Class UsrctrlWelcome
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.lblgreet = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.lblpara = New System.Windows.Forms.Label()
         Me.lblabout = New System.Windows.Forms.Label()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.pics = New System.Windows.Forms.PictureBox()
+        Me.lblgreet = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2GradientPanel1.SuspendLayout()
         CType(Me.pics, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -46,17 +46,6 @@ Partial Class UsrctrlWelcome
         Me.Guna2GradientPanel1.ShadowDecoration.Parent = Me.Guna2GradientPanel1
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(421, 500)
         Me.Guna2GradientPanel1.TabIndex = 0
-        '
-        'lblgreet
-        '
-        Me.lblgreet.AutoSize = False
-        Me.lblgreet.BackColor = System.Drawing.Color.Transparent
-        Me.lblgreet.Font = New System.Drawing.Font("MS Reference Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblgreet.Location = New System.Drawing.Point(32, 312)
-        Me.lblgreet.Name = "lblgreet"
-        Me.lblgreet.Size = New System.Drawing.Size(356, 50)
-        Me.lblgreet.TabIndex = 5
-        Me.lblgreet.Text = "Welcome To Our Project"
         '
         'lblpara
         '
@@ -97,6 +86,17 @@ Partial Class UsrctrlWelcome
         Me.pics.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pics.TabIndex = 4
         Me.pics.TabStop = False
+        '
+        'lblgreet
+        '
+        Me.lblgreet.AutoSize = False
+        Me.lblgreet.BackColor = System.Drawing.Color.Transparent
+        Me.lblgreet.Font = New System.Drawing.Font("MS Reference Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblgreet.Location = New System.Drawing.Point(32, 312)
+        Me.lblgreet.Name = "lblgreet"
+        Me.lblgreet.Size = New System.Drawing.Size(356, 50)
+        Me.lblgreet.TabIndex = 5
+        Me.lblgreet.Text = "Welcome To Our Project"
         '
         'UsrctrlWelcome
         '

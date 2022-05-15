@@ -141,6 +141,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>record_management_systemDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UsrCrlforgotpass.Designer.vb">
+      <DependentUpon>UsrCrlforgotpass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UsrCrlforgotpass.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="usrcrtlITEM1.Designer.vb">
       <DependentUpon>usrcrtlITEM1.vb</DependentUpon>
     </Compile>
@@ -183,6 +189,12 @@
     <Compile Include="usrctrlREPORTS.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="UsrCtrlReturnitems.Designer.vb">
+      <DependentUpon>UsrCtrlReturnitems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UsrCtrlReturnitems.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="usrctrlSETTINGS.Designer.vb">
       <DependentUpon>usrctrlSETTINGS.vb</DependentUpon>
     </Compile>
@@ -211,9 +223,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsrCrlforgotpass.resx">
+      <DependentUpon>UsrCrlforgotpass.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usrcrtlITEM1.resx">
       <DependentUpon>usrcrtlITEM1.vb</DependentUpon>
@@ -235,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrlREPORTS.resx">
       <DependentUpon>usrctrlREPORTS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsrCtrlReturnitems.resx">
+      <DependentUpon>UsrCtrlReturnitems.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usrctrlSETTINGS.resx">
       <DependentUpon>usrctrlSETTINGS.vb</DependentUpon>
@@ -271,40 +289,6 @@
     <None Include="record_management_systemDataSet.xss">
       <DependentUpon>record_management_systemDataSet.xsd</DependentUpon>
     </None>
-    <None Include="Resources\user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\invisible.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\visible-opened-eye-interface-option.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\University_of_Rizal_System-logo-4227AA5058-seeklogo.com.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\list.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hacker.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\workplace.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\left.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\padlock.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\profile-user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user %281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -319,88 +303,103 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\power-off.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\facebook %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\instagram.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\borrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dashboard.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\library.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\monitor.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\open-book.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\return.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\arrow-up.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\down-arrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\urs.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clock.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\alarm-clock.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\password.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\plus %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\plus %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\plus.png" />
+    <None Include="Resources\cross.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\edit.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\facade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\floppy-disk.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cross.png" />
+    <None Include="Resources\hacker.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\trash.png" />
+    <None Include="Resources\instagram.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user main.png" />
+    <None Include="Resources\invisible.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user %283%29.png" />
+    <None Include="Resources\left.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user %282%29.png" />
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-off.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\profile.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\facade.jpg" />
+    <None Include="Resources\University_of_Rizal_System-logo-4227AA5058-seeklogo.com.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\magnifier.png" />
+    <None Include="Resources\user %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visible-opened-eye-interface-option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workplace.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technical-support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online-security.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

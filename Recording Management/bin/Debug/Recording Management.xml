@@ -22,42 +22,22 @@ Recording Management
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:Recording_Management.My.Resources.Resources._return">
+<member name="P:Recording_Management.My.Resources.Resources.back_arrow">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Recording_Management.My.Resources.Resources.alarm_clock">
+<member name="P:Recording_Management.My.Resources.Resources.business_report">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Recording_Management.My.Resources.Resources.arrow_up">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Recording_Management.My.Resources.Resources.borrow">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Recording_Management.My.Resources.Resources.clock">
+<member name="P:Recording_Management.My.Resources.Resources.cart">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:Recording_Management.My.Resources.Resources.cross">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Recording_Management.My.Resources.Resources.dashboard">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Recording_Management.My.Resources.Resources.down_arrow">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -97,17 +77,27 @@ Recording Management
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Recording_Management.My.Resources.Resources.item">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Recording_Management.My.Resources.Resources.left">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Recording_Management.My.Resources.Resources.library">
+<member name="P:Recording_Management.My.Resources.Resources.lock">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Recording_Management.My.Resources.Resources.list">
+<member name="P:Recording_Management.My.Resources.Resources.logout">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Recording_Management.My.Resources.Resources.logout__1_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -122,12 +112,7 @@ Recording Management
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Recording_Management.My.Resources.Resources.open_book">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Recording_Management.My.Resources.Resources.padlock">
+<member name="P:Recording_Management.My.Resources.Resources.online_security">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -162,12 +147,22 @@ Recording Management
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Recording_Management.My.Resources.Resources.profile_user">
+<member name="P:Recording_Management.My.Resources.Resources.report">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Recording_Management.My.Resources.Resources.trash">
+<member name="P:Recording_Management.My.Resources.Resources.technical_support">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Recording_Management.My.Resources.Resources.transaction">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Recording_Management.My.Resources.Resources.trash__1_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -177,37 +172,7 @@ Recording Management
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Recording_Management.My.Resources.Resources.urs">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Recording_Management.My.Resources.Resources.user">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Recording_Management.My.Resources.Resources.user__1_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Recording_Management.My.Resources.Resources.user__2_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Recording_Management.My.Resources.Resources.user__3_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Recording_Management.My.Resources.Resources.user_main">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Recording_Management.My.Resources.Resources.user1">
+<member name="P:Recording_Management.My.Resources.Resources.user__4_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -247,7 +212,32 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_borrowerDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction3DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction4DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_addtocartDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -272,7 +262,32 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_borrowerRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction3Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction4Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_addtocartRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -297,7 +312,32 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_borrowerRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction3RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_transaction4RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_addtocartRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
@@ -322,7 +362,32 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transaction1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transaction2TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
 <member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_borrowerTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transaction3TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transaction4TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_addtocartTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

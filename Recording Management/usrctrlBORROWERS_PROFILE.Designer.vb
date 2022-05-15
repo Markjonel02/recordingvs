@@ -23,11 +23,11 @@ Partial Class usrctrlBORROWERS_PROFILE
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnlusrBORR = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.DGV_borr = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -47,7 +47,6 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.TXTCN = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.CBOBORR = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -55,6 +54,7 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.TXTFNAME = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtSF = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Tbl_borrowerTableAdapter = New Recording_Management.record_management_systemDataSetTableAdapters.tbl_borrowerTableAdapter()
+        Me.CBOBORR = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.pnlusrBORR.SuspendLayout()
         CType(Me.DGV_borr, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblborrowerBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,6 +63,7 @@ Partial Class usrctrlBORROWERS_PROFILE
         '
         'pnlusrBORR
         '
+        Me.pnlusrBORR.Controls.Add(Me.CBOBORR)
         Me.pnlusrBORR.Controls.Add(Me.DGV_borr)
         Me.pnlusrBORR.Controls.Add(Me.Guna2HtmlLabel7)
         Me.pnlusrBORR.Controls.Add(Me.TXTMID)
@@ -73,7 +74,6 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.pnlusrBORR.Controls.Add(Me.Guna2HtmlLabel6)
         Me.pnlusrBORR.Controls.Add(Me.TXTCN)
         Me.pnlusrBORR.Controls.Add(Me.Guna2HtmlLabel5)
-        Me.pnlusrBORR.Controls.Add(Me.CBOBORR)
         Me.pnlusrBORR.Controls.Add(Me.Guna2HtmlLabel3)
         Me.pnlusrBORR.Controls.Add(Me.Guna2HtmlLabel2)
         Me.pnlusrBORR.Controls.Add(Me.Guna2HtmlLabel1)
@@ -96,53 +96,53 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.DGV_borr.AllowUserToDeleteRows = False
         Me.DGV_borr.AllowUserToResizeColumns = False
         Me.DGV_borr.AllowUserToResizeRows = False
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        Me.DGV_borr.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black
+        Me.DGV_borr.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle16
         Me.DGV_borr.AutoGenerateColumns = False
         Me.DGV_borr.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DGV_borr.BackgroundColor = System.Drawing.Color.White
         Me.DGV_borr.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DGV_borr.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DGV_borr.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGV_borr.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_borr.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
         Me.DGV_borr.ColumnHeadersHeight = 17
         Me.DGV_borr.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.FirstnameDataGridViewTextBoxColumn, Me.MiddlenameDataGridViewTextBoxColumn, Me.LastnameDataGridViewTextBoxColumn, Me.BorrowertypeDataGridViewTextBoxColumn, Me.ContactnumberDataGridViewTextBoxColumn})
         Me.DGV_borr.DataSource = Me.TblborrowerBindingSource
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DGV_borr.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_borr.DefaultCellStyle = DataGridViewCellStyle18
         Me.DGV_borr.EnableHeadersVisualStyles = False
         Me.DGV_borr.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.DGV_borr.Location = New System.Drawing.Point(50, 229)
         Me.DGV_borr.Name = "DGV_borr"
         Me.DGV_borr.ReadOnly = True
         Me.DGV_borr.RightToLeft = System.Windows.Forms.RightToLeft.No
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DGV_borr.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_borr.RowHeadersDefaultCellStyle = DataGridViewCellStyle19
         Me.DGV_borr.RowHeadersVisible = False
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black
-        Me.DGV_borr.RowsDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black
+        Me.DGV_borr.RowsDefaultCellStyle = DataGridViewCellStyle20
         Me.DGV_borr.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.DGV_borr.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DGV_borr.Size = New System.Drawing.Size(737, 244)
@@ -355,7 +355,7 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.btnAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.btnAdd.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.btnAdd.HoverState.Parent = Me.btnAdd
-        Me.btnAdd.Image = Global.Recording_Management.My.Resources.Resources.plus__2_
+        Me.btnAdd.Image = Global.Recording_Management.My.Resources.Resources.plus
         Me.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnAdd.ImageOffset = New System.Drawing.Point(10, 0)
         Me.btnAdd.ImageSize = New System.Drawing.Size(25, 25)
@@ -413,29 +413,6 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(85, 17)
         Me.Guna2HtmlLabel5.TabIndex = 9
         Me.Guna2HtmlLabel5.Text = "Borrowers Type"
-        '
-        'CBOBORR
-        '
-        Me.CBOBORR.AutoRoundedCorners = True
-        Me.CBOBORR.BackColor = System.Drawing.Color.Transparent
-        Me.CBOBORR.BorderRadius = 17
-        Me.CBOBORR.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CBOBORR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CBOBORR.FocusedColor = System.Drawing.Color.Empty
-        Me.CBOBORR.FocusedState.Parent = Me.CBOBORR
-        Me.CBOBORR.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.CBOBORR.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.CBOBORR.FormattingEnabled = True
-        Me.CBOBORR.HoverState.Parent = Me.CBOBORR
-        Me.CBOBORR.ItemHeight = 30
-        Me.CBOBORR.Items.AddRange(New Object() {"Student", "Faculty"})
-        Me.CBOBORR.ItemsAppearance.Parent = Me.CBOBORR
-        Me.CBOBORR.Location = New System.Drawing.Point(151, 103)
-        Me.CBOBORR.Name = "CBOBORR"
-        Me.CBOBORR.ShadowDecoration.Parent = Me.CBOBORR
-        Me.CBOBORR.Size = New System.Drawing.Size(253, 36)
-        Me.CBOBORR.TabIndex = 8
-        Me.CBOBORR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Guna2HtmlLabel3
         '
@@ -552,6 +529,29 @@ Partial Class usrctrlBORROWERS_PROFILE
         '
         Me.Tbl_borrowerTableAdapter.ClearBeforeFill = True
         '
+        'CBOBORR
+        '
+        Me.CBOBORR.AutoRoundedCorners = True
+        Me.CBOBORR.BackColor = System.Drawing.Color.Transparent
+        Me.CBOBORR.BorderRadius = 17
+        Me.CBOBORR.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CBOBORR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CBOBORR.FocusedColor = System.Drawing.Color.Empty
+        Me.CBOBORR.FocusedState.Parent = Me.CBOBORR
+        Me.CBOBORR.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.CBOBORR.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.CBOBORR.FormattingEnabled = True
+        Me.CBOBORR.HoverState.Parent = Me.CBOBORR
+        Me.CBOBORR.ItemHeight = 30
+        Me.CBOBORR.Items.AddRange(New Object() {"Faculty", "Student"})
+        Me.CBOBORR.ItemsAppearance.Parent = Me.CBOBORR
+        Me.CBOBORR.Location = New System.Drawing.Point(160, 106)
+        Me.CBOBORR.Name = "CBOBORR"
+        Me.CBOBORR.ShadowDecoration.Parent = Me.CBOBORR
+        Me.CBOBORR.Size = New System.Drawing.Size(234, 36)
+        Me.CBOBORR.TabIndex = 23
+        Me.CBOBORR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'usrctrlBORROWERS_PROFILE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -579,7 +579,6 @@ Partial Class usrctrlBORROWERS_PROFILE
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents TXTCN As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents CBOBORR As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents btnCancel As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents btnEdit As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents btnSave As Guna.UI2.WinForms.Guna2GradientButton
@@ -597,4 +596,5 @@ Partial Class usrctrlBORROWERS_PROFILE
     Friend WithEvents TblborrowerBindingSource As BindingSource
     Friend WithEvents Record_management_systemDataSet As record_management_systemDataSet
     Friend WithEvents Tbl_borrowerTableAdapter As record_management_systemDataSetTableAdapters.tbl_borrowerTableAdapter
+    Friend WithEvents CBOBORR As Guna.UI2.WinForms.Guna2ComboBox
 End Class

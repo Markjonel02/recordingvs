@@ -411,7 +411,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.btnAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.btnAdd.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.btnAdd.HoverState.Parent = Me.btnAdd
-        Me.btnAdd.Image = Global.Recording_Management.My.Resources.Resources.plus__2_
+        Me.btnAdd.Image = Global.Recording_Management.My.Resources.Resources.plus
         Me.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnAdd.ImageOffset = New System.Drawing.Point(10, 0)
         Me.btnAdd.ImageSize = New System.Drawing.Size(25, 25)
@@ -508,7 +508,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.TXTPASS.FocusedState.Parent = Me.TXTPASS
         Me.TXTPASS.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TXTPASS.HoverState.Parent = Me.TXTPASS
-        Me.TXTPASS.IconLeft = Global.Recording_Management.My.Resources.Resources.padlock
+        Me.TXTPASS.IconLeft = Global.Recording_Management.My.Resources.Resources.lock
         Me.TXTPASS.IconLeftOffset = New System.Drawing.Point(5, 0)
         Me.TXTPASS.Location = New System.Drawing.Point(527, 18)
         Me.TXTPASS.Name = "TXTPASS"
@@ -538,7 +538,7 @@ Partial Class UsrctrlMANAGE_ACCOUNT
         Me.TXTUSN.FocusedState.Parent = Me.TXTUSN
         Me.TXTUSN.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TXTUSN.HoverState.Parent = Me.TXTUSN
-        Me.TXTUSN.IconLeft = Global.Recording_Management.My.Resources.Resources.user1
+        Me.TXTUSN.IconLeft = Global.Recording_Management.My.Resources.Resources.user__4_
         Me.TXTUSN.IconLeftCursor = System.Windows.Forms.Cursors.No
         Me.TXTUSN.IconLeftOffset = New System.Drawing.Point(5, 0)
         Me.TXTUSN.Location = New System.Drawing.Point(98, 18)

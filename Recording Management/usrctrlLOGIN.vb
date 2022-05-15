@@ -1,42 +1,58 @@
 ﻿Public Class usrctrlLOGIN
     Dim astat As String = "Active"
+    Dim admin As String = "Gso"
+    Dim Staff As String = "Staff"
 
-    Dim n
+    Private Sub usrctrlLOGIN_Invalidated(sender As Object, e As InvalidateEventArgs) Handles Me.Invalidated
+
+    End Sub
     Private Sub disable()
-        FRMMAINMENU.BTNADDITEM.Enabled = False
-        FRMMAINMENU.BTNITEM.Enabled = False
-        FRMMAINMENU.BTNMANAGE.Enabled = False
-        FRMMAINMENU.BTNSYSTEMSET.Enabled = False
+        FRMMAINMENU.BTNADDITEM.Visible = False
+        FRMMAINMENU.BTNITEM.Visible = False
+        FRMMAINMENU.BTNMANAGE.Visible = False
+        FRMMAINMENU.BTNSYSTEMSET.Visible = False
+
+        FRMMAINMENU.BTNBORRPROF.Location = New Point(0, 254)
+        FRMMAINMENU.BTNTRANSAC.Location = New Point(0, 292)
+        FRMMAINMENU.BTNREP.Location = New Point(0, 330)
+
     End Sub
 
 
     Private Sub BTNLOGIN_Click(sender As Object, e As EventArgs) Handles BTNLOGIN.Click
-        opencon()
-        cmd.CommandText = "Select * from tbl_user where username = '" & TXTUSN.Text & "' and password = '" & TXTPASS.Text & "' and status = '" & astat & "'"
-        cmd.ExecuteNonQuery()
-        dr = cmd.ExecuteReader
-        If dr.HasRows Then
-            dr.Read()
-
-            If dr(3) = "gso" Then
-                FRMMAINMENU.lblgreet.Text = "gso"
-                FRMMAINMENU.Show()
-                FRMLOGIN.pnlmainpanel.Dock = DockStyle.None
-                Me.Controls.Clear()
-                n = Nothing
-            ElseIf dr(3) = "staff" Then
-                FRMMAINMENU.lblgreet.Text = "staff"
-                FRMMAINMENU.Show()
-                disable()
-
-            End If
-        Else
-            MsgBox("Sorry wrong username and password", vbOKOnly + vbCritical, "Error login")
-            TXTUSN.Text = String.Empty
-            TXTPASS.Text = String.Empty
+        If TXTUSN.Text = "" Or TXTPASS.Text = "" Then
+            MsgBox("all fields are required")
+            TXTPASS.Text=""
+            TXTUSN.Text = ""
             TXTUSN.Focus()
+        Else
+            opencon()
+            cmd.CommandText = "Select * from tbl_user where username = '" & TXTUSN.Text & "' and password = '" & TXTPASS.Text & "' and status = '" & astat & "'"
+            cmd.ExecuteNonQuery()
+            dr = cmd.ExecuteReader
+            If dr.HasRows Then
+                dr.Read()
+
+                If dr(3) = admin Then
+                    FRMMAINMENU.lblgreet.Text = "GSO"
+                    FRMMAINMENU.Show()
+
+
+                ElseIf dr(3) = Staff Then
+                    FRMMAINMENU.lblgreet.Text = "STAFF"
+                    FRMMAINMENU.Show()
+                    disable()
+
+                End If
+            Else
+                MsgBox("Sorry wrong username and password", vbOKOnly + vbCritical, "Error login")
+                TXTUSN.Text = String.Empty
+                TXTPASS.Text = String.Empty
+                TXTUSN.Focus()
+            End If
+            con.Close()
         End If
-        con.Close()
+
 
     End Sub
 
@@ -48,6 +64,16 @@
         End If
     End Sub
 
+    Private Sub lblforgot_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
+        'Dim ctrldash As Integer
+        'For ctrldash = 0 To 0
+        '    pnlmainmenu.Controls.RemoveAt(ctrldash)
+        'Next
+        'Dim D As New usrctrlDashboard()
+        'D.Parent = pnlmainmenu
+        'D.Show()
+        'D.Dock = DockStyle.Fill
 
+    End Sub
 End Class
 

@@ -50,6 +50,11 @@ Partial Class usrctrlADD_ITEM
         Me.Record_management_systemDataSet = New Recording_Management.record_management_systemDataSet()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.ItemnameDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StockaddedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DateaddedDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemcodeDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TblstockaddedBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TXTAVS = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TXTADDED = New Guna.UI2.WinForms.Guna2TextBox()
@@ -61,11 +66,7 @@ Partial Class usrctrlADD_ITEM
         Me.TXTITCODE = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Tbl_itemsTableAdapter = New Recording_Management.record_management_systemDataSetTableAdapters.tbl_itemsTableAdapter()
         Me.Tbl_stockaddedTableAdapter = New Recording_Management.record_management_systemDataSetTableAdapters.tbl_stockaddedTableAdapter()
-        Me.TblstockaddedBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ItemnameDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.StockaddedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DateaddedDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ItemcodeDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.chkeclearsearch = New Guna.UI2.WinForms.Guna2ImageCheckBox()
         Me.pnlusrctrlAdditem.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -79,6 +80,7 @@ Partial Class usrctrlADD_ITEM
         '
         'pnlusrctrlAdditem
         '
+        Me.pnlusrctrlAdditem.Controls.Add(Me.chkeclearsearch)
         Me.pnlusrctrlAdditem.Controls.Add(Me.TXTDATEADDED)
         Me.pnlusrctrlAdditem.Controls.Add(Me.btnCancel)
         Me.pnlusrctrlAdditem.Controls.Add(Me.btnAdd)
@@ -175,7 +177,7 @@ Partial Class usrctrlADD_ITEM
         Me.btnAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.btnAdd.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.btnAdd.HoverState.Parent = Me.btnAdd
-        Me.btnAdd.Image = Global.Recording_Management.My.Resources.Resources.plus__2_
+        Me.btnAdd.Image = Global.Recording_Management.My.Resources.Resources.plus
         Me.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnAdd.ImageOffset = New System.Drawing.Point(10, 0)
         Me.btnAdd.ImageSize = New System.Drawing.Size(25, 25)
@@ -445,6 +447,39 @@ Partial Class usrctrlADD_ITEM
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
+        'ItemnameDataGridViewTextBoxColumn1
+        '
+        Me.ItemnameDataGridViewTextBoxColumn1.DataPropertyName = "itemname"
+        Me.ItemnameDataGridViewTextBoxColumn1.HeaderText = "itemname"
+        Me.ItemnameDataGridViewTextBoxColumn1.Name = "ItemnameDataGridViewTextBoxColumn1"
+        Me.ItemnameDataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'StockaddedDataGridViewTextBoxColumn
+        '
+        Me.StockaddedDataGridViewTextBoxColumn.DataPropertyName = "stock_added"
+        Me.StockaddedDataGridViewTextBoxColumn.HeaderText = "stock_added"
+        Me.StockaddedDataGridViewTextBoxColumn.Name = "StockaddedDataGridViewTextBoxColumn"
+        Me.StockaddedDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DateaddedDataGridViewTextBoxColumn1
+        '
+        Me.DateaddedDataGridViewTextBoxColumn1.DataPropertyName = "date_added"
+        Me.DateaddedDataGridViewTextBoxColumn1.HeaderText = "date_added"
+        Me.DateaddedDataGridViewTextBoxColumn1.Name = "DateaddedDataGridViewTextBoxColumn1"
+        Me.DateaddedDataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'ItemcodeDataGridViewTextBoxColumn2
+        '
+        Me.ItemcodeDataGridViewTextBoxColumn2.DataPropertyName = "item_code"
+        Me.ItemcodeDataGridViewTextBoxColumn2.HeaderText = "item_code"
+        Me.ItemcodeDataGridViewTextBoxColumn2.Name = "ItemcodeDataGridViewTextBoxColumn2"
+        Me.ItemcodeDataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'TblstockaddedBindingSource
+        '
+        Me.TblstockaddedBindingSource.DataMember = "tbl_stockadded"
+        Me.TblstockaddedBindingSource.DataSource = Me.Record_management_systemDataSet
+        '
         'TXTAVS
         '
         Me.TXTAVS.AutoRoundedCorners = True
@@ -625,38 +660,19 @@ Partial Class usrctrlADD_ITEM
         '
         Me.Tbl_stockaddedTableAdapter.ClearBeforeFill = True
         '
-        'TblstockaddedBindingSource
+        'chkeclearsearch
         '
-        Me.TblstockaddedBindingSource.DataMember = "tbl_stockadded"
-        Me.TblstockaddedBindingSource.DataSource = Me.Record_management_systemDataSet
-        '
-        'ItemnameDataGridViewTextBoxColumn1
-        '
-        Me.ItemnameDataGridViewTextBoxColumn1.DataPropertyName = "itemname"
-        Me.ItemnameDataGridViewTextBoxColumn1.HeaderText = "itemname"
-        Me.ItemnameDataGridViewTextBoxColumn1.Name = "ItemnameDataGridViewTextBoxColumn1"
-        Me.ItemnameDataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'StockaddedDataGridViewTextBoxColumn
-        '
-        Me.StockaddedDataGridViewTextBoxColumn.DataPropertyName = "stock_added"
-        Me.StockaddedDataGridViewTextBoxColumn.HeaderText = "stock_added"
-        Me.StockaddedDataGridViewTextBoxColumn.Name = "StockaddedDataGridViewTextBoxColumn"
-        Me.StockaddedDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'DateaddedDataGridViewTextBoxColumn1
-        '
-        Me.DateaddedDataGridViewTextBoxColumn1.DataPropertyName = "date_added"
-        Me.DateaddedDataGridViewTextBoxColumn1.HeaderText = "date_added"
-        Me.DateaddedDataGridViewTextBoxColumn1.Name = "DateaddedDataGridViewTextBoxColumn1"
-        Me.DateaddedDataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'ItemcodeDataGridViewTextBoxColumn2
-        '
-        Me.ItemcodeDataGridViewTextBoxColumn2.DataPropertyName = "item_code"
-        Me.ItemcodeDataGridViewTextBoxColumn2.HeaderText = "item_code"
-        Me.ItemcodeDataGridViewTextBoxColumn2.Name = "ItemcodeDataGridViewTextBoxColumn2"
-        Me.ItemcodeDataGridViewTextBoxColumn2.ReadOnly = True
+        Me.chkeclearsearch.BackColor = System.Drawing.Color.Transparent
+        Me.chkeclearsearch.CheckedState.Image = Global.Recording_Management.My.Resources.Resources.cross
+        Me.chkeclearsearch.CheckedState.Parent = Me.chkeclearsearch
+        Me.chkeclearsearch.HoverState.Parent = Me.chkeclearsearch
+        Me.chkeclearsearch.Image = Global.Recording_Management.My.Resources.Resources.cross
+        Me.chkeclearsearch.Location = New System.Drawing.Point(751, 130)
+        Me.chkeclearsearch.Name = "chkeclearsearch"
+        Me.chkeclearsearch.PressedState.Parent = Me.chkeclearsearch
+        Me.chkeclearsearch.Size = New System.Drawing.Size(31, 23)
+        Me.chkeclearsearch.TabIndex = 1
+        Me.chkeclearsearch.UseTransparentBackground = True
         '
         'usrctrlADD_ITEM
         '
@@ -714,4 +730,5 @@ Partial Class usrctrlADD_ITEM
     Friend WithEvents DateaddedDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents ItemcodeDataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents TblstockaddedBindingSource As BindingSource
+    Friend WithEvents chkeclearsearch As Guna.UI2.WinForms.Guna2ImageCheckBox
 End Class

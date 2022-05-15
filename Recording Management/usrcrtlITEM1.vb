@@ -11,7 +11,7 @@ Public Class usrcrtlITEM1
         txtIC.Enabled = False
         txtIN.Enabled = False
         cboitem.Enabled = False
-        DtAdded.Enabled = False
+
     End Sub
 
     Private Sub function_enabled()
@@ -22,7 +22,7 @@ Public Class usrcrtlITEM1
         txtIN.Enabled = True
         txtas.Enabled = True
         cboitem.Enabled = True
-        DtAdded.Enabled = True
+
     End Sub
 
 
@@ -72,13 +72,14 @@ Public Class usrcrtlITEM1
         opencon()
         cmd.CommandText = "insert into tbl_items values(@ic, @in, @icat, @as, @add)"
         Dim AvailStock = Val(txtas.Text)
+        Dim dateadded = Format(Date.Now, "dd MMM yyyy")
         With cmd.Parameters
             .Clear()
             .AddWithValue("ic", txtIC.Text)
             .AddWithValue("in", txtIN.Text)
             .AddWithValue("icat", cboitem.Text)
             .AddWithValue("as", AvailStock)
-            .AddWithValue("add", DtAdded.Text)
+            .AddWithValue("add", dateadded)
         End With
         cmd.ExecuteNonQuery()
         con.Close()
@@ -160,7 +161,7 @@ Public Class usrcrtlITEM1
             cboitem.SelectedIndex = -1
             DGV_Refresh()
             funtion_disabled()
-            MsgBox("Item has been Deleted", vbOKOnly + vbInformation)
+            MsgBox("Item Sucessfully deleted", vbOKOnly + vbInformation)
         End If
 
     End Sub
@@ -173,7 +174,7 @@ Public Class usrcrtlITEM1
             txtIN.Text = row.Cells(1).Value
             txtas.Text = row.Cells(3).Value
             cboitem.Text = row.Cells(2).Value
-            DtAdded.Text = row.Cells(4).Value
+
             txtIC.Enabled = False
             function_enabled()
             btnEdit.Enabled = True

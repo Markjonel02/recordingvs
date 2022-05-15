@@ -22,24 +22,25 @@ Partial Class FRMLOGIN
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRMLOGIN))
         Me.pnlsidenav = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Me.picsurs = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.BTNINSTA = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.btnback = New Bunifu.Framework.UI.BunifuImageButton()
+        Me.BTNFB = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.btnsignin = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.PNLLOGMAIN = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.pnlmainpanel = New System.Windows.Forms.Panel()
         Me.lblpara = New System.Windows.Forms.Label()
         Me.lblabout = New System.Windows.Forms.Label()
         Me.lblgreet = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.picsurs = New Guna.UI2.WinForms.Guna2CirclePictureBox()
-        Me.BTNINSTA = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.btnback = New Bunifu.Framework.UI.BunifuImageButton()
-        Me.BTNFB = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.pics = New System.Windows.Forms.PictureBox()
         Me.pnlsidenav.SuspendLayout()
-        Me.PNLLOGMAIN.SuspendLayout()
-        Me.pnlmainpanel.SuspendLayout()
         CType(Me.picsurs, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnback, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PNLLOGMAIN.SuspendLayout()
+        Me.pnlmainpanel.SuspendLayout()
         CType(Me.pics, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -62,16 +63,99 @@ Partial Class FRMLOGIN
         Me.pnlsidenav.Size = New System.Drawing.Size(187, 500)
         Me.pnlsidenav.TabIndex = 25
         '
+        'picsurs
+        '
+        Me.picsurs.BackColor = System.Drawing.Color.Transparent
+        Me.picsurs.Image = Global.Recording_Management.My.Resources.Resources.University_of_Rizal_System_logo_4227AA5058_seeklogo_com
+        Me.picsurs.Location = New System.Drawing.Point(46, 59)
+        Me.picsurs.Name = "picsurs"
+        Me.picsurs.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.picsurs.ShadowDecoration.Parent = Me.picsurs
+        Me.picsurs.Size = New System.Drawing.Size(101, 115)
+        Me.picsurs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picsurs.TabIndex = 4
+        Me.picsurs.TabStop = False
+        Me.picsurs.Visible = False
+        '
         'Guna2HtmlLabel1
         '
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("MS Reference Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.MistyRose
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(50, 303)
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(41, 299)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(97, 18)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(109, 21)
         Me.Guna2HtmlLabel1.TabIndex = 30
         Me.Guna2HtmlLabel1.Text = "Follow us on "
+        '
+        'BTNINSTA
+        '
+        Me.BTNINSTA.AutoRoundedCorners = True
+        Me.BTNINSTA.BackColor = System.Drawing.Color.Transparent
+        Me.BTNINSTA.BorderRadius = 20
+        Me.BTNINSTA.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.BTNINSTA.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.BTNINSTA.CheckedState.Parent = Me.BTNINSTA
+        Me.BTNINSTA.CustomBorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BTNINSTA.CustomImages.Parent = Me.BTNINSTA
+        Me.BTNINSTA.FillColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.BTNINSTA.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(233, Byte), Integer))
+        Me.BTNINSTA.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BTNINSTA.ForeColor = System.Drawing.Color.White
+        Me.BTNINSTA.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.BTNINSTA.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.BTNINSTA.HoverState.Parent = Me.BTNINSTA
+        Me.BTNINSTA.Image = Global.Recording_Management.My.Resources.Resources.instagram
+        Me.BTNINSTA.ImageOffset = New System.Drawing.Point(-10, 0)
+        Me.BTNINSTA.Location = New System.Drawing.Point(15, 393)
+        Me.BTNINSTA.Name = "BTNINSTA"
+        Me.BTNINSTA.PressedColor = System.Drawing.Color.Aqua
+        Me.BTNINSTA.ShadowDecoration.Parent = Me.BTNINSTA
+        Me.BTNINSTA.Size = New System.Drawing.Size(158, 42)
+        Me.BTNINSTA.TabIndex = 29
+        Me.BTNINSTA.Text = "Instagram"
+        Me.BTNINSTA.TextOffset = New System.Drawing.Point(-2, 0)
+        '
+        'btnback
+        '
+        Me.btnback.BackColor = System.Drawing.Color.Transparent
+        Me.btnback.Image = CType(resources.GetObject("btnback.Image"), System.Drawing.Image)
+        Me.btnback.ImageActive = Nothing
+        Me.btnback.Location = New System.Drawing.Point(17, 12)
+        Me.btnback.Name = "btnback"
+        Me.btnback.Size = New System.Drawing.Size(32, 29)
+        Me.btnback.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnback.TabIndex = 28
+        Me.btnback.TabStop = False
+        Me.btnback.Zoom = 10
+        '
+        'BTNFB
+        '
+        Me.BTNFB.AutoRoundedCorners = True
+        Me.BTNFB.BackColor = System.Drawing.Color.Transparent
+        Me.BTNFB.BorderRadius = 20
+        Me.BTNFB.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.BTNFB.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.BTNFB.CheckedState.Parent = Me.BTNFB
+        Me.BTNFB.CustomBorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BTNFB.CustomImages.Parent = Me.BTNFB
+        Me.BTNFB.FillColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.BTNFB.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(233, Byte), Integer))
+        Me.BTNFB.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BTNFB.ForeColor = System.Drawing.Color.White
+        Me.BTNFB.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.BTNFB.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.BTNFB.HoverState.Parent = Me.BTNFB
+        Me.BTNFB.Image = Global.Recording_Management.My.Resources.Resources.facebook__1_
+        Me.BTNFB.ImageOffset = New System.Drawing.Point(-10, 0)
+        Me.BTNFB.Location = New System.Drawing.Point(15, 332)
+        Me.BTNFB.Name = "BTNFB"
+        Me.BTNFB.PressedColor = System.Drawing.Color.Aqua
+        Me.BTNFB.ShadowDecoration.Parent = Me.BTNFB
+        Me.BTNFB.Size = New System.Drawing.Size(158, 42)
+        Me.BTNFB.TabIndex = 27
+        Me.BTNFB.Text = "Facebook"
+        Me.BTNFB.TextOffset = New System.Drawing.Point(-2, 0)
         '
         'btnsignin
         '
@@ -88,7 +172,7 @@ Partial Class FRMLOGIN
         Me.btnsignin.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.btnsignin.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.btnsignin.HoverState.Parent = Me.btnsignin
-        Me.btnsignin.Location = New System.Drawing.Point(17, 236)
+        Me.btnsignin.Location = New System.Drawing.Point(15, 236)
         Me.btnsignin.Name = "btnsignin"
         Me.btnsignin.PressedColor = System.Drawing.Color.Aqua
         Me.btnsignin.ShadowDecoration.Parent = Me.btnsignin
@@ -124,6 +208,7 @@ Partial Class FRMLOGIN
         '
         'lblpara
         '
+        Me.lblpara.Font = New System.Drawing.Font("Mongolian Baiti", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblpara.Location = New System.Drawing.Point(36, 358)
         Me.lblpara.Name = "lblpara"
         Me.lblpara.Size = New System.Drawing.Size(335, 63)
@@ -135,9 +220,10 @@ Partial Class FRMLOGIN
         'lblabout
         '
         Me.lblabout.AutoSize = True
-        Me.lblabout.Location = New System.Drawing.Point(180, 331)
+        Me.lblabout.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblabout.Location = New System.Drawing.Point(179, 334)
         Me.lblabout.Name = "lblabout"
-        Me.lblabout.Size = New System.Drawing.Size(49, 13)
+        Me.lblabout.Size = New System.Drawing.Size(57, 13)
         Me.lblabout.TabIndex = 2
         Me.lblabout.Text = "About us"
         '
@@ -152,92 +238,9 @@ Partial Class FRMLOGIN
         Me.lblgreet.TabIndex = 1
         Me.lblgreet.Text = "Welcome To Our Project"
         '
-        'picsurs
-        '
-        Me.picsurs.BackColor = System.Drawing.Color.Transparent
-        Me.picsurs.Image = Global.Recording_Management.My.Resources.Resources.University_of_Rizal_System_logo_4227AA5058_seeklogo_com
-        Me.picsurs.Location = New System.Drawing.Point(46, 59)
-        Me.picsurs.Name = "picsurs"
-        Me.picsurs.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.picsurs.ShadowDecoration.Parent = Me.picsurs
-        Me.picsurs.Size = New System.Drawing.Size(101, 115)
-        Me.picsurs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picsurs.TabIndex = 4
-        Me.picsurs.TabStop = False
-        Me.picsurs.Visible = False
-        '
-        'BTNINSTA
-        '
-        Me.BTNINSTA.AutoRoundedCorners = True
-        Me.BTNINSTA.BackColor = System.Drawing.Color.Transparent
-        Me.BTNINSTA.BorderRadius = 20
-        Me.BTNINSTA.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.BTNINSTA.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.BTNINSTA.CheckedState.Parent = Me.BTNINSTA
-        Me.BTNINSTA.CustomBorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BTNINSTA.CustomImages.Parent = Me.BTNINSTA
-        Me.BTNINSTA.FillColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.BTNINSTA.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(233, Byte), Integer))
-        Me.BTNINSTA.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.BTNINSTA.ForeColor = System.Drawing.Color.White
-        Me.BTNINSTA.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.BTNINSTA.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.BTNINSTA.HoverState.Parent = Me.BTNINSTA
-        Me.BTNINSTA.Image = Global.Recording_Management.My.Resources.Resources.instagram
-        Me.BTNINSTA.ImageOffset = New System.Drawing.Point(-10, 0)
-        Me.BTNINSTA.Location = New System.Drawing.Point(17, 393)
-        Me.BTNINSTA.Name = "BTNINSTA"
-        Me.BTNINSTA.PressedColor = System.Drawing.Color.Aqua
-        Me.BTNINSTA.ShadowDecoration.Parent = Me.BTNINSTA
-        Me.BTNINSTA.Size = New System.Drawing.Size(158, 42)
-        Me.BTNINSTA.TabIndex = 29
-        Me.BTNINSTA.Text = "Instagram"
-        Me.BTNINSTA.TextOffset = New System.Drawing.Point(-2, 0)
-        '
-        'btnback
-        '
-        Me.btnback.BackColor = System.Drawing.Color.Transparent
-        Me.btnback.Image = Global.Recording_Management.My.Resources.Resources.left
-        Me.btnback.ImageActive = Nothing
-        Me.btnback.Location = New System.Drawing.Point(17, 12)
-        Me.btnback.Name = "btnback"
-        Me.btnback.Size = New System.Drawing.Size(32, 29)
-        Me.btnback.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.btnback.TabIndex = 28
-        Me.btnback.TabStop = False
-        Me.btnback.Zoom = 10
-        '
-        'BTNFB
-        '
-        Me.BTNFB.AutoRoundedCorners = True
-        Me.BTNFB.BackColor = System.Drawing.Color.Transparent
-        Me.BTNFB.BorderRadius = 20
-        Me.BTNFB.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.BTNFB.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.BTNFB.CheckedState.Parent = Me.BTNFB
-        Me.BTNFB.CustomBorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BTNFB.CustomImages.Parent = Me.BTNFB
-        Me.BTNFB.FillColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.BTNFB.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(233, Byte), Integer))
-        Me.BTNFB.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.BTNFB.ForeColor = System.Drawing.Color.White
-        Me.BTNFB.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.BTNFB.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.BTNFB.HoverState.Parent = Me.BTNFB
-        Me.BTNFB.Image = Global.Recording_Management.My.Resources.Resources.facebook__1_
-        Me.BTNFB.ImageOffset = New System.Drawing.Point(-10, 0)
-        Me.BTNFB.Location = New System.Drawing.Point(17, 332)
-        Me.BTNFB.Name = "BTNFB"
-        Me.BTNFB.PressedColor = System.Drawing.Color.Aqua
-        Me.BTNFB.ShadowDecoration.Parent = Me.BTNFB
-        Me.BTNFB.Size = New System.Drawing.Size(158, 42)
-        Me.BTNFB.TabIndex = 27
-        Me.BTNFB.Text = "Facebook"
-        Me.BTNFB.TextOffset = New System.Drawing.Point(-2, 0)
-        '
         'pics
         '
-        Me.pics.Image = Global.Recording_Management.My.Resources.Resources.workplace
+        Me.pics.Image = CType(resources.GetObject("pics.Image"), System.Drawing.Image)
         Me.pics.Location = New System.Drawing.Point(102, 36)
         Me.pics.Name = "pics"
         Me.pics.Size = New System.Drawing.Size(217, 217)
@@ -259,11 +262,11 @@ Partial Class FRMLOGIN
         Me.Text = " "
         Me.pnlsidenav.ResumeLayout(False)
         Me.pnlsidenav.PerformLayout()
+        CType(Me.picsurs, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnback, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PNLLOGMAIN.ResumeLayout(False)
         Me.pnlmainpanel.ResumeLayout(False)
         Me.pnlmainpanel.PerformLayout()
-        CType(Me.picsurs, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.btnback, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pics, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

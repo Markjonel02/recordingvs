@@ -56,8 +56,6 @@ Partial Class usrcrtlITEM1
         Me.btnAdd = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.txtIN = New Guna.UI2.WinForms.Guna2TextBox()
         Me.txtIC = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.DtAdded = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -279,8 +277,6 @@ Partial Class usrcrtlITEM1
         Me.pnlusrctrlITEM.Controls.Add(Me.btnAdd)
         Me.pnlusrctrlITEM.Controls.Add(Me.txtIN)
         Me.pnlusrctrlITEM.Controls.Add(Me.txtIC)
-        Me.pnlusrctrlITEM.Controls.Add(Me.DtAdded)
-        Me.pnlusrctrlITEM.Controls.Add(Me.Label6)
         Me.pnlusrctrlITEM.Controls.Add(Me.Label7)
         Me.pnlusrctrlITEM.Controls.Add(Me.Label8)
         Me.pnlusrctrlITEM.Controls.Add(Me.Label9)
@@ -332,7 +328,7 @@ Partial Class usrcrtlITEM1
         Me.DGV_item.DefaultCellStyle = DataGridViewCellStyle3
         Me.DGV_item.EnableHeadersVisualStyles = False
         Me.DGV_item.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.DGV_item.Location = New System.Drawing.Point(24, 242)
+        Me.DGV_item.Location = New System.Drawing.Point(24, 218)
         Me.DGV_item.Name = "DGV_item"
         Me.DGV_item.ReadOnly = True
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
@@ -462,11 +458,11 @@ Partial Class usrcrtlITEM1
         Me.btnDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.btnDelete.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.btnDelete.HoverState.Parent = Me.btnDelete
-        Me.btnDelete.Image = Global.Recording_Management.My.Resources.Resources.trash
+        Me.btnDelete.Image = Global.Recording_Management.My.Resources.Resources.trash__1_
         Me.btnDelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnDelete.ImageOffset = New System.Drawing.Point(7, 0)
         Me.btnDelete.ImageSize = New System.Drawing.Size(25, 25)
-        Me.btnDelete.Location = New System.Drawing.Point(658, 178)
+        Me.btnDelete.Location = New System.Drawing.Point(658, 152)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.ShadowDecoration.Parent = Me.btnDelete
         Me.btnDelete.Size = New System.Drawing.Size(141, 45)
@@ -493,7 +489,7 @@ Partial Class usrcrtlITEM1
         Me.btnCancel.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnCancel.ImageOffset = New System.Drawing.Point(7, 0)
         Me.btnCancel.ImageSize = New System.Drawing.Size(25, 25)
-        Me.btnCancel.Location = New System.Drawing.Point(502, 178)
+        Me.btnCancel.Location = New System.Drawing.Point(502, 152)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.ShadowDecoration.Parent = Me.btnCancel
         Me.btnCancel.Size = New System.Drawing.Size(141, 45)
@@ -520,7 +516,7 @@ Partial Class usrcrtlITEM1
         Me.btnEdit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnEdit.ImageOffset = New System.Drawing.Point(7, 0)
         Me.btnEdit.ImageSize = New System.Drawing.Size(30, 30)
-        Me.btnEdit.Location = New System.Drawing.Point(346, 178)
+        Me.btnEdit.Location = New System.Drawing.Point(346, 152)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.ShadowDecoration.Parent = Me.btnEdit
         Me.btnEdit.Size = New System.Drawing.Size(141, 45)
@@ -546,7 +542,7 @@ Partial Class usrcrtlITEM1
         Me.btnSave.Image = Global.Recording_Management.My.Resources.Resources.floppy_disk
         Me.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnSave.ImageOffset = New System.Drawing.Point(10, 0)
-        Me.btnSave.Location = New System.Drawing.Point(34, 178)
+        Me.btnSave.Location = New System.Drawing.Point(34, 152)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.ShadowDecoration.Parent = Me.btnSave
         Me.btnSave.Size = New System.Drawing.Size(141, 45)
@@ -569,11 +565,11 @@ Partial Class usrcrtlITEM1
         Me.btnAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(209, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.btnAdd.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.btnAdd.HoverState.Parent = Me.btnAdd
-        Me.btnAdd.Image = Global.Recording_Management.My.Resources.Resources.plus__2_
+        Me.btnAdd.Image = Global.Recording_Management.My.Resources.Resources.plus
         Me.btnAdd.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.btnAdd.ImageOffset = New System.Drawing.Point(10, 0)
         Me.btnAdd.ImageSize = New System.Drawing.Size(25, 25)
-        Me.btnAdd.Location = New System.Drawing.Point(190, 179)
+        Me.btnAdd.Location = New System.Drawing.Point(190, 153)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.ShadowDecoration.Parent = Me.btnAdd
         Me.btnAdd.Size = New System.Drawing.Size(141, 45)
@@ -598,7 +594,7 @@ Partial Class usrcrtlITEM1
         Me.txtIN.ForeColor = System.Drawing.Color.Black
         Me.txtIN.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtIN.HoverState.Parent = Me.txtIN
-        Me.txtIN.Location = New System.Drawing.Point(123, 61)
+        Me.txtIN.Location = New System.Drawing.Point(123, 64)
         Me.txtIN.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
         Me.txtIN.Name = "txtIN"
         Me.txtIN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -637,36 +633,6 @@ Partial Class usrcrtlITEM1
         Me.txtIC.Size = New System.Drawing.Size(263, 36)
         Me.txtIC.TabIndex = 0
         Me.txtIC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'DtAdded
-        '
-        Me.DtAdded.AutoRoundedCorners = True
-        Me.DtAdded.BackColor = System.Drawing.Color.Transparent
-        Me.DtAdded.BorderRadius = 17
-        Me.DtAdded.CheckedState.Parent = Me.DtAdded
-        Me.DtAdded.FillColor = System.Drawing.Color.Gold
-        Me.DtAdded.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.DtAdded.HoverState.Parent = Me.DtAdded
-        Me.DtAdded.Location = New System.Drawing.Point(123, 117)
-        Me.DtAdded.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.DtAdded.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.DtAdded.Name = "DtAdded"
-        Me.DtAdded.ShadowDecoration.Parent = Me.DtAdded
-        Me.DtAdded.Size = New System.Drawing.Size(263, 36)
-        Me.DtAdded.TabIndex = 5
-        Me.DtAdded.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.DtAdded.Value = New Date(2022, 5, 10, 16, 43, 58, 931)
-        '
-        'Label6
-        '
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label6.Location = New System.Drawing.Point(28, 117)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(93, 36)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Date Added"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label7
         '
@@ -934,7 +900,6 @@ Partial Class usrcrtlITEM1
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2GradientPanel2 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents pnlusrctrlITEM As Guna.UI2.WinForms.Guna2GradientPanel
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
@@ -951,7 +916,6 @@ Partial Class usrcrtlITEM1
     Friend WithEvents TXTITNAME As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents TXTITCODE As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents DtAdded As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents txtIN As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents txtIC As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents btnDelete As Guna.UI2.WinForms.Guna2GradientButton

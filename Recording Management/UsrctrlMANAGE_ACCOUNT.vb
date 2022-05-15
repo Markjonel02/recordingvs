@@ -185,11 +185,6 @@
 
     End Sub
 
-    Private Sub DGUSER_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs)
-        If e.ColumnIndex = 1 Then
-            e.Value = New String("*", e.Value.ToString.Length)
-        End If
-    End Sub
 
     Private Sub TXTPASS_TextChanged(sender As Object, e As EventArgs) Handles TXTPASS.TextChanged
         If TXTPASS.Text = String.Empty Then
@@ -200,6 +195,13 @@
 
     End Sub
 
+    Private Sub DG_user_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles DG_user.CellFormatting
+        If e.ColumnIndex = 1 Then
+            e.Value = New String("*", e.Value.ToString.Length)
+        End If
+    End Sub
 
+    Private Sub pnluser_Paint(sender As Object, e As PaintEventArgs) Handles pnluser.Paint
 
+    End Sub
 End Class

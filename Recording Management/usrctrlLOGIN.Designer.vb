@@ -22,18 +22,20 @@ Partial Class usrctrlLOGIN
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim lblforgot As System.Windows.Forms.LinkLabel
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.ctrlpanel = New System.Windows.Forms.Panel()
-        Me.piclogin = New System.Windows.Forms.PictureBox()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.CHKEYE = New Guna.UI2.WinForms.Guna2ImageCheckBox()
         Me.lblgreet = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.TXTUSN = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TXTPASS = New Guna.UI2.WinForms.Guna2TextBox()
         Me.BTNLOGIN = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.seplogin = New Guna.UI2.WinForms.Guna2Separator()
+        lblforgot = New System.Windows.Forms.LinkLabel()
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.ctrlpanel.SuspendLayout()
-        CType(Me.piclogin, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2GradientPanel1
@@ -51,7 +53,8 @@ Partial Class usrctrlLOGIN
         'ctrlpanel
         '
         Me.ctrlpanel.BackColor = System.Drawing.Color.Transparent
-        Me.ctrlpanel.Controls.Add(Me.piclogin)
+        Me.ctrlpanel.Controls.Add(lblforgot)
+        Me.ctrlpanel.Controls.Add(Me.Guna2PictureBox1)
         Me.ctrlpanel.Controls.Add(Me.CHKEYE)
         Me.ctrlpanel.Controls.Add(Me.lblgreet)
         Me.ctrlpanel.Controls.Add(Me.TXTUSN)
@@ -65,16 +68,16 @@ Partial Class usrctrlLOGIN
         Me.ctrlpanel.Size = New System.Drawing.Size(421, 500)
         Me.ctrlpanel.TabIndex = 28
         '
-        'piclogin
+        'Guna2PictureBox1
         '
-        Me.piclogin.BackColor = System.Drawing.Color.Transparent
-        Me.piclogin.Image = Global.Recording_Management.My.Resources.Resources.hacker
-        Me.piclogin.Location = New System.Drawing.Point(167, 138)
-        Me.piclogin.Name = "piclogin"
-        Me.piclogin.Size = New System.Drawing.Size(101, 101)
-        Me.piclogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.piclogin.TabIndex = 36
-        Me.piclogin.TabStop = False
+        Me.Guna2PictureBox1.Image = Global.Recording_Management.My.Resources.Resources.hacker
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(172, 134)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(104, 101)
+        Me.Guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Guna2PictureBox1.TabIndex = 36
+        Me.Guna2PictureBox1.TabStop = False
         '
         'CHKEYE
         '
@@ -83,7 +86,7 @@ Partial Class usrctrlLOGIN
         Me.CHKEYE.CheckedState.Parent = Me.CHKEYE
         Me.CHKEYE.HoverState.Parent = Me.CHKEYE
         Me.CHKEYE.Image = Global.Recording_Management.My.Resources.Resources.invisible
-        Me.CHKEYE.Location = New System.Drawing.Point(281, 360)
+        Me.CHKEYE.Location = New System.Drawing.Point(288, 327)
         Me.CHKEYE.Name = "CHKEYE"
         Me.CHKEYE.PressedState.Parent = Me.CHKEYE
         Me.CHKEYE.Size = New System.Drawing.Size(61, 37)
@@ -94,9 +97,9 @@ Partial Class usrctrlLOGIN
         '
         Me.lblgreet.AutoSize = False
         Me.lblgreet.BackColor = System.Drawing.Color.Transparent
-        Me.lblgreet.Font = New System.Drawing.Font("MS Reference Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblgreet.Font = New System.Drawing.Font("MS Reference Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblgreet.ForeColor = System.Drawing.Color.Lavender
-        Me.lblgreet.Location = New System.Drawing.Point(78, 54)
+        Me.lblgreet.Location = New System.Drawing.Point(83, 49)
         Me.lblgreet.Name = "lblgreet"
         Me.lblgreet.Size = New System.Drawing.Size(291, 44)
         Me.lblgreet.TabIndex = 32
@@ -121,9 +124,9 @@ Partial Class usrctrlLOGIN
         Me.TXTUSN.ForeColor = System.Drawing.Color.Black
         Me.TXTUSN.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TXTUSN.HoverState.Parent = Me.TXTUSN
-        Me.TXTUSN.IconLeft = Global.Recording_Management.My.Resources.Resources.user
+        Me.TXTUSN.IconLeft = Global.Recording_Management.My.Resources.Resources.user__4_
         Me.TXTUSN.IconLeftOffset = New System.Drawing.Point(10, 0)
-        Me.TXTUSN.Location = New System.Drawing.Point(95, 293)
+        Me.TXTUSN.Location = New System.Drawing.Point(102, 272)
         Me.TXTUSN.Name = "TXTUSN"
         Me.TXTUSN.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TXTUSN.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
@@ -155,7 +158,7 @@ Partial Class usrctrlLOGIN
         Me.TXTPASS.IconLeft = Global.Recording_Management.My.Resources.Resources.password
         Me.TXTPASS.IconLeftOffset = New System.Drawing.Point(5, 0)
         Me.TXTPASS.IconLeftSize = New System.Drawing.Size(30, 30)
-        Me.TXTPASS.Location = New System.Drawing.Point(95, 360)
+        Me.TXTPASS.Location = New System.Drawing.Point(102, 327)
         Me.TXTPASS.Name = "TXTPASS"
         Me.TXTPASS.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.TXTPASS.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(205, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(222, Byte), Integer))
@@ -174,16 +177,16 @@ Partial Class usrctrlLOGIN
         Me.BTNLOGIN.BorderRadius = 17
         Me.BTNLOGIN.CheckedState.Parent = Me.BTNLOGIN
         Me.BTNLOGIN.CustomImages.Parent = Me.BTNLOGIN
-        Me.BTNLOGIN.FillColor = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(249, Byte), Integer))
-        Me.BTNLOGIN.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(233, Byte), Integer))
-        Me.BTNLOGIN.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BTNLOGIN.FillColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(233, Byte), Integer))
+        Me.BTNLOGIN.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(9, Byte), Integer), CType(CType(198, Byte), Integer), CType(CType(249, Byte), Integer))
+        Me.BTNLOGIN.Font = New System.Drawing.Font("Segoe UI Semibold", 9.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTNLOGIN.ForeColor = System.Drawing.Color.White
         Me.BTNLOGIN.HoverState.Parent = Me.BTNLOGIN
-        Me.BTNLOGIN.Location = New System.Drawing.Point(155, 422)
+        Me.BTNLOGIN.Location = New System.Drawing.Point(149, 381)
         Me.BTNLOGIN.Name = "BTNLOGIN"
         Me.BTNLOGIN.PressedColor = System.Drawing.Color.Aqua
         Me.BTNLOGIN.ShadowDecoration.Parent = Me.BTNLOGIN
-        Me.BTNLOGIN.Size = New System.Drawing.Size(133, 37)
+        Me.BTNLOGIN.Size = New System.Drawing.Size(143, 37)
         Me.BTNLOGIN.TabIndex = 31
         Me.BTNLOGIN.Text = "Login"
         '
@@ -196,6 +199,18 @@ Partial Class usrctrlLOGIN
         Me.seplogin.Size = New System.Drawing.Size(355, 21)
         Me.seplogin.TabIndex = 30
         '
+        'lblforgot
+        '
+        lblforgot.AutoSize = True
+        lblforgot.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        lblforgot.Location = New System.Drawing.Point(177, 434)
+        lblforgot.Name = "lblforgot"
+        lblforgot.Size = New System.Drawing.Size(91, 13)
+        lblforgot.TabIndex = 37
+        lblforgot.TabStop = True
+        lblforgot.Text = "Forgot password?"
+        AddHandler lblforgot.LinkClicked, AddressOf Me.lblforgot_LinkClicked
+        '
         'usrctrlLOGIN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -205,18 +220,19 @@ Partial Class usrctrlLOGIN
         Me.Size = New System.Drawing.Size(421, 500)
         Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.ctrlpanel.ResumeLayout(False)
-        CType(Me.piclogin, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ctrlpanel.PerformLayout()
+        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents ctrlpanel As Panel
-    Friend WithEvents piclogin As PictureBox
     Friend WithEvents CHKEYE As Guna.UI2.WinForms.Guna2ImageCheckBox
     Friend WithEvents lblgreet As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents TXTUSN As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents TXTPASS As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents BTNLOGIN As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents seplogin As Guna.UI2.WinForms.Guna2Separator
+    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
 End Class

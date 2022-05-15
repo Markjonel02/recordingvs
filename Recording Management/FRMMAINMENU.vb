@@ -2,8 +2,7 @@
 
 
     Private Sub FRMMAINMENU_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        BTNDASHOARD.FillColor = Color.RoyalBlue
-        BTNDASHOARD.FillColor2 = Color.RoyalBlue
+
         FRMLOGIN.Close()
         Dim ctrldash As Integer
         For ctrldash = 0 To 0
@@ -13,6 +12,8 @@
         D.Parent = pnlmainmenu
         D.Show()
         D.Dock = DockStyle.Fill
+
+
     End Sub
 
 
@@ -30,6 +31,25 @@
         D.Dock = DockStyle.Fill
 
 
+
+
+    End Sub
+
+    Private Sub BTNDASHOARD_Leave(sender As Object, e As EventArgs) Handles BTNDASHOARD.Leave
+
+        BTNDASHOARD.FillColor = Color.Transparent
+        BTNDASHOARD.FillColor2 = Color.Transparent
+        BTNDASHOARD.ForeColor = Color.White
+        BTNDASHOARD.CustomBorderColor = Color.Transparent
+    End Sub
+
+    Private Sub BTNDASHOARD_GotFocus(sender As Object, e As EventArgs) Handles BTNDASHOARD.GotFocus
+
+        BTNDASHOARD.FillColor = Color.WhiteSmoke
+        BTNDASHOARD.FillColor2 = Color.WhiteSmoke
+        BTNDASHOARD.ForeColor = Color.RoyalBlue
+        BTNDASHOARD.CustomBorderColor = Color.RoyalBlue
+
     End Sub
 
     Private Sub BNTMANAGE_Click(sender As Object, e As EventArgs) Handles BTNMANAGE.Click
@@ -45,6 +65,7 @@
         BTNMANAGE.FillColor = Color.WhiteSmoke
         BTNMANAGE.FillColor2 = Color.WhiteSmoke
         BTNMANAGE.ForeColor = Color.RoyalBlue
+        BTNMANAGE.CustomBorderColor = Color.RoyalBlue
 
     End Sub
 
@@ -52,6 +73,7 @@
         BTNMANAGE.FillColor = Color.Transparent
         BTNMANAGE.FillColor2 = Color.Transparent
         BTNMANAGE.ForeColor = Color.White
+        BTNMANAGE.CustomBorderColor = Color.Transparent
     End Sub
 
     Private Sub BTNITEM_Click(sender As Object, e As EventArgs) Handles BTNITEM.Click
@@ -66,6 +88,7 @@
         BTNITEM.FillColor = Color.WhiteSmoke
         BTNITEM.FillColor2 = Color.WhiteSmoke
         BTNITEM.ForeColor = Color.RoyalBlue
+        BTNITEM.CustomBorderColor = Color.RoyalBlue
     End Sub
 
 
@@ -73,6 +96,7 @@
         BTNITEM.FillColor = Color.Transparent
         BTNITEM.FillColor2 = Color.Transparent
         BTNITEM.ForeColor = Color.White
+        BTNITEM.CustomBorderColor = Color.Transparent
     End Sub
 
 
@@ -88,12 +112,14 @@
         BTNADDITEM.FillColor = Color.WhiteSmoke
         BTNADDITEM.FillColor2 = Color.WhiteSmoke
         BTNADDITEM.ForeColor = Color.RoyalBlue
+        BTNADDITEM.CustomBorderColor = Color.RoyalBlue
     End Sub
 
     Private Sub BTNADDITEM_Leave(sender As Object, e As EventArgs) Handles BTNADDITEM.Leave
         BTNADDITEM.FillColor = Color.Transparent
         BTNADDITEM.FillColor2 = Color.Transparent
         BTNADDITEM.ForeColor = Color.White
+        BTNADDITEM.CustomBorderColor = Color.Transparent
     End Sub
 
     Private Sub BTNBORRPROF_Click(sender As Object, e As EventArgs) Handles BTNBORRPROF.Click
@@ -108,12 +134,14 @@
         BTNBORRPROF.FillColor = Color.WhiteSmoke
         BTNBORRPROF.FillColor2 = Color.WhiteSmoke
         BTNBORRPROF.ForeColor = Color.RoyalBlue
+        BTNBORRPROF.CustomBorderColor = Color.RoyalBlue
     End Sub
 
     Private Sub BTNBORRPROF_Leave(sender As Object, e As EventArgs) Handles BTNBORRPROF.Leave
         BTNBORRPROF.FillColor = Color.Transparent
         BTNBORRPROF.FillColor2 = Color.Transparent
         BTNBORRPROF.ForeColor = Color.White
+        BTNBORRPROF.CustomBorderColor = Color.Transparent
     End Sub
     Private Sub BTNLOGOUT_Click(sender As Object, e As EventArgs) Handles BTNLOGOUT.Click
         Dim close = MsgBox("Log out your acount?", vbYesNo + vbCritical, "logout account")
@@ -136,6 +164,7 @@
         BTNTRANSAC.FillColor = Color.WhiteSmoke
         BTNTRANSAC.FillColor2 = Color.WhiteSmoke
         BTNTRANSAC.ForeColor = Color.RoyalBlue
+        BTNTRANSAC.CustomBorderColor = Color.RoyalBlue
     End Sub
 
 
@@ -143,6 +172,7 @@
         BTNTRANSAC.FillColor = Color.Transparent
         BTNTRANSAC.FillColor2 = Color.Transparent
         BTNTRANSAC.ForeColor = Color.White
+        BTNTRANSAC.CustomBorderColor = Color.Transparent
     End Sub
 
     Private Sub BTNSYSTEMSET_Click(sender As Object, e As EventArgs) Handles BTNSYSTEMSET.Click
@@ -157,12 +187,14 @@
         BTNSYSTEMSET.FillColor = Color.WhiteSmoke
         BTNSYSTEMSET.FillColor2 = Color.WhiteSmoke
         BTNSYSTEMSET.ForeColor = Color.RoyalBlue
+        BTNSYSTEMSET.CustomBorderColor = Color.RoyalBlue
     End Sub
 
     Private Sub BTNSYSTEMSET_Leave(sender As Object, e As EventArgs) Handles BTNSYSTEMSET.Leave
         BTNSYSTEMSET.FillColor = Color.Transparent
         BTNSYSTEMSET.FillColor2 = Color.Transparent
         BTNSYSTEMSET.ForeColor = Color.White
+        BTNSYSTEMSET.CustomBorderColor = Color.Transparent
     End Sub
 
     Private Sub BTNREP_Click(sender As Object, e As EventArgs) Handles BTNREP.Click
@@ -177,6 +209,7 @@
         BTNREP.FillColor = Color.WhiteSmoke
         BTNREP.FillColor2 = Color.WhiteSmoke
         BTNREP.ForeColor = Color.RoyalBlue
+        BTNREP.CustomBorderColor = Color.RoyalBlue
     End Sub
 
 
@@ -184,11 +217,10 @@
         BTNREP.FillColor = Color.Transparent
         BTNREP.FillColor2 = Color.Transparent
         BTNREP.ForeColor = Color.White
+        BTNREP.CustomBorderColor = Color.Transparent
     End Sub
 
-
-
-    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+    Private Sub btnExit_Click_1(sender As Object, e As EventArgs) Handles btnExit.Click
         ExitButton()
     End Sub
 
