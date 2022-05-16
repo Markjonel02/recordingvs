@@ -82,7 +82,7 @@ Partial Class usrctrlBORROWERS_PROFILE
         Me.pnlusrBORR.Controls.Add(Me.txtSF)
         Me.pnlusrBORR.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlusrBORR.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
-        Me.pnlusrBORR.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(96, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.pnlusrBORR.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(190, Byte), Integer))
         Me.pnlusrBORR.ForeColor = System.Drawing.Color.White
         Me.pnlusrBORR.Location = New System.Drawing.Point(0, 0)
         Me.pnlusrBORR.Name = "pnlusrBORR"

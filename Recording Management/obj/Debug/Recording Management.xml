@@ -222,6 +222,16 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_settingsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_activitylogDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_userRow">
 <summary>
 Represents strongly named DataRow class.
@@ -248,6 +258,16 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:Recording_Management.record_management_systemDataSet.tbl_transactionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_settingsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_activitylogRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -282,6 +302,16 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_settingsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSet.tbl_activitylogRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_userTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
@@ -308,6 +338,16 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_transactionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_settingsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Recording_Management.record_management_systemDataSetTableAdapters.tbl_activitylogTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

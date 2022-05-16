@@ -1,4 +1,4 @@
-﻿Imports MySql.Data.MySqlClient
+﻿
 
 Public Class usrcrtlITEM1
     Private Sub funtion_disabled()
@@ -31,6 +31,17 @@ Public Class usrcrtlITEM1
         funtion_disabled()
         Me.Tbl_itemsTableAdapter.Fill(Me.Record_management_systemDataSet.tbl_items)
         txtIC.ReadOnly = True
+        opencon()
+        cmd.CommandText = "select * from tbl_settings"
+        dr = cmd.ExecuteReader
+        If dr.HasRows Then
+            dr.Read()
+            While dr.Read
+                cboitem.Items.Add(dr.Item("item_category"))
+            End While
+            con.Close()
+        End If
+
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs)
@@ -41,7 +52,19 @@ Public Class usrcrtlITEM1
     Private Sub DGV_Refresh()
         Me.Tbl_itemsTableAdapter.Fill(Me.Record_management_systemDataSet.tbl_items)
     End Sub
-
+    Private Sub ACTLOG()
+        con.Close()
+        con.Open()
+        cmd.CommandText = "insert into tbl_activitylog values (@un, @act, @dt)"
+        With cmd.Parameters
+            .Clear()
+            .AddWithValue("un", FRMMAINMENU.lblgreet.Text)
+            .AddWithValue("act", Act)
+            .AddWithValue("dt", Date.Now())
+        End With
+        cmd.ExecuteNonQuery()
+        con.Close()
+    End Sub
 
     'save code w/ error trapping 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
@@ -84,7 +107,8 @@ Public Class usrcrtlITEM1
         cmd.ExecuteNonQuery()
         con.Close()
         MsgBox("New record ha been saved!", vbOKOnly + vbInformation, "Saving Successful")
-
+        Act = "Added a new item "
+        ACTLOG()
         txtIC.Text = ""
         txtas.Text = ""
         txtIN.Text = ""
@@ -162,6 +186,8 @@ Public Class usrcrtlITEM1
             DGV_Refresh()
             funtion_disabled()
             MsgBox("Item Sucessfully deleted", vbOKOnly + vbInformation)
+            Act = "deleted a item"
+            ACTLOG()
         End If
 
     End Sub
@@ -214,8 +240,10 @@ Public Class usrcrtlITEM1
 
             cmd.ExecuteNonQuery()
             con.Close()
-            MsgBox("Record has been updated!", vbOKOnly + vbInformation, "Editing    Successful")
+            MsgBox("Record has been updated!", vbOKOnly + vbInformation, "Editing Successful")
             btnEdit.Text = "EDIT"
+            Act = "updated a item"
+            ACTLOG()
             function_enabled()
             txtIN.Text = ""
             txtas.Text = ""
@@ -226,5 +254,7 @@ Public Class usrcrtlITEM1
 
     End Sub
 
+    Private Sub cboitem_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboitem.SelectedIndexChanged
 
+    End Sub
 End Class

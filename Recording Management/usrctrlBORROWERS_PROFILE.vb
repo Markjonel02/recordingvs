@@ -45,7 +45,19 @@
         txtSF.Enabled = True
         TXTLN.Text = String.Empty
     End Sub
-
+    Private Sub ACTLOG()
+        con.Close()
+        con.Open()
+        cmd.CommandText = "insert into tbl_activitylog values (@un, @act, @dt)"
+        With cmd.Parameters
+            .Clear()
+            .AddWithValue("un", FRMMAINMENU.lblgreet.Text)
+            .AddWithValue("act", Act)
+            .AddWithValue("dt", Date.Now())
+        End With
+        cmd.ExecuteNonQuery()
+        con.Close()
+    End Sub
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         If txtSF.Text = "" Or TXTFNAME.Text = "" Or TXTLN.Text = "" Or CBOBORR.Text = "" Or TXTCN.Text = "" Or TXTCN.Text = "" Then
             MsgBox("All fields are required!", vbOKOnly + vbExclamation, "Error Saving")
@@ -80,6 +92,8 @@
         cmd.ExecuteNonQuery()
         con.Close()
         MsgBox("New record ha been saved!", vbOKOnly + vbInformation, "Saving Successful")
+        Act = "created borrowers profile"
+        ACTLOG()
         funtion_disabled()
         txtSF.Text = ""
         TXTFNAME.Text = ""
@@ -142,6 +156,8 @@
             cmd.ExecuteNonQuery()
             con.Close()
             MsgBox("Record has been updated!", vbOKOnly + vbInformation, "Editing    Successful")
+            Act = "updated a profile"
+            ACTLOG()
             btnEdit.Text = "EDIT"
             function_enabled()
             txtSF.Text = String.Empty

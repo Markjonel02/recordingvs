@@ -143,13 +143,28 @@
     End Sub
     Private Sub BTNLOGOUT_Click(sender As Object, e As EventArgs) Handles BTNLOGOUT.Click
         Dim close = MsgBox("Log out your acount?", vbYesNo + vbCritical, "logout account")
+
         If DialogResult.Yes = close Then
+            Act = "logged-out "
+            ACTLOG()
 
             FRMLOGIN.Show()
             Me.Close()
         End If
     End Sub
-
+    Private Sub ACTLOG()
+        con.Close()
+        con.Open()
+        cmd.CommandText = "insert into tbl_activitylog values (@un, @act, @dt)"
+        With cmd.Parameters
+            .Clear()
+            .AddWithValue("un", lblgreet.Text)
+            .AddWithValue("act", Act)
+            .AddWithValue("dt", Date.Now())
+        End With
+        cmd.ExecuteNonQuery()
+        con.Close()
+    End Sub
     Private Sub BTNTRANSAC_Click(sender As Object, e As EventArgs) Handles BTNTRANSAC.Click
         Dim ctrl As Integer
         For ctrl = 0 To 0
@@ -196,18 +211,20 @@
     End Sub
 
     Private Sub BTNREP_Click(sender As Object, e As EventArgs) Handles BTNREP.Click
-        Dim ctrl As Integer
-        For ctrl = 0 To 0
-            pnlmainmenu.Controls.RemoveAt(ctrl)
-        Next
-        Dim D As New usrctrlREPORTS()
-        D.Parent = pnlmainmenu
-        D.Show()
-        D.Dock = DockStyle.Fill
-        BTNREP.FillColor = Color.WhiteSmoke
-        BTNREP.FillColor2 = Color.WhiteSmoke
-        BTNREP.ForeColor = Color.RoyalBlue
-        BTNREP.CustomBorderColor = Color.RoyalBlue
+        Frm_reports.ShowDialog()
+
+        '    Dim ctrl As Integer
+        '    For ctrl = 0 To 0
+        '        pnlmainmenu.Controls.RemoveAt(ctrl)
+        '    Next
+        '    Dim D As New usrctrlREPORTS()
+        '    D.Parent = pnlmainmenu
+        '    D.Show()
+        '    D.Dock = DockStyle.Fill
+        '    BTNREP.FillColor = Color.WhiteSmoke
+        '    BTNREP.FillColor2 = Color.WhiteSmoke
+        '    BTNREP.ForeColor = Color.RoyalBlue
+        '    BTNREP.CustomBorderColor = Color.RoyalBlue
     End Sub
 
 
@@ -223,6 +240,7 @@
     End Sub
 
     Private Sub BTNRETURN_Click(sender As Object, e As EventArgs) Handles BTNRETURN.Click
+
         Dim ctrl As Integer
         For ctrl = 0 To 0
             pnlmainmenu.Controls.RemoveAt(ctrl)
@@ -242,6 +260,10 @@
         BTNRETURN.FillColor2 = Color.Transparent
         BTNRETURN.ForeColor = Color.White
         BTNRETURN.CustomBorderColor = Color.Transparent
+
+    End Sub
+
+    Private Sub lblgreet_Click(sender As Object, e As EventArgs) Handles lblgreet.Click
 
     End Sub
 End Class

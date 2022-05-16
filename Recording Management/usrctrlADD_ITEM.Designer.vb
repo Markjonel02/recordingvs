@@ -97,7 +97,7 @@ Partial Class usrctrlADD_ITEM
         Me.pnlusrctrlAdditem.Controls.Add(Me.TXTITCODE)
         Me.pnlusrctrlAdditem.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnlusrctrlAdditem.FillColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
-        Me.pnlusrctrlAdditem.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(96, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(205, Byte), Integer))
+        Me.pnlusrctrlAdditem.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(88, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.pnlusrctrlAdditem.Location = New System.Drawing.Point(0, 0)
         Me.pnlusrctrlAdditem.Name = "pnlusrctrlAdditem"
         Me.pnlusrctrlAdditem.ShadowDecoration.Parent = Me.pnlusrctrlAdditem

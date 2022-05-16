@@ -22,10 +22,25 @@ Partial Class UsrCtrlReturnitems
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnluserret = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Me.DGV_item = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.TransactionidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FullnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BorrowerstypeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StudfacultynoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemcodeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ItemnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.QuantityDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DateborrowedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DatereturnedDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TbltransactionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Record_management_systemDataSet = New Recording_Management.record_management_systemDataSet()
         Me.ASDASD = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.TXTIN = New Guna.UI2.WinForms.Guna2TextBox()
@@ -36,13 +51,16 @@ Partial Class UsrCtrlReturnitems
         Me.TXTSEARCH = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnCancel = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.btnReturn = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.Guna2DataGridView3 = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.Tbl_transactionTableAdapter = New Recording_Management.record_management_systemDataSetTableAdapters.tbl_transactionTableAdapter()
         Me.pnluserret.SuspendLayout()
-        CType(Me.Guna2DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_item, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TbltransactionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Record_management_systemDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnluserret
         '
+        Me.pnluserret.Controls.Add(Me.DGV_item)
         Me.pnluserret.Controls.Add(Me.ASDASD)
         Me.pnluserret.Controls.Add(Me.Guna2HtmlLabel2)
         Me.pnluserret.Controls.Add(Me.TXTIN)
@@ -53,7 +71,6 @@ Partial Class UsrCtrlReturnitems
         Me.pnluserret.Controls.Add(Me.TXTSEARCH)
         Me.pnluserret.Controls.Add(Me.btnCancel)
         Me.pnluserret.Controls.Add(Me.btnReturn)
-        Me.pnluserret.Controls.Add(Me.Guna2DataGridView3)
         Me.pnluserret.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pnluserret.FillColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(154, Byte), Integer), CType(CType(254, Byte), Integer))
         Me.pnluserret.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(246, Byte), Integer))
@@ -65,16 +82,165 @@ Partial Class UsrCtrlReturnitems
         Me.pnluserret.Size = New System.Drawing.Size(832, 493)
         Me.pnluserret.TabIndex = 1
         '
+        'DGV_item
+        '
+        Me.DGV_item.AllowUserToAddRows = False
+        Me.DGV_item.AllowUserToDeleteRows = False
+        Me.DGV_item.AllowUserToResizeColumns = False
+        Me.DGV_item.AllowUserToResizeRows = False
+        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle21.BackColor = System.Drawing.Color.White
+        Me.DGV_item.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle21
+        Me.DGV_item.AutoGenerateColumns = False
+        Me.DGV_item.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DGV_item.BackgroundColor = System.Drawing.Color.White
+        Me.DGV_item.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DGV_item.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DGV_item.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle22.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_item.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle22
+        Me.DGV_item.ColumnHeadersHeight = 17
+        Me.DGV_item.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.TransactionidDataGridViewTextBoxColumn, Me.FullnameDataGridViewTextBoxColumn, Me.BorrowerstypeDataGridViewTextBoxColumn, Me.StudfacultynoDataGridViewTextBoxColumn, Me.ItemcodeDataGridViewTextBoxColumn, Me.ItemnameDataGridViewTextBoxColumn, Me.QuantityDataGridViewTextBoxColumn, Me.DateborrowedDataGridViewTextBoxColumn, Me.DatereturnedDataGridViewTextBoxColumn})
+        Me.DGV_item.DataSource = Me.TbltransactionBindingSource
+        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle23.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DGV_item.DefaultCellStyle = DataGridViewCellStyle23
+        Me.DGV_item.EnableHeadersVisualStyles = False
+        Me.DGV_item.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_item.Location = New System.Drawing.Point(13, 240)
+        Me.DGV_item.Name = "DGV_item"
+        Me.DGV_item.ReadOnly = True
+        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DGV_item.RowHeadersDefaultCellStyle = DataGridViewCellStyle24
+        Me.DGV_item.RowHeadersVisible = False
+        DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.DGV_item.RowsDefaultCellStyle = DataGridViewCellStyle25
+        Me.DGV_item.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DGV_item.Size = New System.Drawing.Size(804, 230)
+        Me.DGV_item.TabIndex = 48
+        Me.DGV_item.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
+        Me.DGV_item.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.DGV_item.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.DGV_item.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.DGV_item.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.DGV_item.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.DGV_item.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.DGV_item.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_item.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_item.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.DGV_item.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DGV_item.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.DGV_item.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.DGV_item.ThemeStyle.HeaderStyle.Height = 17
+        Me.DGV_item.ThemeStyle.ReadOnly = True
+        Me.DGV_item.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.DGV_item.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DGV_item.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DGV_item.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.DGV_item.ThemeStyle.RowsStyle.Height = 22
+        Me.DGV_item.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.DGV_item.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'TransactionidDataGridViewTextBoxColumn
+        '
+        Me.TransactionidDataGridViewTextBoxColumn.DataPropertyName = "transaction_id"
+        Me.TransactionidDataGridViewTextBoxColumn.HeaderText = "transaction_id"
+        Me.TransactionidDataGridViewTextBoxColumn.Name = "TransactionidDataGridViewTextBoxColumn"
+        Me.TransactionidDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'FullnameDataGridViewTextBoxColumn
+        '
+        Me.FullnameDataGridViewTextBoxColumn.DataPropertyName = "fullname"
+        Me.FullnameDataGridViewTextBoxColumn.HeaderText = "fullname"
+        Me.FullnameDataGridViewTextBoxColumn.Name = "FullnameDataGridViewTextBoxColumn"
+        Me.FullnameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'BorrowerstypeDataGridViewTextBoxColumn
+        '
+        Me.BorrowerstypeDataGridViewTextBoxColumn.DataPropertyName = "borrowers_type"
+        Me.BorrowerstypeDataGridViewTextBoxColumn.HeaderText = "borrowers_type"
+        Me.BorrowerstypeDataGridViewTextBoxColumn.Name = "BorrowerstypeDataGridViewTextBoxColumn"
+        Me.BorrowerstypeDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'StudfacultynoDataGridViewTextBoxColumn
+        '
+        Me.StudfacultynoDataGridViewTextBoxColumn.DataPropertyName = "stud_facultyno"
+        Me.StudfacultynoDataGridViewTextBoxColumn.HeaderText = "stud_facultyno"
+        Me.StudfacultynoDataGridViewTextBoxColumn.Name = "StudfacultynoDataGridViewTextBoxColumn"
+        Me.StudfacultynoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'ItemcodeDataGridViewTextBoxColumn
+        '
+        Me.ItemcodeDataGridViewTextBoxColumn.DataPropertyName = "item_code"
+        Me.ItemcodeDataGridViewTextBoxColumn.HeaderText = "item_code"
+        Me.ItemcodeDataGridViewTextBoxColumn.Name = "ItemcodeDataGridViewTextBoxColumn"
+        Me.ItemcodeDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'ItemnameDataGridViewTextBoxColumn
+        '
+        Me.ItemnameDataGridViewTextBoxColumn.DataPropertyName = "item_name"
+        Me.ItemnameDataGridViewTextBoxColumn.HeaderText = "item_name"
+        Me.ItemnameDataGridViewTextBoxColumn.Name = "ItemnameDataGridViewTextBoxColumn"
+        Me.ItemnameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'QuantityDataGridViewTextBoxColumn
+        '
+        Me.QuantityDataGridViewTextBoxColumn.DataPropertyName = "quantity"
+        Me.QuantityDataGridViewTextBoxColumn.HeaderText = "quantity"
+        Me.QuantityDataGridViewTextBoxColumn.Name = "QuantityDataGridViewTextBoxColumn"
+        Me.QuantityDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DateborrowedDataGridViewTextBoxColumn
+        '
+        Me.DateborrowedDataGridViewTextBoxColumn.DataPropertyName = "date_borrowed"
+        Me.DateborrowedDataGridViewTextBoxColumn.HeaderText = "date_borrowed"
+        Me.DateborrowedDataGridViewTextBoxColumn.Name = "DateborrowedDataGridViewTextBoxColumn"
+        Me.DateborrowedDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DatereturnedDataGridViewTextBoxColumn
+        '
+        Me.DatereturnedDataGridViewTextBoxColumn.DataPropertyName = "date_returned"
+        Me.DatereturnedDataGridViewTextBoxColumn.HeaderText = "date_returned"
+        Me.DatereturnedDataGridViewTextBoxColumn.Name = "DatereturnedDataGridViewTextBoxColumn"
+        Me.DatereturnedDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'TbltransactionBindingSource
+        '
+        Me.TbltransactionBindingSource.DataMember = "tbl_transaction"
+        Me.TbltransactionBindingSource.DataSource = Me.Record_management_systemDataSet
+        '
+        'Record_management_systemDataSet
+        '
+        Me.Record_management_systemDataSet.DataSetName = "record_management_systemDataSet"
+        Me.Record_management_systemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'ASDASD
         '
         Me.ASDASD.BackColor = System.Drawing.Color.Transparent
         Me.ASDASD.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ASDASD.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.ASDASD.Location = New System.Drawing.Point(650, 71)
+        Me.ASDASD.Location = New System.Drawing.Point(638, 71)
         Me.ASDASD.Name = "ASDASD"
-        Me.ASDASD.Size = New System.Drawing.Size(98, 19)
+        Me.ASDASD.Size = New System.Drawing.Size(115, 19)
         Me.ASDASD.TabIndex = 44
-        Me.ASDASD.Text = "DATE BORROW"
+        Me.ASDASD.Text = "DATE BORROWED"
         '
         'Guna2HtmlLabel2
         '
@@ -149,9 +315,9 @@ Partial Class UsrCtrlReturnitems
         Me.Guna2HtmlLabel8.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(105, 71)
         Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
-        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(114, 19)
+        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(117, 19)
         Me.Guna2HtmlLabel8.TabIndex = 46
-        Me.Guna2HtmlLabel8.Text = "CUSTOMER NAME"
+        Me.Guna2HtmlLabel8.Text = "BORROWER NAME"
         '
         'TXTNAME
         '
@@ -259,6 +425,7 @@ Partial Class UsrCtrlReturnitems
         Me.btnReturn.BorderThickness = 2
         Me.btnReturn.CheckedState.Parent = Me.btnReturn
         Me.btnReturn.CustomImages.Parent = Me.btnReturn
+        Me.btnReturn.Enabled = False
         Me.btnReturn.FillColor = System.Drawing.Color.White
         Me.btnReturn.FillColor2 = System.Drawing.Color.White
         Me.btnReturn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -276,62 +443,9 @@ Partial Class UsrCtrlReturnitems
         Me.btnReturn.TabIndex = 34
         Me.btnReturn.Text = "RETURN"
         '
-        'Guna2DataGridView3
+        'Tbl_transactionTableAdapter
         '
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView3.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
-        Me.Guna2DataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.Guna2DataGridView3.BackgroundColor = System.Drawing.Color.White
-        Me.Guna2DataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Guna2DataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.Guna2DataGridView3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
-        Me.Guna2DataGridView3.ColumnHeadersHeight = 4
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView3.DefaultCellStyle = DataGridViewCellStyle15
-        Me.Guna2DataGridView3.EnableHeadersVisualStyles = False
-        Me.Guna2DataGridView3.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView3.Location = New System.Drawing.Point(20, 240)
-        Me.Guna2DataGridView3.Name = "Guna2DataGridView3"
-        Me.Guna2DataGridView3.RowHeadersVisible = False
-        Me.Guna2DataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.Guna2DataGridView3.Size = New System.Drawing.Size(797, 237)
-        Me.Guna2DataGridView3.TabIndex = 2
-        Me.Guna2DataGridView3.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.[Default]
-        Me.Guna2DataGridView3.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView3.ThemeStyle.AlternatingRowsStyle.Font = Nothing
-        Me.Guna2DataGridView3.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView3.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView3.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
-        Me.Guna2DataGridView3.ThemeStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView3.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView3.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView3.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.Guna2DataGridView3.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.Guna2DataGridView3.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
-        Me.Guna2DataGridView3.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.Guna2DataGridView3.ThemeStyle.HeaderStyle.Height = 4
-        Me.Guna2DataGridView3.ThemeStyle.ReadOnly = False
-        Me.Guna2DataGridView3.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
-        Me.Guna2DataGridView3.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.Guna2DataGridView3.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.Guna2DataGridView3.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.Guna2DataGridView3.ThemeStyle.RowsStyle.Height = 22
-        Me.Guna2DataGridView3.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2DataGridView3.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.Tbl_transactionTableAdapter.ClearBeforeFill = True
         '
         'UsrCtrlReturnitems
         '
@@ -342,13 +456,14 @@ Partial Class UsrCtrlReturnitems
         Me.Size = New System.Drawing.Size(832, 493)
         Me.pnluserret.ResumeLayout(False)
         Me.pnluserret.PerformLayout()
-        CType(Me.Guna2DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_item, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TbltransactionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Record_management_systemDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents pnluserret As Guna.UI2.WinForms.Guna2CustomGradientPanel
-    Friend WithEvents Guna2DataGridView3 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents btnCancel As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents btnReturn As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents chkeclearsearch As Guna.UI2.WinForms.Guna2ImageCheckBox
@@ -359,4 +474,17 @@ Partial Class UsrCtrlReturnitems
     Friend WithEvents TXTBORR As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2HtmlLabel8 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents TXTNAME As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents DGV_item As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents TransactionidDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents FullnameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents BorrowerstypeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents StudfacultynoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ItemcodeDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ItemnameDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents QuantityDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DateborrowedDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DatereturnedDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents TbltransactionBindingSource As BindingSource
+    Friend WithEvents Record_management_systemDataSet As record_management_systemDataSet
+    Friend WithEvents Tbl_transactionTableAdapter As record_management_systemDataSetTableAdapters.tbl_transactionTableAdapter
 End Class

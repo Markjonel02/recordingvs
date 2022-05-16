@@ -88,6 +88,22 @@
 
     End Sub
 
+    Private Sub ACTLOG()
+        con.Close()
+        con.Open()
+        cmd.CommandText = "insert into tbl_activitylog values (@un, @act, @dt)"
+        With cmd.Parameters
+            .Clear()
+            .AddWithValue("un", FRMMAINMENU.lblgreet.Text)
+            .AddWithValue("act", Act)
+            .AddWithValue("dt", Date.Now())
+        End With
+        cmd.ExecuteNonQuery()
+        con.Close()
+    End Sub
+
+
+
 
     'save 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
@@ -167,7 +183,8 @@
         cmd.ExecuteNonQuery()
         con.Close()
         MsgBox("Items successfully borrowed!", vbOKOnly + vbInformation)
-
+        Act = "items borrowed "
+        ACTLOG()
 
 
         TXTID.Text = ""
@@ -269,6 +286,8 @@
         con.Close()
 
         MsgBox("Successfully added to cart!", vbOKOnly + vbInformation, "Added Successful")
+        Act = "cart added"
+        ACTLOG()
         TXTIC.Text = ""
         TXTSTUDF.Text = ""
         TXTIN.Text = ""

@@ -1,7 +1,8 @@
 ﻿Public Class UsrctrlMANAGE_ACCOUNT
-    Private Sub btnExit_Click(sender As Object, e As EventArgs) 
+    Private Sub btnExit_Click(sender As Object, e As EventArgs)
         ExitButton()
     End Sub
+
     Private Sub function_enabled()
         btnAdd.Enabled = False
         btnSave.Enabled = True
@@ -41,8 +42,21 @@
         CBOUST.Text = String.Empty
         TXTUSN.Focus()
     End Sub
-
+    Private Sub ACTLOG()
+        con.Close()
+        con.Open()
+        cmd.CommandText = "insert into tbl_activitylog values (@un, @act, @dt)"
+        With cmd.Parameters
+            .Clear()
+            .AddWithValue("un", FRMMAINMENU.lblgreet.Text)
+            .AddWithValue("act", Act)
+            .AddWithValue("dt", Date.Now())
+        End With
+        cmd.ExecuteNonQuery()
+        con.Close()
+    End Sub
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+
         If TXTUSN.Text = "" Or TXTPASS.Text = "" Or TXTCONF.Text = "" Or txtLN.Text = "" Or CBOUST.Text = "" Or CBOSTAT.Text = "" Then
             MsgBox("All fields are required!", vbOKOnly + vbExclamation, "Error Saving")
             TXTUSN.Focus()
@@ -81,6 +95,8 @@
         cmd.ExecuteNonQuery()
         con.Close()
         MsgBox("New record ha been saved!", vbOKOnly + vbInformation, "Saving Successful")
+        Act = "Added new user"
+        ACTLOG()
         funtion_disabled()
         TXTUSN.Text = ""
         TXTPASS.Text = ""
@@ -172,6 +188,8 @@
             cmd.ExecuteNonQuery()
             con.Close()
             MsgBox("Record has been updated!", vbOKOnly + vbInformation, "Editing Successful")
+            Act = "edited user"
+            ACTLOG()
             btnEdit.Text = "EDIT"
             function_enabled()
             TXTUSN.Text = ""

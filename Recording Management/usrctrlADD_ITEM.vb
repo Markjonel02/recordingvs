@@ -71,7 +71,19 @@
         TXTDATEADDED.Enabled = False
         clear()
     End Sub
-
+    Private Sub ACTLOG()
+        con.Close()
+        con.Open()
+        cmd.CommandText = "insert into tbl_activitylog values (@un, @act, @dt)"
+        With cmd.Parameters
+            .Clear()
+            .AddWithValue("un", FRMMAINMENU.lblgreet.Text)
+            .AddWithValue("act", Act)
+            .AddWithValue("dt", Date.Now())
+        End With
+        cmd.ExecuteNonQuery()
+        con.Close()
+    End Sub
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Dim stockadded = Val(TXTADDED.Text)
         Dim availableSt = Val(TXTAVS.Text)
@@ -92,7 +104,8 @@
             cmd.ExecuteNonQuery()
             con.Close()
             MsgBox("Stocks has been Added!", vbOKOnly + vbInformation, "Editing Successful")
-
+            Act = "added a stock"
+            ACTLOG()
 
 
             opencon()

@@ -1,3 +1,32 @@
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.exe.config
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.Frm_reports.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.FRMLOGIN.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.FRMMAINMENU.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.Resources.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrCrlforgotpass.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrcrtlITEM1.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrCtrlActlog.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlADD_ITEM.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlBORROWERS_PROFILE.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlDashboard.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrCtrlITEM.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrCtrlITEMStock.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlLOGIN.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrctrlMANAGE_ACCOUNT.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlREPORTS.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrCtrlReturnitems.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrpnlSet.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlTRANSACTION.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.Usrctrluseraccount.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrctrlWelcome.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.vbproj.GenerateResource.cache
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\RdlCompile.cache
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\RdlCompile.compiled
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.vbproj.CoreCompileInputs.cache
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Recording Management.exe.config
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Recording Management.exe
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Recording Management.pdb
@@ -5,38 +34,99 @@ C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Record
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Guna.UI2.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.SqlServer.Types.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\MySql.Data.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\EnvDTE.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Google.Protobuf.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Zstandard.Net.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\K4os.Compression.LZ4.Streams.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Ubiety.Dns.Core.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Renci.SshNet.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.Build.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.Build.Framework.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\stdole.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\System.Buffers.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\K4os.Compression.LZ4.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\System.IO.Compression.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\Microsoft.MSXML.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\MySql.Data.xml
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.vbprojAssemblyReference.cache
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.exe.config
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.FRMLOGIN.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.FRMMAINMENU.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.Resources.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrCrlforgotpass.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrcrtlITEM1.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlADD_ITEM.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlBORROWERS_PROFILE.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlDashboard.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlLOGIN.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrctrlMANAGE_ACCOUNT.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlREPORTS.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrCtrlReturnitems.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrpnlSet.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.usrctrlTRANSACTION.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrctrlWelcome.resources
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.vbproj.GenerateResource.cache
-C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.vbproj.CoreCompileInputs.cache
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\cs\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\de\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\en\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\es\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\fr\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\it\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ja\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ko\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\pl\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\pt-BR\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\ru\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\tr\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\zh-Hans\Microsoft.Build.resources.dll
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\bin\Debug\zh-Hant\Microsoft.Build.resources.dll
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.vbproj.CopyComplete
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.exe
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.xml
 C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.pdb
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording Management.vbprojAssemblyReference.cache
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrCtrlborrow.resources
+C:\Users\Marin\Documents\Visual Studio 2017\Projects\Recording Management\Recording Management\obj\Debug\Recording_Management.UsrCtrlTrans.resources

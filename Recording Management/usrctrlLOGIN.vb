@@ -2,7 +2,7 @@
     Dim astat As String = "Active"
     Dim admin As String = "Gso"
     Dim Staff As String = "Staff"
-
+    Public a
     Private Sub usrctrlLOGIN_Invalidated(sender As Object, e As InvalidateEventArgs) Handles Me.Invalidated
 
     End Sub
@@ -18,7 +18,19 @@
 
     End Sub
 
-
+    Private Sub ACTLOG()
+        con.Close()
+        con.Open()
+        cmd.CommandText = "insert into tbl_activitylog values (@un, @act, @dt)"
+        With cmd.Parameters
+            .Clear()
+            .AddWithValue("un", TXTUSN.Text)
+            .AddWithValue("act", Act)
+            .AddWithValue("dt", Date.Now())
+        End With
+        cmd.ExecuteNonQuery()
+        con.Close()
+    End Sub
     Private Sub BTNLOGIN_Click(sender As Object, e As EventArgs) Handles BTNLOGIN.Click
         If TXTUSN.Text = "" Or TXTPASS.Text = "" Then
             MsgBox("all fields are required")
@@ -34,12 +46,18 @@
                 dr.Read()
 
                 If dr(3) = admin Then
-                    FRMMAINMENU.lblgreet.Text = "GSO"
+                    Act = "Logged-in"
+                    ACTLOG()
+                    a = TXTUSN.Text
+                    FRMMAINMENU.lblgreet.Text = a
                     FRMMAINMENU.Show()
 
 
                 ElseIf dr(3) = Staff Then
-                    FRMMAINMENU.lblgreet.Text = "STAFF"
+                    Act = "Logged-in"
+                    ACTLOG()
+                    a = TXTUSN.Text
+                    FRMMAINMENU.lblgreet.Text = a
                     FRMMAINMENU.Show()
                     disable()
 
